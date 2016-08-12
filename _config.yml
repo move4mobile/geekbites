@@ -1,0 +1,39 @@
+# Permalinks
+permalink:           pretty
+
+# Setup
+title:               M4M Geek Blog
+tagline:             Blog by M4M developers
+url:                 https://move4mobile.github.io
+paginate:            1
+baseurl:             ""
+
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          _sass
+  style:            :compressed
+
+# About/contact
+author:
+  name:              Michael Schilling
+  url:               https://twitter.com/mschilling
+  email:             mschilling@move4mobile.com
+
+# Custom vars
+version:             1.0.0
+
+github:
+  repo:              github.com/move4mobile/move4mobile.github.io
+
+# This is the list of pages to include in the header of the website.
+pages_list:
+  About: '/about/'
+  Archive: '/archive/'
+  Feed: '/atom.xml'
+
+# Gems
+gems:
+  - jekyll-paginate
+  - jekyll-gist
