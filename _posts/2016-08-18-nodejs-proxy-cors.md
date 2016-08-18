@@ -15,7 +15,7 @@ check: No 'Access-Control-Allow-Origin' header is present on the requested resou
 therefore not allowed access.
 ```
 
-Voorbeeld:
+In DevTools ziet dat er zo uit:
 
 ![CORS error in developer console.](/assets/cors-error-no-access-control-allow-origin.png)
 
@@ -64,3 +64,6 @@ Voorbeeld request vanuit je web client:
 * http://localhost:8080/http://google.com/ - Google.com with CORS headers
 * http://localhost:8080/google.com - Same as previous.
 
+
+---
+^MS
