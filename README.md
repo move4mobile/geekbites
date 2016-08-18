@@ -8,3 +8,6 @@ http://bobbelderbos.com/2016/01/migrating-to-jekyll/
 
 Inserting Images in Markdown Jekyll Posts
 http://dev-notes.eu/2016/01/images-in-kramdown-jekyll/
+
+Mastering Markdown
+https://guides.github.com/features/mastering-markdown/
