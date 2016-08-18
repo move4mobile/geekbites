@@ -9,11 +9,7 @@ comments: true
 Wanneer je als web developer een applicatie bouwt die een REST service op een ander domain moet aanroepen, dan ben je 
 vast bekend met de volgende foutmelding:
 
-```
-XMLHttpRequest cannot load http://api.example.com/login. Response to preflight request doesn't pass access control 
-check: No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'http://localhost' is 
-therefore not allowed access.
-```
+```XMLHttpRequest cannot load http://api.example.com/login. Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'http://localhost' is therefore not allowed access.```
 
 In DevTools ziet dat er zo uit:
 
