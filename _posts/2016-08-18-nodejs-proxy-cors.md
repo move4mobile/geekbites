@@ -19,8 +19,8 @@ Ai, ai, ai...!
 
 ## CORS headers automatisch toevoegen via proxy
 
-Vandaag kwam ik een handige node library tegen waarmee gemakkelijk een reverse proxy kan opzetten die de juiste CORS 
-headers aan iedere request (en response) voor je toevoegd: [cors-anywhere](https://www.npmjs.com/package/cors-anywhere)
+Vandaag kwam ik een handige node library tegen waarmee je gemakkelijk een reverse proxy kan opzetten die de juiste CORS
+headers aan iedere request (en response) voor je toevoegt: [cors-anywhere](https://www.npmjs.com/package/cors-anywhere)
 
 > CORS Anywhere is a NodeJS proxy which adds CORS headers to the proxied request.
 >
