@@ -7,6 +7,7 @@ tagline:             Blog by M4M developers
 url:                 https://move4mobile.github.io
 paginate:            1
 baseurl:             ""
+analytics_id:        UA-31584143-2
 
 # Assets
 #
