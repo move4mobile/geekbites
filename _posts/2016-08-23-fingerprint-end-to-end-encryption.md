@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Improved endpoint security using FE2EE
+title: Verbeterde beveiliging door gebruik van FE2EE
 category: security
 tags: privacy, encryption
 comments: true
