@@ -1,6 +1,6 @@
 # move4mobile.github.io
 
-Onze blog staat live: http://geekbites.move4mobile.com
+Onze blog staat live: http://geekbites.move4mobile.io
 
 ###About GitHub Pages and Jekyll:
 https://help.github.com/articles/about-github-pages-and-jekyll/
