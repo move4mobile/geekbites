@@ -3,7 +3,7 @@ markdown:           kramdown
 kramdown:
   extensions: ["tables"]
 
-highlighter:         true
+highlighter:         rouge
 
 # Permalinks
 permalink:           /:year/:month/:day/:title.html
