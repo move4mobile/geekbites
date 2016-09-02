@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Automatisch CORS headers toevoegen via een reverse proxy
-category: web development
+category: web-development
 #tags: cors, nodejs
 comments: true
 permalink: "automatisch-cors-headers-via-reverse-proxy"
@@ -64,5 +64,3 @@ Voorbeeld request vanuit je web client:
 
 ---
 ^Michael
-
-{% include twitter_plug.html %}
