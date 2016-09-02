@@ -6,7 +6,7 @@ kramdown:
 highlighter:         rouge
 
 # Permalinks
-permalink:           /:year/:month/:day/:title.html
+permalink:           /:year/:month/:day/:title/
 
 # Setup
 title:               Geek Bites
