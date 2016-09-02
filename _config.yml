@@ -1,3 +1,10 @@
+# Dependencies
+markdown:           kramdown
+kramdown:
+  extensions: ["tables"]
+
+highlighter:         true
+
 # Permalinks
 permalink:           pretty
 
@@ -5,7 +12,9 @@ permalink:           pretty
 title:               Geek Bites
 tagline:             Blog by M4M developers
 url:                 https://move4mobile.github.io
+
 paginate:            1
+
 baseurl:             ""
 analytics_id:        UA-31584143-2
 
@@ -34,7 +43,10 @@ pages_list:
   Archief: '/archive/'
   Feed: '/atom.xml'
 
+# Allow URL Redirects:
+#  * https://help.github.com/articles/redirects-on-github-pages
 # Gems
 gems:
+  - jekyll-redirect-from
   - jekyll-paginate
   - jekyll-gist
