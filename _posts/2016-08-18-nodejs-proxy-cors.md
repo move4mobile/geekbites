@@ -2,9 +2,9 @@
 layout: post
 title: Automatisch CORS headers toevoegen via een reverse proxy
 category: web-development
-#tags: cors, nodejs
+tags: cors, nodejs
 comments: true
-permalink: "automatisch-cors-headers-via-reverse-proxy"
+#permalink: "automatisch-cors-headers-via-reverse-proxy"
 ---
 
 Wanneer je als web developer een applicatie bouwt die een REST service op een ander domain moet aanroepen, dan ben je 
