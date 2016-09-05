@@ -3,7 +3,7 @@
 Onze blog staat live: http://geekbites.move4mobile.io
 
 ####How to install
-Allereest even checken of je Ruby hebt geinstalleerd:
+Allereerst even checken of je Ruby hebt geinstalleerd:
 
 `ruby -v`
 
