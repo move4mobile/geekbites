@@ -41,3 +41,6 @@ http://dev-notes.eu/2016/01/images-in-kramdown-jekyll/
 
 ####Mastering Markdown
 https://guides.github.com/features/mastering-markdown/
+
+cards-jekyll-template
+https://github.com/willianjusten/cards-jekyll-template

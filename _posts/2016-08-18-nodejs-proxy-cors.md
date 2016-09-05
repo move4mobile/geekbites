@@ -5,6 +5,7 @@ category: web-development
 tags: cors, nodejs
 comments: true
 #permalink: "automatisch-cors-headers-via-reverse-proxy"
+author: michael
 ---
 
 Wanneer je als web developer een applicatie bouwt die een REST service op een ander domain moet aanroepen, dan ben je 
@@ -64,3 +65,10 @@ Voorbeeld request vanuit je web client:
 
 ---
 ^Michael
+
+{% assign author = site.data.people[page.author] %}
+<a rel="author"
+  href="{{ author.twitter }}"
+  title="{{ author.name }}">
+    {{ author.name }}
+</a>

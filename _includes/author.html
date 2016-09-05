@@ -1,0 +1,8 @@
+{% assign author = site.data.people[page.author] %}
+<section class="author" itemprop="author">
+    <div class="details" itemscope itemtype="http://schema.org/Person">
+        <img itemprop="image" class="img-rounded" src="{{author.avatar}}" alt="{{site.name}}">
+        <p>{{author.name}}</p>
+        <p><a itemprop="github" class="github" href="https://github.com/{{author.github}}">github.com/{{author.github}}</a></p>
+    </div>
+</section>
