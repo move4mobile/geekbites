@@ -3,7 +3,7 @@ layout: post
 title: Automatisch CORS headers toevoegen via een reverse proxy
 category: web-development
 tags: cors, nodejs
-#comments: true
+comments: true
 author: michael
 min_read: 5
 ---
