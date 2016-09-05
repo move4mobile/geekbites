@@ -1,5 +1,6 @@
 michael:
     name: Michael Schilling
+    bio: Some bio text
     email: mschilling@move4mobile.com
     twitter: mschilling
     github: mschilling
@@ -8,6 +9,8 @@ michael:
 
 dennis:
     name: Dennis Bruijn
-    twitter: 0xFFFF
-    github: 0xFFFF
+    email: dbruijn@move4mobile.com
+    twitter: '0x1ad2'
+    github: '0x1ad2'
+    avatar: https://avatars0.githubusercontent.com/u/1705904?v=3&s=80
 

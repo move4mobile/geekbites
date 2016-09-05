@@ -5,7 +5,7 @@ layout: default
 <article class="post">
   <h1 class="post-title">{{ page.title }}</h1>
   <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date_to_string }}{% if page.min_read != null %} - {{page.min_read}} min read {% endif %}</time>
-  {% if false %}
+  {% if true %}
   {% include author.html %}
   {% endif %}
 
