@@ -34,7 +34,3 @@ Ik kan me voorstellen dat er gebruikers zijn die alleen bij het opstarten van de
 ## Zou ik FE2EE kunnen gebruiken op mijn telefoon?
 Sommige iOS en Android apparaten kunnen je vingerafdruk scannen (een biometrische scanner is verplicht), hierdoor kun je gebruik maken van het meest veilige beveiligingsmechanisme tot nu toe.
 Indien je dus een biometrische scanner hebt en een app die het bovenstaande heeft toegepast kun je FE2EE aanzetten.
-
-
----
-^Dennis

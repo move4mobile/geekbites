@@ -61,7 +61,3 @@ Voorbeeld request vanuit je web client:
 
 * http://localhost:8080/http://google.com/ - Google.com with CORS headers
 * http://localhost:8080/google.com - Same as previous.
-
-
----
-^Michael
