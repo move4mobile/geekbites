@@ -4,7 +4,7 @@ title: 3 Minder bekende features nieuw in Android 7.0
 category: android
 tags: android, nougat, android 7.0, featurers, verborgen
 comments: true
-author: 
+author: ramon
 min_read: 6
 ---
 ![nougat](/assets/nougat.jpg)
