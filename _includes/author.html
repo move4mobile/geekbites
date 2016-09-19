@@ -6,10 +6,8 @@
     </div>
     <div class="content">
         <h3 class="title">{{author.name}}</h3>
-        <!--<span>{{author.bio}}</span>-->
         {% if author.twitter != null %}<p><a itemprop="twitter" class="twitter" href="https://twitter.com/{{author.twitter}}">@{{author.twitter}}</a></p>{% endif %}
         <p><a itemprop="github" class="github" href="https://github.com/{{author.github}}">github.com/{{author.github}}</a></p>
     </div>
-
 </div>
 {% endif %}
