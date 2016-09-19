@@ -6,5 +6,6 @@ title: Archief
 ## Blog Posts
 
 {% for post in site.posts %}
-  * {{ post.date | date_to_string }} » [ {{ post.title }} ]({{ post.url }})
+{% assign author = site.data.people[post.author] %}
+  * {{ post.date | date_to_string }} » [ {{ post.title }} ]({{ post.url }}){% if author != null %} - <small> {{author.name}}</small>{% endif %}
 {% endfor %}
