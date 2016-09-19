@@ -4,7 +4,6 @@ category: web-development
 tags: firebase, web
 title: Firebase voor Web
 comments: true
-#date: 2016-09-15
 author: jesper
 ---
 

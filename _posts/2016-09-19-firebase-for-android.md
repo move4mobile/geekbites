@@ -4,7 +4,6 @@ title: Firebase opzetten voor Android
 category: firebase
 tags: firebase, android
 comments: true
-#date: 2016-09-13
 author: cas
 ---
 
