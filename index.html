@@ -13,7 +13,7 @@ title: Home
       </a>
     </h1>
 
-    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}{% if post.min_read != null %} - {{post.min_read}} min read {% endif %}</time>
+    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}{% if post.min_read != null %} - {{post.min_read}} min read {% endif %} - <span class="disqus-comment-count" data-disqus-identifier="{{ site.disqusid }}{{ post.url | replace:'index.html','' }}"> <!-- Count will be inserted here --> </span></time>
 
     {% include author.html %}
     {{ post.content }}
