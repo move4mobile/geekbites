@@ -17,7 +17,7 @@ Als dat het geval is dan kun je volgende commando's uitvoeren:
 
 `jekyll serve`
 
-En je bent klaar voor het schrijven van je Geekbite!
+En je bent klaar voor het schrijven van je eigen Geekbite!
 
 Mocht je toch tegen een probleem met dependencies aanlopen, dan kun je het volgende commando proberen:
 
