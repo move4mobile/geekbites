@@ -23,7 +23,7 @@ Mocht je toch tegen een probleem met dependencies aanlopen, dan kun je het volge
 
 `bundle exec jekyll serve`
 
-Succes!!!
+Succes!
 
 ####About GitHub Pages and Jekyll:
 https://help.github.com/articles/about-github-pages-and-jekyll/
