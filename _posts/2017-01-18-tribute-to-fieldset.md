@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Retro
+title: Het fieldset element
 category: web
 tags: html, fieldset
 comments: false
 author: rsuper
 min_read: 6
 ---
-Terwijl je werkgerelateerde dingen aan het doen bent op het internet kom je altijd van alles tegen. Ze vullen je dag met de nodige "wtf"-momenten of de "oh no they didn't". Maar vergeet ook de "wow"-momenten niet die je inspireren hetzelfde ook te doen (al dan niet wat anders).   
+Terwijl je werkgerelateerde dingen aan het doen bent op het internet kom je altijd van alles tegen. Ze vullen je dag met de nodige "wtf"-momenten of de "oh no they didn't". Maar vergeet ook de "wow"-momenten niet die je inspiratie bieden tot nieuwe ideeën.   
 
 ## Hè?
 Ik belandde op een website waarin een stukje tekst was geplaatst in een kader. De lijn van het kader ging mooi gebogen de bocht om, en dit proces zou zich herhalen tot het begin van de lijn bereikt was: een perfecte vierkant.
