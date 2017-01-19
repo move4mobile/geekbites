@@ -4,7 +4,7 @@ title: Het fieldset element
 category: web
 tags: html, fieldset
 comments: false
-author: rsuper
+author: ronan
 min_read: 6
 ---
 Terwijl je werkgerelateerde dingen aan het doen bent op het internet kom je altijd van alles tegen. Ze vullen je dag met de nodige "wtf"-momenten of de "oh no they didn't". Maar vergeet ook de "wow"-momenten niet die je inspiratie bieden tot nieuwe ideeën.   
