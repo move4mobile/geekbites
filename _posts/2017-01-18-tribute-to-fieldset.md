@@ -12,6 +12,8 @@ Terwijl je werkgerelateerde dingen aan het doen bent op het internet kom je alti
 ## Hè?
 Ik belandde op een website waarin een stukje tekst was geplaatst in een kader. De lijn van het kader ging mooi gebogen de bocht om, en dit proces zou zich herhalen tot het begin van de lijn bereikt was: een perfecte vierkant.
 
+![Fieldset](/assets/html-fieldset.png)
+
 Ware het niet dat er tekst op de lijn stond. Lelijk? In tegendeel! De tekst fungeerde als titel of onderwerp voor de ingesloten tekst en was perfect verticaal uitgelijnd op de lijn.
 De lijn was niet zichtbaar achter de tekst en hield enige afstand zowel links van de eerste letter als rechts van de laatste letter van de tekst. Het was voldoende voor een "hè?"-moment, dat mijn top 4 van momenten completeert.
 
