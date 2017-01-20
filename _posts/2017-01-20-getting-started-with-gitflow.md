@@ -160,7 +160,7 @@ Dan kan je de feature _mergen_ naar `master`.
 
 In dit geval bevat de feature een nieuwe blog post. Dus, wanneer de blog post naar tevredenheid is afgerond, kan deze feature als volgt worden afgerond:
 
-`$ git feature finish post-gitflow-getting-started`
+`$ git flow feature finish post-gitflow-getting-started`
 
 Output:
 
