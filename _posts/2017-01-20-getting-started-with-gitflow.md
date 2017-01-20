@@ -22,34 +22,47 @@ Het is in zo'n geval zeker niet ongewoon dat je een hele dag aan werk kwijt kan 
 
 Sommige developers gebruiken de CLI (_Command Line Interface_). Anderen installeren een GUI (_Graphical User Inteface_) zoals SourceTree of TortoiseGit. 
 Terwijl ik zelf voorstander ben van de CLI, zou het in principe niet zoveel uit moeten maken welke tool je wilt gebruiken. 
-Het zijn de onderlingen afspraken en de gekozen workflow die het verschil maken. 
+Het zijn de onderlinge afspraken en de gekozen workflow die het verschil maken. 
 
 ### Git Flow
-Op het internet is veel te vinden over de zogenaamde [Git Flow](http://nvie.com/posts/a-successful-git-branching-model/). Hierbij komt altijd de volgende afbeelding opduiken:
+Op het internet is veel te vinden over de zogenaamde [Git Flow](http://nvie.com/posts/a-successful-git-branching-model/). Hierbij komt meestal het volgende plaatje voorbij:
 ![Git Flow stategy by Vincent Driessen.](/assets/git-flow-model.png).
 
 Door binnen je developent team, Git Flow als default workflow te adopteren, ben je er zeker van dat iedere developer op dezelfde (duidelijke) manier met versiebeheer omgaat. Op deze manier kan je je codebase 'gezond' en voor iedereen overzichtelijk houden. 
 
-Adopteren van Git Flow hoeft overigens niet te betekenen dat je de voorgelegde strategy 100% procent hoeft over te nemen. 
+Adopteren van Git Flow hoeft overigens niet te betekenen dat je het voorgelegde model 100% procent hoeft over te nemen. 
 Integendeel, je neemt gewoon de dingen over die bij je team passen (en je legt dit ergens binnen het team vast. 
-Het is vooral van belang dat de ontwikkelwerkzaamheden voortaan op de `develop` branch gaan plaatsvinden, en niet meer direct op `master`. 
+Wat je in ieder geval wel uit dit model wilt overnemen, is de basis inrichting waarbij je centrale repo voorzien is van de volgende twee branches: `master` en `develop`
+
+> The master branch at origin should be familiar to every Git user. Parallel to the master branch, another branch exists called develop.
+> 
+> We consider origin/master to be the main branch where the source code of HEAD always reflects a production-ready state.
+> 
+> We consider origin/develop to be the main branch where the source code of HEAD always reflects a state with the latest delivered development changes for the next release. Some would call this the “integration branch”. This is where any automatic nightly builds are built from.
+> 
+> When the source code in the develop branch reaches a stable point and is ready to be released, all of the changes should be merged back into master somehow and then tagged with a release number. How this is done in detail will be discussed further on.
+
+[http://nvie.com/posts/a-successful-git-branching-model/](http://nvie.com/posts/a-successful-git-branching-model/)
+
+Kortom, ontwikkelen doe je op `develop` en niet op `master`.
 
 ### Git Flow extensie voor Git
-Natuurlijk kan je in Git de gewenste workflow uitoefenen door zelf de juiste Git commando's in te tikken. 
-Bijvoorbeeld: `$ git checkout -b feature/my-new-feature` op het moment dat je aan een nieuwe feature gaat werken. 
+Natuurlijk kan je in Git de gewenste workflow toepassen door zelf de juiste Git commando's in te tikken. 
+Bijvoorbeeld: `git checkout -b feature/my-new-feature` op het moment dat je aan een nieuwe feature gaat werken. 
+
 Dit kan, maar het kan nog gemakkelijker, er is namelijk een handige extensie voor Git beschikbaar. 
-Deze extensie 'kent' Git Flow en kan daarom e.e.a. voor je te versimpelen.
+Deze extensie 'kent' Git Flow en kan daarom het een en ander voor je te versimpelen.
 
 Deze extensie heet **gitflow** en is te vinden op GitHub: [nvie/gitflow](https://github.com/nvie/gitflow) 
 
-Wanneer je deze extensie gebruiken en aan een nieuwe feature wilt gaan werken, dan typ je `$ git flow feature start my-new-feature`. 
-Hoe je niet per definitie 'minder' karakters hoeft te typen, ben je je er wel heel bewust van wat je aan het doen bent.
+Wanneer je deze extensie gebruiken en aan een nieuwe feature wilt gaan werken, dan typ je `git flow feature start my-new-feature`. 
+Hoewel je niet per definitie 'minder' karakters hoeft te typen, ben je je er wel heel bewust van wat je aan het doen bent.
 
 ## Let's Git Started
 
-Deze blog (geekbites) is op de achtergrond gekoppeld aan een Git repository (gehost op GitHub). 
-Hieronder wordt stap voor stap uitgelegd wat er nodig is geweest om _Git Flow_ binnen deze bestaande repository in te richten.
-Vervolgs wordt uitgelegd hoe er, door afsplitsing van een _feature branch_, een nieuwe post is ontstaan op de website. Deze blog post ;-)
+Deze blog (geekbites) is op de achtergrond gekoppeld aan een Git repository (een Jekyll blog gehost op GitHub). 
+Hieronder wordt stap voor stap uitgelegd wat er nodig is geweest om _Git Flow_ in deze bestaande repo in te richten.
+Vervolgens wordt uitgelegd hoe er, door afsplitsing van een _feature branch_, een nieuwe post is ontstaan op de website. Deze blog post ;-)
 
 #### 1. Git Flow initialiseren in een bestaande Git repository
 
@@ -104,7 +117,7 @@ Now, start committing on your feature. When done, use:
      git flow feature finish post-gitflow-getting-started
 ```
 
-Zoals je in de output kan zien, wordt de nieuwe feature branch automatisch voor je uitgecheckt (en zit je er gelijk in). 
+Zoals je in de output kan zien, wordt de nieuwe feature branch automatisch voor je uitgecheckt. 
 Met het volgende commando kan je gemakkelijk zien welke feature branches er zijn:
 
 `$ git flow feature`
@@ -112,7 +125,7 @@ Met het volgende commando kan je gemakkelijk zien welke feature branches er zijn
 Output:
 
 ```
-$ * post-gitflow-getting-started
+* post-gitflow-getting-started
 ```
 
 Optioneel: stel dat je je nieuwe feature branch wilt pushen naar GitHub (of een andere remote), dan doe je dit als volgt:
