@@ -165,6 +165,25 @@ In dit geval bevat de feature een nieuwe blog post. Dus, wanneer de blog post na
 Output:
 
 ```
+Switched to branch 'develop'
+Your branch is up-to-date with 'origin/develop'.
+Merge made by the 'recursive' strategy.
+ _posts/2017-01-20-getting-started-with-gitflow.md | 189 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ assets/git-flow-master-develop.png                | Bin 0 -> 25860 bytes
+ assets/git-flow-model.png                         | Bin 0 -> 124925 bytes
+ 3 files changed, 189 insertions(+)
+ create mode 100644 _posts/2017-01-20-getting-started-with-gitflow.md
+ create mode 100644 assets/git-flow-master-develop.png
+ create mode 100644 assets/git-flow-model.png
+warning: not deleting branch 'feature/post-gitflow-getting-started' that is not yet merged to
+         'refs/remotes/origin/feature/post-gitflow-getting-started', even though it is merged to HEAD.
+error: The branch 'feature/post-gitflow-getting-started' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D feature/post-gitflow-getting-started'.
+
+Summary of actions:
+- The feature branch 'feature/post-gitflow-getting-started' was merged into 'develop'
+- Feature branch 'feature/post-gitflow-getting-started' has been removed
+- You are now on branch 'develop'
 ```
 
 Nu is je feature gemerged naar `develop`. De feature branch wordt automatisch voor je weggegooid.
