@@ -26,13 +26,15 @@ Het zijn de onderlinge afspraken en de gekozen workflow die het verschil maken.
 
 ### Git Flow
 Op het internet is veel te vinden over de zogenaamde [Git Flow](http://nvie.com/posts/a-successful-git-branching-model/). Hierbij komt meestal het volgende plaatje voorbij:
-![Git Flow stategy by Vincent Driessen.](/assets/git-flow-model.png).
+![Git Flow stategy by Vincent Driessen.](/assets/git-flow-model.png)
 
 Door binnen je developent team, Git Flow als default workflow te adopteren, ben je er zeker van dat iedere developer op dezelfde (duidelijke) manier met versiebeheer omgaat. Op deze manier kan je je codebase 'gezond' en voor iedereen overzichtelijk houden. 
 
 Adopteren van Git Flow hoeft overigens niet te betekenen dat je het voorgelegde model 100% procent hoeft over te nemen. 
 Integendeel, je neemt gewoon de dingen over die bij je team passen (en je legt dit ergens binnen het team vast. 
 Wat je in ieder geval wel uit dit model wilt overnemen, is de basis inrichting waarbij je centrale repo voorzien is van de volgende twee branches: `master` en `develop`
+
+![Git Flow stategy by Vincent Driessen.](/assets/git-flow-master-develop.png)
 
 > The master branch at origin should be familiar to every Git user. Parallel to the master branch, another branch exists called develop.
 > 
@@ -168,17 +170,7 @@ Output:
 Switched to branch 'develop'
 Your branch is up-to-date with 'origin/develop'.
 Merge made by the 'recursive' strategy.
- _posts/2017-01-20-getting-started-with-gitflow.md | 189 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
- assets/git-flow-master-develop.png                | Bin 0 -> 25860 bytes
- assets/git-flow-model.png                         | Bin 0 -> 124925 bytes
- 3 files changed, 189 insertions(+)
- create mode 100644 _posts/2017-01-20-getting-started-with-gitflow.md
- create mode 100644 assets/git-flow-master-develop.png
- create mode 100644 assets/git-flow-model.png
-warning: not deleting branch 'feature/post-gitflow-getting-started' that is not yet merged to
-         'refs/remotes/origin/feature/post-gitflow-getting-started', even though it is merged to HEAD.
-error: The branch 'feature/post-gitflow-getting-started' is not fully merged.
-If you are sure you want to delete it, run 'git branch -D feature/post-gitflow-getting-started'.
+    ... skipped ...
 
 Summary of actions:
 - The feature branch 'feature/post-gitflow-getting-started' was merged into 'develop'
@@ -186,7 +178,7 @@ Summary of actions:
 - You are now on branch 'develop'
 ```
 
-Nu is je feature gemerged naar `develop`. De feature branch wordt automatisch voor je weggegooid.
+Nu is je feature gemerged naar `develop` en de feature branch wordt automatisch voor je weggegooid.
 
 #### 3. Releasen via een release branch
 Om een nieuwe versie van je software te releasen, kan je een zogenaamde release branch aan gaan maken. 
@@ -198,11 +190,11 @@ Release branch aanmaken:
 Release branch afronden:
 `git flow release finish 1.0`
 
-Het zou voor deze blog post een beetje overkill zijn, om deze post met behulp van een release branch, te publishen naar `master` (deze blog). 
+Het zou voor deze blog post een beetje overkill zijn, om deze post met behulp van een release branch te publishen naar `master` (deze blog). 
 Daarom is er in dit geval voor gekozen om gewoon zelf, `develop` terug te mergen naar `master`:
 
-Vanuit `maseter` branch:
+Vanuit `master` branch:
 `git merge --no-ff develop`
 
-
-Tot slot pushen naar GitHub, en deze nieuw blog post staat live :-)
+## Done!
+Tot slot push je `master` naar GitHub en deze nieuwe blog post staat live :-)
