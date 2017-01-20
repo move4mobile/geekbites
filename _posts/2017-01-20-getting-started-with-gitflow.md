@@ -185,9 +185,11 @@ Om een nieuwe versie van je software te releasen, kan je een zogenaamde release 
 Deze release branch kan je later weer mergen naar `master` en 'back-mergen' naar `develop`.
 
 Release branch aanmaken:
+
 `git flow release start 1.0`
 
 Release branch afronden:
+
 `git flow release finish 1.0`
 
 Het zou voor deze blog post een beetje overkill zijn, om deze post met behulp van een release branch te publishen naar `master` (deze blog). 
