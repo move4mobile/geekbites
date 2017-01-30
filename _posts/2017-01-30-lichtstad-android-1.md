@@ -5,7 +5,7 @@ category: android-development
 tags: android, ontwikkeling, Gramsbergen, lichtstad
 comments: true
 author: wilco
-min_read: 2
+min_read: 3
 ---
 
 ![Opening Gramsbergen Lichtstad](/assets/lichtstad-1.jpg)
