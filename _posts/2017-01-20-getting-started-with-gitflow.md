@@ -28,7 +28,7 @@ Het zijn de onderlinge afspraken en de gekozen workflow die het verschil maken.
 Op het internet is veel te vinden over de zogenaamde [Git Flow](http://nvie.com/posts/a-successful-git-branching-model/). Hierbij komt meestal het volgende plaatje voorbij:
 ![Git Flow stategy by Vincent Driessen.](/assets/git-flow-model.png)
 
-Door binnen je developent team, Git Flow als default workflow te adopteren, ben je er zeker van dat iedere developer op dezelfde (duidelijke) manier met versiebeheer omgaat. Op deze manier kan je je codebase 'gezond' en voor iedereen overzichtelijk houden. 
+Door binnen je development team Git Flow als default workflow te adopteren, ben je er zeker van dat iedere developer op dezelfde (duidelijke) manier met versiebeheer omgaat. Op deze manier kan je je codebase 'gezond' en voor iedereen overzichtelijk houden. 
 
 Adopteren van Git Flow hoeft overigens niet te betekenen dat je het voorgelegde model 100% procent hoeft over te nemen. 
 Integendeel, je neemt gewoon de dingen over die bij je team passen (en je legt dit ergens binnen het team vast. 
