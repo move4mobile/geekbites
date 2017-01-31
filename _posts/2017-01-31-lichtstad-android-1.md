@@ -8,12 +8,12 @@ author: wilco
 min_read: 3
 ---
 
-![Opening Gramsbergen Lichtstad](/assets/lichtstad-1.jpg)
-
 De Oranjevereniging van Gramsbergen organiseert elk jaar in de laatste week van augustus [Gramsbergen Lichtstad](http://gramsbergen.nl/index.php/oranjevereniging/gramsbergen-lichtstad), hét evenement van Gramsbergen. Dit jaar  vindt het evenement plaats van 25 augustus tot en met 2 september.  
 Gramsbergen Lichtstad ontleent haar naam aan de door met tienduizenden lampjes verlichte en versierde straten. Verder is de week volgepakt met activiteiten, waaronder een dweilorkestenfestival, achtkamp, hardloopwedstrijd en kermis. De week wordt afgesloten door een versierde wagenoptocht en fantastische vuurwerkshow. De feestweek houdt zich aan een tweejarig thema. Dit jaar en volgend jaar zal dat zijn _Fout_.
 
 Ons is gevraagd een app te maken die de bezoekers van Gramsbergen Lichtstad kunnen gebruiken om informatie en foto's te bekijken. In deze serie zullen we de stappen die we nemen beschrijven om een duidelijker beeld te geven van wat de ontwikkeling van een app inhoudt. Hoewel er een Android- en iOS-app zullen worden gebouwd, zal deze serie zich focussen op de Androidapplicatie. Deze blogs zullen soms wat technische stukken zullen bevatten, maar de tekst zal hopelijk goed te volgen zijn.
+
+![Opening Gramsbergen Lichtstad](/assets/lichtstad-1.jpg)
 
 ## Eisen
 Het belangrijkste om mee te beginnen is het op papier zetten van de eisen waaraan de app moet voldoen. Dit kunnen functionele eisen zijn, zoals _Het moet mogelijk zijn het programma te bekijken_, maar ook niet-functionele eisen, zoals _De app moet offline bruikbaar zijn_. De eisen zijn opgeschreven als user story's, zodat duidelijk is vanuit welk oogpunt gekeken moet worden. Ook wordt hierdoor duidelijker wat het doel is van de eis. Om de eisen op te stellen hebben wij al om tafel gezeten met Erika Kuiper, die de PR-activiteiten voor de Oranjevereniging regelt.  
