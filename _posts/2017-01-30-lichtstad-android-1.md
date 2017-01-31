@@ -32,4 +32,4 @@ Om aan de eis van offlinefunctionaliteit te voldoen, zullen we gebruik maken van
 De gegevens die we van de server aangeboden krijgen moeten natuurlijk ook worden getoond. Hiervoor zullen we de [data-bindinglibrary](https://developer.android.com/topic/libraries/data-binding/index.html) van Google gebruiken. Dit zorgt ervoor dat we de gegevens makkelijk kunnen koppelen aan de gebruikersinterface. Doordat we hier minder regels code voor hoeven te schrijven, zal dit hopelijk ook bugs (_fouten_) schelen.
 
 ## Tot slot
-Met deze punten vastgesteld kunnen we ons richten op het echte ontwikkelen. Het verhaal van vandaag zal ongetwijfeld redelijk abstract geklonken hebben, dus volgende keer: het ontwerp.
+Met deze punten vastgesteld kunnen we ons richten op het echte ontwikkelen. Het verhaal van vandaag zal ongetwijfeld redelijk abstract geklonken hebben, dus volgende keer: het grafisch ontwerp.
