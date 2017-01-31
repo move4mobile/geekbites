@@ -28,7 +28,11 @@ Hieruit is het volgende lijstje komen rollen:
 
 ## Technieken
 Nu we de eisen op een rijtje hebben, is het belangrijk te bepalen welke technieken we zullen gebruiken bij het ontwikkelen. Omdat wij graag volledige vrijheid willen in de onderdelen die we gebruiken en een zo vloeiend mogelijke ervaring willen bieden, zullen we de app _native_ bouwen. Dat wil zeggen dat we de componenten zullen gebruiken zoals ze door Android aangeboden worden en geen (web)abstractielaag zullen gebruiken.  
+
+#### Firebase
 Om aan de eis van offlinefunctionaliteit te voldoen, zullen we gebruik maken van [Firebase](https://firebase.google.com). Firebase is een ontwikkelplatform van Google dat veel hulpmiddelen biedt voor het maken van een app. Het relevante onderdeel is in dit geval de _Realtime Database_. Dit is een databasepakket dat er uit zichzelf voor zorgt dat de gegevens in de app en op de server gelijk blijven. Verder is met een paar regels code in te stellen dat de gegevens ook offline beschikbaar zijn.  
+
+#### Data-binding
 De gegevens die we van de server aangeboden krijgen moeten natuurlijk ook worden getoond. Hiervoor zullen we de [data-bindinglibrary](https://developer.android.com/topic/libraries/data-binding/index.html) van Google gebruiken. Dit zorgt ervoor dat we de gegevens makkelijk kunnen koppelen aan de gebruikersinterface. Doordat we hier minder regels code voor hoeven te schrijven, zal dit hopelijk ook bugs (_fouten_) schelen.
 
 ## Tot slot
