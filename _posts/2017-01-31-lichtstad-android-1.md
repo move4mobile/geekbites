@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Lichtstad Android - Deel 1
+title: 'Het bouwen van Lichtstad Android - Deel 1: Eerste opzet'
 category: android-development
-tags: android, ontwikkeling, Gramsbergen, lichtstad
+tags: android, ontwikkeling, development, Gramsbergen, lichtstad
 comments: true
 author: wilco
 min_read: 3
