@@ -1,0 +1,25 @@
+language: ruby
+# rvm:
+#   - 2.2.2
+
+before_script:
+  - npm install -g firebase-tools
+
+install:
+  - bundle install
+
+script: 
+  - bundle exec jekyll build
+  # - bundle exec htmlproofer ./_site
+
+after_success:
+  - ./deploy.sh
+
+env:
+  global:
+    secure: EXAMPLE
+
+cache:
+  directories:
+    - $(npm config get prefix)/bin/firebase-tools
+    - node_modules
