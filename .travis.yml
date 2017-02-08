@@ -1,0 +1,18 @@
+language: ruby
+rvm:
+- 2.3.3
+before_script:
+- npm install -g firebase-tools
+install:
+- bundle install
+script:
+- bundle exec jekyll build
+after_success:
+- ./deploy.sh
+cache:
+  directories:
+  - $(npm config get prefix)/bin/firebase-tools
+  - node_modules
+notifications:
+  slack:
+    secure: tk9vgxAn/7BjDp7ncXgj8aqbW7OCkhkm5YCOb05cbmmBqQrt4SHEMEFAjJg3oFJgOAsDRfOwGD+rI6wFxOz9hGvPOJGCrfbvaVe+3iNJhDAolzRsKxgQec9hQNRpQ0Nr8kPgOPMi5ikOrbnwXjGbHEL1QR05E/XD1Pl2lhN40BnRWJAmdO/nSAnnqpXL+SwydkW/MgrxWbDpCZ/esqVdTvO6XsNAqbWE/Ottv3x+gGdsGdOM1A6UamxnEcE3HdoRHAsrq/pK/8z3sH1NSzXFWL59sm1vLPNh0cUVkLsYymIRU7JLUNNEudpD57q0+KvvhC/rDJx/eO1iAP4nPPVdbFGTMwuj1wvuojBngEYOAm7SuTC+5hyyEXQZHB84vmn/RK9rsokR7vw9cAObxuASwv6lnHYtbtVsYwCHKVe0pHcMBRXqohnU/LZDXOYQ57N72o3jwRyPgiiITP689p7aK+Sbo7AidzyoRnJmuQ+DCRcP/pZ47rRAB7d3e/hVtMEZ6ghQTkAVFXeA8Y172U+gKtLT9vWIB1zNxjft49XSjR9jr3ogn20CMlbzpmHpJkg4YYusqTaKXVfTTcuYiTrhjn/4SgU+vo+Kl4Fw2jTT3m5uQaKUEL8/pLk6ORLo4FJRcNwiSj4J9XjHWkOSkRPo7NewObkKFNguUfirfguGsXo=
