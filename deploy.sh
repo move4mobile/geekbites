@@ -1,9 +1,8 @@
 #!/bin/bash
 echo "Executing deploy script..."
-echo "Deploy script in test mode! Everything !== 'master' will be automatically deployed ;-)"
 echo "Branch: $TRAVIS_BRANCH"
-if [ $TRAVIS_BRANCH != "master" ]; then
-    echo "Branch is master..."
+if [ $TRAVIS_BRANCH == "develop" ]; then
+    echo "Branch is develop..."
     echo "Checking on PR..."
     echo "Pull Request: $TRAVIS_PULL_REQUEST"
     if [ $TRAVIS_PULL_REQUEST == false ]; then
@@ -15,6 +14,6 @@ if [ $TRAVIS_BRANCH != "master" ]; then
         echo "Not deploying."
     fi
 else
-    echo "Not master branch..."
+    echo "Not develop branch..."
     echo "Not deploying."
 fi
