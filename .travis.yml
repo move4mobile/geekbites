@@ -1,6 +1,6 @@
 language: ruby
-# rvm:
-#   - 2.2.2
+rvm:
+  - 2.3.3
 
 before_script:
   - npm install -g firebase-tools
