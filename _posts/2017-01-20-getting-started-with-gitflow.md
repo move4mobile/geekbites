@@ -200,3 +200,7 @@ Vanuit `master` branch:
 
 ## Done!
 Tot slot push je `master` naar GitHub en deze nieuwe blog post staat live :-)
+
+Zie ook:
+
+* [Git Flow Cheatsheet](http://danielkummer.github.io/git-flow-cheatsheet/)

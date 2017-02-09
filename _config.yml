@@ -10,7 +10,7 @@ permalink:           /:year/:month/:day/:title/
 
 # Setup
 title:               Geek Bites
-tagline:             Blog by M4M developers
+tagline:             Move4Mobile developers blog
 url:                 https://move4mobile.github.io
 
 paginate:            1
