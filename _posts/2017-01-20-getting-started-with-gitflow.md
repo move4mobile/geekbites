@@ -31,7 +31,7 @@ Op het internet is veel te vinden over de zogenaamde [Git Flow](http://nvie.com/
 Door binnen je development team Git Flow als default workflow te adopteren, ben je er zeker van dat iedere developer op dezelfde (duidelijke) manier met versiebeheer omgaat. Op deze manier kan je je codebase 'gezond' en voor iedereen overzichtelijk houden. 
 
 Adopteren van Git Flow hoeft overigens niet te betekenen dat je het voorgelegde model 100% procent hoeft over te nemen. 
-Integendeel, je neemt gewoon de dingen over die bij je team passen (en je legt dit ergens binnen het team vast. 
+Integendeel, je neemt gewoon de dingen over die bij je team passen en je legt dit ergens binnen het team vast. 
 Wat je in ieder geval wel uit dit model wilt overnemen, is de basis inrichting waarbij je centrale repo voorzien is van de volgende twee branches: `master` en `develop`
 
 ![Git Flow stategy by Vincent Driessen.](/assets/git-flow-master-develop.png)
