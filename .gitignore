@@ -3,6 +3,7 @@ _gh_pages
 _site
 .ruby-version
 .sass-cache
+.jekyll-metadata
 
 # Numerous always-ignore extensions
 *.diff
@@ -42,9 +43,7 @@ validation-report.json
 node_modules
 
 
-# Created by https://www.gitignore.io/api/we,webstorm
-
-#!! ERROR: we is undefined. Use list command to see defined gitignore types !!#
+# Created by https://www.gitignore.io/api/webstorm
 
 ### WebStorm ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and Webstorm
