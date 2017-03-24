@@ -15,7 +15,7 @@ vast bekend met de volgende foutmelding:
 
 In DevTools ziet dat er zo uit:
 
-![CORS error in developer console.](/assets/cors-error-no-access-control-allow-origin.png)
+![CORS error in developer console.](/assets/nodejs-proxy-cors/cors-error-no-access-control-allow-origin.png)
 
 Ai, ai, ai...!
 
