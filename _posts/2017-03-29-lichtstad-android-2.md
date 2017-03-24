@@ -19,3 +19,11 @@ Het onderdeel programma is in deze applicatie oranje. In dit onderdeel is het mo
 ## Uitslagen
 <img alt="Ontwerp onderdeel uitslagen" src="/assets/lichtstad-android-2/result.png" style="max-height: 50vh;"/>
 In het blauwe onderdeel uitslagen zijn de uitslagen van evenementen tijdens de feestweek te bekijken. Van elk evenement wordt een afbeelding en de naam getoond. Wanneer op een evenement wordt getikt zal de website van gramsbergen.nl worden geopend om de uitslagen te laten zien. Bovenin de tabbalk kan een jaar worden gekozen, zodat de uitslagen van meerdere jaren kunnen worden vergeleken.
+
+## Foto's
+<img alt="Ontwerp onderdeel foto's" src="/assets/lichtstad-android-2/photos.png" style="max-height: 50vh;"/>
+De foto's van de feestweek kunnen worden bekeken in het rode onderdeel van de app. Wanneer het onderdeel wordt geopend is een lijst met fotoalbums zichtbaar. Bij elk fotoalbum wordt het aantal foto's en een foto uit het album getoond. Door de preview niet altijd dezelfde verhouding te geven wordt de lijst wat speelser. Door op een album te tikken zal deze worden geopend waardoor de lijst met foto's in het album zichtbaar wordt. Deze wordt in dezelfde stijl weergegeven.
+
+## Video's
+<img alt="Ontwerp onderdeel video's" src="/assets/lichtstad-android-2/videos.png" style="max-height: 50vh;"/>
+Het laatste onderdeel van de app is het zwarte onderdeel video's. Hier zijn de video's die door de oranjevereniging zijn geüpload te zien. Wanneer op de video wordt getikt zal de youtube-app openen om de video af te spelen.
