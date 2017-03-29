@@ -7,7 +7,7 @@ comments: true
 author: ramon
 min_read: 6
 ---
-![nougat](/assets/nougat.jpg)
+![nougat](/assets/lesser-known-android-features/nougat.jpg)
 Het is nu bijna een maand geleden sinds de nieuwe Android release “Nougat” officieel is gereleased met nieuwe features als [Multi-Window](https://developer.android.com/guide/topics/ui/multi-window.html) support en compleet veranderde [Notificaties](https://developer.android.com/guide/topics/ui/notifiers/notifications.html). Maar naast deze opvallende veranderingen zijn er ook een paar verborgen en onbekende features.
 
 ## Nachtmodus
@@ -35,7 +35,7 @@ adb reboot sideload <zip file>
 ## Zet Freeform modus aan
 Naast Multi-Window modus waarbij 2 schermen tegelijkertijd geopend kunnen zijn is ook het experimentele Freeform modus toegevoegd, in deze modus kan men a la OSX/Windows een oneindig aantal apps openen welke vrij over de desktop te verplaatsen en resizen zijn. Ondanks dat deze functie vooral op kleine schermen niet extreem nuttig is geeft het wel een idee over wat in de toekomst mogelijk is in Android.
 
-![freeform](/assets/freeform.png)
+![freeform](/assets/lesser-known-android-features/freeform.png)
 Bestandsbeheerder, Google Camera en Youtube alle drie geopend (en werkend) op een desktop.
 
 #### Gebruik

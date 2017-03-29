@@ -13,7 +13,7 @@ Gramsbergen Lichtstad ontleent haar naam aan de door met tienduizenden lampjes v
 
 Ons is gevraagd een app te maken die de bezoekers van Gramsbergen Lichtstad kunnen gebruiken om informatie en foto's te bekijken. In deze serie zullen we de stappen die we nemen beschrijven om een duidelijker beeld te geven van wat de ontwikkeling van een app inhoudt. Hoewel er een Android- en iOS-app zullen worden gebouwd, zal deze serie zich focussen op de Androidapplicatie. Deze blogs zullen soms wat technische stukken zullen bevatten, maar de tekst zal hopelijk goed te volgen zijn.
 
-![Opening Gramsbergen Lichtstad](/assets/lichtstad-1.jpg)
+![Opening Gramsbergen Lichtstad](/assets/lichtstad-android-1/lichtstad-1.jpg)
 
 ## Eisen
 Het belangrijkste om mee te beginnen is het op papier zetten van de eisen waaraan de app moet voldoen. Dit kunnen functionele eisen zijn, zoals _Het moet mogelijk zijn het programma te bekijken_, maar ook niet-functionele eisen, zoals _De app moet offline bruikbaar zijn_. De eisen zijn opgeschreven als user story's, zodat duidelijk is vanuit welk oogpunt gekeken moet worden. Ook wordt hierdoor duidelijker wat het doel is van de eis. Om de eisen op te stellen hebben wij al om tafel gezeten met Erika Kuiper, die de PR-activiteiten voor de Oranjevereniging regelt.  
