@@ -11,7 +11,7 @@ permalink:           /:year/:month/:day/:title/
 # Setup
 title:               Geek Bites
 tagline:             Move4Mobile developers blog
-url:                 https://move4mobile.github.io
+url:                 https://geekbites.move4mobile.io/
 
 paginate:            1
 
@@ -35,7 +35,7 @@ author:
 version:             1.0.2
 
 github:
-  repo:              github.com/move4mobile/move4mobile.github.io
+  repo:              github.com/move4mobile/geekbites
 
 # This is the list of pages to include in the header of the website.
 pages_list:
