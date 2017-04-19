@@ -1,4 +1,4 @@
-# Geek Bites [![Build Status](https://travis-ci.org/move4mobile/move4mobile.github.io.svg?branch=develop)](https://travis-ci.org/move4mobile/move4mobile.github.io)
+# Geek Bites [![Build Status](https://travis-ci.org/move4mobile/geekbites.svg?branch=develop)](https://travis-ci.org/move4mobile/geekbites)
 
 Onze blog staat live: http://geekbites.move4mobile.io
 
