@@ -4,7 +4,7 @@ title: 'Wat is blockchain?'
 category: Blockchain
 tags: Blockchain, Bitcoin, Ethereum, Litecoin,
 comments: true
-author: M. Beekhuizen
+author: martin
 min_read: 6
 ---
 
