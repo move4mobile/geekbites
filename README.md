@@ -19,7 +19,11 @@ Als dat het geval is dan kun je volgende commando's uitvoeren:
 
 En je bent klaar voor het schrijven van je eigen Geekbite!
 
-Mocht je toch tegen een probleem met dependencies aanlopen, dan kun je het volgende commando proberen:
+Mocht je toch tegen een probleem met dependencies aanlopen, dan kun je het volgende commando chain proberen:
+
+`bundle update` 
+
+`bundle install`
 
 `bundle exec jekyll serve`
 
