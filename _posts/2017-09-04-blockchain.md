@@ -21,7 +21,7 @@ Een blockchainnetwerk is te vergelijken met een logboek waar allerlei 'transacti
 ### Werking blockchain
 In de onderstaande afbeelding is te zien hoe zo'n transactie plaats vindt. 
 
-![Blockchain technology](/assets/blockchain/Blockchain-high-level.jpg)
+![Blockchain technology](/assets/blockchain/blockchain-high-level.jpg)
 
  1. Gebruiker A wil geld versturen naar gebruiker B.
 
