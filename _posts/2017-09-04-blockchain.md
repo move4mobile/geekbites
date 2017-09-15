@@ -43,12 +43,12 @@ In de onderstaande afbeelding is te zien hoe zo'n transactie plaats vindt.
 ### Toepassingen
 
 
-Tot op heden ( 11-09-2017 ) wordt de blokchain technologie toegepast voor verschillende doeleinden. De eerste en de meest bekende is de Bitcoin. Door het succes van de Bitcoin zijn er verschillende nieuwe cryptocurrency's in leven geroepen, waaronder: [Litecoin](https://nl.wikipedia.org/wiki/Litecoin), Dogecoin, Ethereum, Syscoin en Monero. Deze cryptocurrency's stellen gebruikers in staat om snel en anoniem voor producten te betalen. Dit kan gaan om fysieke of digitale producten.
+Tot op heden ( 11-09-2017 ) wordt de blockchain technologie toegepast voor verschillende doeleinden. De eerste en de meest bekende is de Bitcoin. Door het succes van de Bitcoin zijn er verschillende nieuwe cryptocurrency's in leven geroepen, waaronder: [Litecoin](https://nl.wikipedia.org/wiki/Litecoin), Dogecoin, Ethereum, Syscoin en Monero. Deze cryptocurrency's stellen gebruikers in staat om snel en anoniem voor producten te betalen. Dit kan gaan om fysieke of digitale producten.
 
 #### Energiebedrijven
 In de energiesector is een grote verschuiving gaande van centraal opgewekte elektriciteit in centrales naar wind- en zonne-energie die consumenten met eigen installaties opwekken en doorverkopen. Maar ook voor doorverkoop van die energie is vaak nog een derde partij nodig. Dat doen de bedrijven Vandebron en Powerpeers bijvoorbeeld: die koppelen via een digitaal platform energieopwekkers aan gebruikers en vragen daarvoor een commissie. 
 
-Energiebedrijven experimenteren met blockchain om te kijken of doorverkoop van energie ook via blockchain kan. In het Amerikaanse Brooklyn, in de staat New York, experimenteert het bedrijf LO3 Energy met blockchaintechnologie Ook de Nederlandse netbeheerder Enexis werkt aan vergelijkbare plannen.
+Energiebedrijven experimenteren met blockchain om te kijken of doorverkoop van energie ook via blockchain kan. In Brooklyn (New York), experimenteert het bedrijf LO3 Energy met blockchaintechnologie Ook de Nederlandse netbeheerder Enexis werkt aan vergelijkbare plannen.
 
 #### De zorg
 Op dit moment werk Philips aan een project die medische informatie uit de zorg moet gaan registreren en deze vervolgens samen te brengen. Op dit moment zijn verschillende medische gegevens nog verspreid over instellingen: van verzekeraar tot ziekenhuis tot huisarts. Als die informatie via blockchain geregistreerd kan worden, kan die toegankelijk worden voor zorgverleners die die informatie nodig hebben. 
