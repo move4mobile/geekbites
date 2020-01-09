@@ -45,6 +45,11 @@ module.exports = function(eleventyConfig) {
     return array.slice(0, n);
   });
 
+  eleventyConfig.addFilter('console', function(value) {
+    const output = JSON.stringify(value);
+    return output;
+  });
+
   // Plugins
   eleventyConfig.addPlugin(pluginSass, {
     watch: ['**/*.{scss,sass}', '!node_modules/**']
