@@ -42,17 +42,9 @@ module.exports = function(eleventyConfig) {
   });
 
   // Plugins
-  eleventyConfig.addPlugin(pluginSass, sassPluginOptions => {
-    return {
-      cleanCSSOptions: {
-        rebaseTo2: '/dist/test'
-      },
-      watch: ['abc']
-      // watch: ['**/*.{scss,sass}', '!node_modules/**']      
-    }
-    
+  eleventyConfig.addPlugin(pluginSass, {
+    watch: ['**/*.{scss,sass}', '!node_modules/**']
   });
-
 
   // You can return your Config object (optional).
   return {

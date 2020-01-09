@@ -1,18 +1,11 @@
-
-
-// @import "variables";
-// @import "base";
-// @import "type";
-// @import "syntax";
-// @import "code";
-// @import "layout";
-// @import "masthead";
-// @import "posts";
-// @import "pagination";
-// @import "message";
-// @import "_author";
-
-html {
-    background-color: yellow;
-    font-size: 50px;
-}
+@import "src/_sass/variables";
+@import "src/_sass/base";
+@import "src/_sass/type";
+@import "src/_sass/syntax";
+@import "src/_sass/code";
+@import "src/_sass/layout";
+@import "src/_sass/masthead";
+@import "src/_sass/posts";
+@import "src/_sass/pagination";
+@import "src/_sass/message";
+@import "src/_sass/author";
