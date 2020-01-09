@@ -2,5 +2,6 @@
   "tags": [
     "posts"
   ],
-  "permalink": "{{ date | ymd }}/{{ title | slug }}/"
+  "permalink": "{{ date | ymd }}/{{ title | slug }}/",
+  "layout": "post"
 }
