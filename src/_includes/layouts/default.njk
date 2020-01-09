@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="nl">
 
-  include head.html
+  {% include "head.html" %}
 
   <body>
 
@@ -10,9 +10,9 @@
         <h3 class="masthead-title">
           <a href="/" title="Home">{{ site.title }}</a>
 
-          [% for page in site.pages_list %]
-          &nbsp;&nbsp;&nbsp;<small><a href="[[ page[1]  ]]">[[ page[0] ]]</a></small>
-          [% endfor %]
+          {%- for nav in collections.nav -%}
+            &nbsp;&nbsp;&nbsp;<small class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}"><a href="{{ nav.url | url }}">{{ nav.data.title }}</a></small>
+          {%- endfor -%}
 
         </h3>
 
@@ -22,7 +22,7 @@
 
         {{ content | safe }}
 
-        [% include comments.html %]
+        {% include "comments.html" %}
 
       </main>
 
