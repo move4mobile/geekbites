@@ -1,0 +1,23 @@
+{
+  "name": "geekbites",
+  "version": "2.0.0-SNAPSHOT",
+  "description": "Onze blog staat live: http://geekbites.move4mobile.io",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve"
+ },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/move4mobile/geekbites.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/move4mobile/geekbites/issues"
+  },
+  "homepage": "https://github.com/move4mobile/geekbites#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0"
+  }
+}
