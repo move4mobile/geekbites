@@ -43,7 +43,7 @@ module.exports = function(eleventyConfig) {
 
   // Plugins
   eleventyConfig.addPlugin(pluginSass, {
-    watch: ['src/**/*.{scss,sass}', '!node_modules/**']
+    watch: ['**/*.{scss,sass}', '!node_modules/**']
   });
 
   // You can return your Config object (optional).
@@ -51,7 +51,6 @@ module.exports = function(eleventyConfig) {
     templateFormats: ['md', 'njk', 'html', 'liquid'],
     htmlTemplateEngine: 'njk',
     dataTemplateEngine: 'njk',
-    permalink2: 'test/{{ mySlug }}',
     dir: {
       input: 'src',
       output: 'dist'

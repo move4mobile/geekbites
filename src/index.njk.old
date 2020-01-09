@@ -1,9 +1,0 @@
----
-layout: layouts/home.njk
-tags:
-  - nav
-navtitle: Home
----
-
-<h1>Latest 4 Posts</h1>
-
