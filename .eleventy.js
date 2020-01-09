@@ -5,6 +5,8 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addLayoutAlias('post', 'layouts/post.njk');
 
+  eleventyConfig.addLayoutAlias('page', 'layouts/page.njk');
+
   eleventyConfig.addCollection('tagList', require('./_11ty/getTagList'));
 
 //   eleventyConfig.addPassthroughCopy('src/css');
@@ -13,6 +15,12 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter('readableDate', dateObj => {
     return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat(
       'dd LLL yyyy'
+    );
+  });
+
+  eleventyConfig.addFilter('ymd', dateObj => { // yearmonthdate
+    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat(
+      'yyyy/MM/dd'
     );
   });
 
@@ -35,6 +43,7 @@ module.exports = function(eleventyConfig) {
     templateFormats: ['md', 'njk', 'html', 'liquid'],
     htmlTemplateEngine: 'njk',
     dataTemplateEngine: 'njk',
+    permalink2: 'test/{{ mySlug }}',
     dir: {
       input: 'src',
       output: 'dist'

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "eleventy",
-    "start": "eleventy --serve"
+    "start": "rimraf dist && eleventy --serve"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   "homepage": "https://github.com/move4mobile/geekbites#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
-    "luxon": "^1.21.3"
+    "luxon": "^1.21.3",
+    "rimraf": "^3.0.0"
   }
 }
