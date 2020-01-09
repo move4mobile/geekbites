@@ -1,4 +1,5 @@
 const { DateTime } = require('luxon');
+const pluginSass = require("eleventy-plugin-sass");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.setDataDeepMerge(true);
@@ -39,6 +40,19 @@ module.exports = function(eleventyConfig) {
 
     return array.slice(0, n);
   });
+
+  // Plugins
+  eleventyConfig.addPlugin(pluginSass, sassPluginOptions => {
+    return {
+      cleanCSSOptions: {
+        rebaseTo2: '/dist/test'
+      },
+      watch: ['abc']
+      // watch: ['**/*.{scss,sass}', '!node_modules/**']      
+    }
+    
+  });
+
 
   // You can return your Config object (optional).
   return {
