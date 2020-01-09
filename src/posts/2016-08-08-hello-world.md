@@ -1,7 +1,7 @@
 ---
 # layout: post
 title: Hello World!
-# author: michael
+author: michael
 min_read: 1
 date: 2016-08-08
 ---

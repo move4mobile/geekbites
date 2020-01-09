@@ -1,0 +1,71 @@
+michael:
+    name: Michael Schilling
+    bio: Some bio text
+    email: mschilling@move4mobile.com
+    twitter: mschilling
+    github: mschilling
+    avatar: https://avatars0.githubusercontent.com/u/7045335?v=3&s=80
+
+
+dennis:
+    name: Dennis Bruijn
+    email: dbruijn@move4mobile.com
+    twitter: '0x1ad2'
+    github: '0x1ad2'
+    avatar: https://avatars0.githubusercontent.com/u/1705904?v=3&s=80
+
+
+cas:
+    name: Cas van Dinter
+    email: cvandinter@move4mobile.com
+    github: cassshh
+    avatar: https://avatars.githubusercontent.com/cassshh?size=80
+
+jesper:
+    name: Jesper Strating
+    email: jstrating@move4mobile.com
+    github: jstrating
+    avatar: https://avatars0.githubusercontent.com/jstrating?size=80
+
+ramon:
+    name: Ramon Valk
+    email: rvalk@move4mobile.com
+    twitter: ramonvalk
+    github: RamonValk
+    avatar: https://avatars0.githubusercontent.com/u/9320900?v=3&s=80
+
+ronan:
+    name: Ronan Super
+    email: rsuper@move4mobile.com
+    github: rsuper
+    avatar: https://avatars3.githubusercontent.com/u/4209748?v=3&s=80
+
+wilco:
+    name: Wilco Wolters
+    email: wwolters@move4mobile.com
+    github: wwolters
+    avatar: https://avatars0.githubusercontent.com/wwolters?s=80
+
+arwin:
+    name: Arwin Strating
+    email: astrating@move4mobile.com
+    github: arwinstrating
+    avatar: https://avatars0.githubusercontent.com/u/9743543?v=3&s=80
+    
+ruben:
+    name: Ruben Aalders
+    email: raalders@move4mobile.com
+    github: rubenaalders
+    avatar: https://avatars2.githubusercontent.com/u/4243098?v=3&s=80
+
+martin:
+    name: Martin Beekhuizen
+    email: mbeekhuizen@move4mobile.com
+    github: MartinBeekhuizen
+    avatar: https://avatars1.githubusercontent.com/u/10518249?v=3&s=80
+
+bart:
+    name: Bart L'Herminez
+    email: blherminez@move4mobile.com
+    github: Bartlherminez
+    avatar: https://avatars2.githubusercontent.com/u/15778830?s=80&v=4
