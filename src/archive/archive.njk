@@ -1,0 +1,15 @@
+---
+layout: layouts/page.njk
+title: Archief
+tags:
+  - nav
+---
+
+ <h2>Blog Posts</h2>
+
+{% set postslist = collections.posts | head(-3) %}
+
+{% for post in postslist %}
+[ assign author = site.data.people[post.author] ]
+  * {{ post.date | readableDate }} » [ [[ post.title ]] ]([[ post.url ]])[% if author != null %] - <small> [[author.name]]</small>[% endif %]
+{% endfor %}

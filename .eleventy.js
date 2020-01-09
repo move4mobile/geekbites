@@ -1,11 +1,11 @@
 const { DateTime } = require('luxon');
 
 module.exports = function(eleventyConfig) {
-//   eleventyConfig.setDataDeepMerge(true);
+  eleventyConfig.setDataDeepMerge(true);
 
-//   eleventyConfig.addLayoutAlias('post', 'layouts/post.njk');
+  eleventyConfig.addLayoutAlias('post', 'layouts/post.njk');
 
-//   eleventyConfig.addCollection('tagList', require('./_11ty/getTagList'));
+  eleventyConfig.addCollection('tagList', require('./_11ty/getTagList'));
 
 //   eleventyConfig.addPassthroughCopy('src/css');
 
