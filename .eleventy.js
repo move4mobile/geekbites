@@ -43,7 +43,7 @@ module.exports = function(eleventyConfig) {
 
   // Plugins
   eleventyConfig.addPlugin(pluginSass, {
-    watch: ['**/*.{scss,sass}', '!node_modules/**']
+    watch: ['src/**/*.{scss,sass}', '!node_modules/**']
   });
 
   // You can return your Config object (optional).
