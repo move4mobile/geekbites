@@ -7,7 +7,7 @@ tags:
 
  <h2>Blog Posts</h2>
 
-{% set postslist = collections.posts | head(-3) %}
+{% set postslist = collections.posts | reverse %}
 {% for post in postslist %}
 {% set author = people[post.data.author] %}
 

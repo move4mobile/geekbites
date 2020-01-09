@@ -1,5 +1,4 @@
 ---
-# layout: post
 title: Hello World!
 author: michael
 min_read: 1

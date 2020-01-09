@@ -1,5 +1,4 @@
 ---
-# layout: post
 title: Verbeterde beveiliging door gebruik van FE2EE
 category: security
 tags: privacy, encryption
