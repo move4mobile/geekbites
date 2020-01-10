@@ -1,6 +1,7 @@
 const { DateTime } = require('luxon');
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginSass = require("eleventy-plugin-sass");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.setDataDeepMerge(true);
@@ -52,6 +53,8 @@ module.exports = function(eleventyConfig) {
   });
 
   // Plugins
+  eleventyConfig.addPlugin(pluginRss);
+  
   eleventyConfig.addPlugin(syntaxHighlight, {
 
     // only install the markdown highlighter
