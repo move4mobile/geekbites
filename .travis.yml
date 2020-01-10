@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+  - '12'
+dist: trusty
+# before_script:
+#   - npm list -g firebase-tools --depth=0 || npm install -g firebase-tools
+script:
+  - cd server
+  - npm install
+  - npm run build
+# after_success:
+# - "$TRAVIS_BUILD_DIR/.travis/deploy.sh develop"
+cache:
+  directories:
+    - '$(npm config get prefix)/bin/firebase-tools'
+    - node_modules
+notifications:
+  email: false
+  webhooks: https://travis.webhooks.m4m.io
