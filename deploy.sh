@@ -25,9 +25,6 @@ if [ $TRAVIS_BRANCH == "master" ]; then
 elif [ $TRAVIS_BRANCH == "develop" ]; then
     echo "Branch is develop..."
     check_on_pr "${FIREBASE_PROJECT_ID_DEV}"
-elif [ $TRAVIS_BRANCH == "v2" ]; then
-    echo "Branch is v2..."
-    check_on_pr "${FIREBASE_PROJECT_ID_DEV}"
 else
     echo "Not develop branch or master..."
     echo "Not deploying."
