@@ -29,7 +29,7 @@ Om gebruik te maken van Firebase moet je voldoen aan de volgende eisen:
 3. Voer de package name in van je app. **Dit kan maar eenmalig worden ingesteld.**
 4. De *Debug signing certificate SHA-1* kan je vinden door het volgende command uit te voeren in opdrachtprompt:
 
-   ```
+   ```bash
    keytool -exportcert -list -v -alias androiddebugkey ^
    -keystore %USERPROFILE%\.android\debug.keystore
    ```
@@ -43,7 +43,7 @@ Om gebruik te maken van Firebase moet je voldoen aan de volgende eisen:
 ## SDK toevoegen
 Voeg google-services plugin toe aan je root-level ```build.gradle```:
 
-```gradle
+```groovy
 buildscript {
 	// ....
 	dependencies {
@@ -55,7 +55,7 @@ buildscript {
 
 Vervolgens voeg de ```apply plugin``` regel toe onderaan je module-level ```build.gradle```:
 
-```gradle
+```groovy
 apply plugin: 'com.android.application'
 
 android {
