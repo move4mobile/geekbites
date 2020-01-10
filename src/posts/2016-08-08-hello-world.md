@@ -3,6 +3,7 @@ title: Hello World!
 author: michael
 min_read: 1
 date: 2016-08-08
+permalink: /2016/08/08/hello-world/
 ---
 
 Vanaf vandaag zijn wij met onze blog overgegaan op Jekyll, het perfecte platform om code-style te bloggen:

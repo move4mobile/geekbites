@@ -6,6 +6,7 @@ comments: true
 author: martin
 min_read: 6
 date: 2017-09-20
+permalink: /2017/09/20/blockchain/
 ---
 
 Blockchain, een stukje revolutionaire technologie die veel processen in de toekomst kan gaan verbeteren.

@@ -5,6 +5,7 @@ tags: privacy, encryption
 comments: true
 author: dennis
 date: 2016-08-23
+permalink: /2016/08/23/fingerprint-end-to-end-encryption/
 ---
 
 ## Wat is E2EE?

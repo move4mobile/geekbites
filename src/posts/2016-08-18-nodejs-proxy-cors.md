@@ -6,6 +6,7 @@ comments: true
 author: michael
 min_read: 5
 date: 2016-08-18
+permalink: /2016/08/18/nodejs-proxy-cors/
 ---
 
 Wanneer je als web developer een applicatie bouwt die een REST service op een ander domain moet aanroepen, dan ben je 

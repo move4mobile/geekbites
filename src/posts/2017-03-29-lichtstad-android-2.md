@@ -6,6 +6,7 @@ comments: true
 author: wilco
 min_read: 3
 date: 2017-03-29
+permalink: /2017/03/29/lichtstad-android-2/
 ---
 
 Na lang wachten is het er dan eindelijk: het grafisch ontwerp. In de rest van deze serie zal dit _design_ genoemd worden. Dit design is onstaan uit een samenwerking van onze designers Ellen en Matthijs. Nu is het aan ons ontwikkelaars om dit design om te zetten in een werkende app.   

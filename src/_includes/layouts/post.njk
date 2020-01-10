@@ -6,10 +6,11 @@ styles:
 ---
 <article class="post">
   <h1 class="post-title">{{ title }}</h1>
-  <time datetime="{{ date | htmlDateString }}" class="post-date">{{ date | readableDate }}{% if min_read != null %} - {{min_read}} min read {% endif %} - <a href="{{ page.url | url }}#comments" class="disqus-comment-count" data-disqus-identifier="{{ page.fileSlug }}"> <!-- Count will be inserted here --> </a></time>
+  <time datetime="{{ date | htmlDateString }}" class="post-date">{{ date | readableDate }}{% if min_read != null %} - {{min_read}} min read {% endif %} - 
+  <a href="{{ page.url }}#comments" class="disqus-comment-count" data-disqus-identifier="{{ page.url }}"> <!-- Count will be inserted here --> </a>
+  </time>
 
   {% include 'author.html' %}
-
 
   {{ content | safe }}
 </article>

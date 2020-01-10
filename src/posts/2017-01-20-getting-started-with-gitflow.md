@@ -6,6 +6,7 @@ comments: true
 author: michael
 min_read: 8
 date: 2017-01-20
+permalink: /2017/01/20/getting-started-with-gitflow/
 ---
 
 Iedere developer heeft wel eens gehoord van **Git**: een razendsnel versiebeheersysteem oorspronkelijk gemaakt tijdens de ontwikkeling van de Linuxkernel.

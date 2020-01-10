@@ -5,6 +5,7 @@ tags: firebase, android
 comments: true
 date: 2016-09-13
 author: cas
+permalink: /2016/09/13/firebase-for-android/
 ---
 
 ![alt text](https://1.bp.blogspot.com/-YIfQT6q8ZM4/Vzyq5z1B8HI/AAAAAAAAAAc/UmWSSMLKtKgtH7CACElUp12zXkrPK5UoACLcB/s1600/image00.png, "Firebase")

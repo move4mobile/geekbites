@@ -6,6 +6,7 @@ comments: false
 author: ronan
 min_read: 6
 date: 2017-01-18
+permalink: /2017/01/18/tribute-to-fieldset/
 ---
 Terwijl je werkgerelateerde dingen aan het doen bent op het internet kom je altijd van alles tegen. Ze vullen je dag met de nodige "wtf"-momenten of de "oh no they didn't". Maar vergeet ook de "wow"-momenten niet die je inspiratie bieden tot nieuwe ideeën.   
 

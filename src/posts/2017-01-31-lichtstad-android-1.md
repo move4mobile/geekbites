@@ -6,6 +6,7 @@ comments: true
 author: wilco
 min_read: 3
 date: 2017-01-31
+permalink: /2017/01/31/lichtstad-android-1/
 ---
 
 De Oranjevereniging van Gramsbergen organiseert elk jaar in de laatste week van augustus [Gramsbergen Lichtstad](http://gramsbergen.nl/index.php/oranjevereniging/gramsbergen-lichtstad), hét evenement van Gramsbergen. Dit jaar  vindt het evenement plaats van 25 augustus tot en met 2 september.  

@@ -6,6 +6,7 @@ comments: true
 author: ramon
 min_read: 6
 date: 2016-09-19
+permalink: /2016/09/19/lesser-known-android-features/
 ---
 ![nougat](/assets/lesser-known-android-features/nougat.jpg)
 Het is nu bijna een maand geleden sinds de nieuwe Android release “Nougat” officieel is gereleased met nieuwe features als [Multi-Window](https://developer.android.com/guide/topics/ui/multi-window.html) support en compleet veranderde [Notificaties](https://developer.android.com/guide/topics/ui/notifiers/notifications.html). Maar naast deze opvallende veranderingen zijn er ook een paar verborgen en onbekende features.

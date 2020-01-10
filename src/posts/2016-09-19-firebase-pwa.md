@@ -5,6 +5,7 @@ title: Firebase voor Web
 comments: true
 date: 2016-09-15
 author: jesper
+permalink: /2016/09/15/firebase-pwa/
 ---
 
 Met Firebase kun je verschillende backend services gebruiken zonder ook maar een regel server code te schrijven.
