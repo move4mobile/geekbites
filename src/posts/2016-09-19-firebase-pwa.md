@@ -21,7 +21,7 @@ Nadat je een project aanmaakt op de [Firebase Console](https://console.firebase.
 
 
 * Wanneer je geen gebruikt maakt van node.js:
-[% highlight javascript %]
+```javascript
 <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase-database.js"></script>
@@ -35,12 +35,12 @@ Nadat je een project aanmaakt op de [Firebase Console](https://console.firebase.
   };
   firebase.initializeApp(config);
 </script>
-[% endhighlight %]
+```
 * Met node.js:
-[% highlight javascript %]
+```javascript
     $ npm install firebase --save
-[% endhighlight %]
-[% highlight javascript %]
+```
+```javascript
    var firebase = require("firebase");
 
    var config = {
@@ -50,18 +50,18 @@ Nadat je een project aanmaakt op de [Firebase Console](https://console.firebase.
      storageBucket: "<BUCKET>.appspot.com",
    };
    firebase.initializeApp(config);
-[% endhighlight %]
+```
 
 Firebase heeft ook een eigen CLI, mocht je hier gebruik van willen maken om een lokale server te runnen, installeren kan zo:
-[% highlight javascript %]
+```javascript
     $ npm install -g firebase-tools
     $ firebase serve
-[% endhighlight %]
+```
 
 
 ## Google Sign-in met Firebase
 Een google sign-in met redirect voor je web applicatie is zo gedaan met Firebase.
-[% highlight javascript %]
+```javascript
 var provider = new firebase.auth.GoogleAuthProvider();
 
 firebase.auth().signInWithRedirect(provider);
@@ -77,7 +77,7 @@ firebase.auth().getRedirectResult().then(function(result) {
   var user = result.user;
 })
 
-[% endhighlight %]
+```
 
 
 [Firebase docs](https://firebase.google.com/docs/)

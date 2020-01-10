@@ -32,7 +32,7 @@ headers aan iedere request (en response) voor je toevoegt: [cors-anywhere](https
 
 ## Getting Started
 
-[% highlight javascript %]
+```javascript
 var host = process.env.PORT ? '0.0.0.0' : '127.0.0.1';
 var port = process.env.PORT || 8080;
  
@@ -44,7 +44,7 @@ cors_proxy.createServer({
 }).listen(port, host, function() {
     console.log('Running CORS Anywhere on ' + host + ':' + port);
 });
-[% endhighlight %]
+```
 
 1. Maak een nieuwe folder aan 
 
