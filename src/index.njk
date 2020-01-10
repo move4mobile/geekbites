@@ -1,0 +1,9 @@
+---
+layout: layouts/home.njk
+tags:
+  - nav
+navtitle: Home
+---
+
+{% set postslist = collections.posts | head(-3) %}
+{% include "postslist-content.njk" %}

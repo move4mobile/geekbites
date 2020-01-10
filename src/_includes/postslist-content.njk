@@ -1,0 +1,13 @@
+{% for post in postslist | reverse %}
+  <article class="post">
+    <a href="{{ post.url }}"><h1 class="post-title">{{ post.data.title }}</h1></a>
+    <time datetime="{{ post.date | htmlDateString }}" class="post-date">{{ post.date | readableDate }}{% if post.data.min_read != null %} - {{post.data.min_read}} min read {% endif %} - 
+    <a href="{{ post.url }}#comments" class="disqus-comment-count" data-disqus-identifier="{{ post.url }}"> <!-- Count will be inserted here --> </a>
+    </time>
+
+    {% set author = post.data.author %}
+    {% include 'author.html' %}
+
+    {{ post.templateContent | safe }}
+  </article>
+{% endfor %}
