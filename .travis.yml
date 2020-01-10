@@ -3,7 +3,6 @@ dist: trusty
 # before_script:
 #   - npm list -g firebase-tools --depth=0 || npm install -g firebase-tools
 script:
-  - cd server
   - npm install
   - npm run build
 # after_success:
