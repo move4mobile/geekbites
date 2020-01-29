@@ -1,7 +1,9 @@
 ---
-title: 'Aan de slag met Stenciljs'
+title: 'Aan de slag met Stencil'
+tags: Stencil, Web Components, Design System
 comments: true
 author: danny
+min_read: 4
 date: 2020-01-27
 ---
 
@@ -22,14 +24,14 @@ Stencil is ontwikkeld dor het Ionic framework team.
 Stencil bouwt Web Components die te gebruiken zijn in de populaire desktop en mobile browsers. Voor de browsers die geen ondersteuning bieden voor Custom Elements v1 (De API waarop Web Components zijn gebaseerd) maakt Stencil gebruik van polyfills.
 Stencil maakt hiervoor gebruik van een dynamic loader die de polyfill alleen inlaadt in browsers die het nodig zijn.
 
-![verbindingen](assets/stencil-getting-started.png)
+![verbindingen](assets/stencil-getting-started/stencil-browsersupport.png)
 
 ### Getting Started
 
 Stencil vereist een recente LTS versie van NodeJS en npm (npm 6 of hoger). Zorg er dus voor dat deze geïnstalleerd of up to date zijn voordat je verdergaat.
 
 ```
-    npm init stencil
+ npm init stencil
 ```
 
 Stencil kan gebruikt worden om losstaande componenten of gehele applicaties te maken. Na het uitvoeren van het hierboven weergegeven script krijg je de optie om het type project te kiezen.
