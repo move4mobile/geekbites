@@ -8,7 +8,7 @@ date: 2020-01-27
 ---
 
 ### Wat is Stencil?
-[Stencil](https://stenciljs.com/) is een compiler die Web Components (Custom Elements) genereert. Stencil combineert de beste concepten van de meest populaire frameworks in een simpele tool.
+[Stencil](https://stenciljs.com/) is een compiler die Web Components (Custom Elements v1) genereert. Stencil combineert de beste concepten van de meest populaire frameworks in een simpele tool.
 
 Stencil maakt gebruik van features zoals:
 * Virtual DOM
@@ -17,7 +17,7 @@ Stencil maakt gebruik van features zoals:
 * TypeScript
 * JSX
 
-Stencil is ontwikkeld dor het Ionic framework team.
+Stencil is ontwikkeld door het Ionic framework team.
 
 ### Browser Support
 
