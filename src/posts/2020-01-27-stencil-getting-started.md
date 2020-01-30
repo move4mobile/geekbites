@@ -24,7 +24,7 @@ Stencil is ontwikkeld door het Ionic framework team.
 Stencil bouwt Web Components die te gebruiken zijn in de populaire desktop en mobile browsers. Voor de browsers die geen ondersteuning bieden voor Custom Elements v1 (de API waarop Web Components zijn gebaseerd) maakt Stencil gebruik van polyfills.
 Stencil maakt hiervoor gebruik van een dynamic loader die de polyfill alleen inlaadt in browsers die het nodig zijn.
 
-![verbindingen](assets/stencil-getting-started/stencil-browsersupport.png)
+![verbindingen](/assets/stencil-getting-started/stencil-browsersupport.png)
 
 ### Getting Started
 
