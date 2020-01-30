@@ -44,7 +44,7 @@ De keuzes zijn hieronder weergegeven, deze blog gaat echter over de optie _compo
 ```
 
 #### Stencil Installation
-Zorg ervoor dat je binnen de directory zit van het gegenereerde project, voer daarna het volgende script uit om de laatste versie van Stencil te genereren:
+Zorg ervoor dat je binnen de directory zit van het gegenereerde project, voer daarna het volgende script uit om de laatste versie van Stencil te installeren:
 
 ```
  npm install @stencil/core@latest --save-exact
