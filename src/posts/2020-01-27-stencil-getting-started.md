@@ -21,14 +21,14 @@ Stencil is ontwikkeld door het Ionic framework team.
 
 ### Browser Support
 
-Stencil bouwt Web Components die te gebruiken zijn in de populaire desktop en mobile browsers. Voor de browsers die geen ondersteuning bieden voor Custom Elements v1 (De API waarop Web Components zijn gebaseerd) maakt Stencil gebruik van polyfills.
+Stencil bouwt Web Components die te gebruiken zijn in de populaire desktop en mobile browsers. Voor de browsers die geen ondersteuning bieden voor Custom Elements v1 (de API waarop Web Components zijn gebaseerd) maakt Stencil gebruik van polyfills.
 Stencil maakt hiervoor gebruik van een dynamic loader die de polyfill alleen inlaadt in browsers die het nodig zijn.
 
 ![verbindingen](assets/stencil-getting-started/stencil-browsersupport.png)
 
 ### Getting Started
 
-Stencil vereist een recente LTS versie van NodeJS en npm (npm 6 of hoger). Zorg er dus voor dat deze geïnstalleerd of up to date zijn voordat je verdergaat.
+Stencil vereist een recente LTS versie van NodeJS en npm (npm 6 of hoger). Zorg er dus voor dat deze geïnstalleerd of up to date zijn voordat je verdergaat. Als je dat gedaan hebt initialiseer je een stencil project als volgt:
 
 ```
  npm init stencil
@@ -43,8 +43,8 @@ De keuzes zijn hieronder weergegeven, deze blog gaat echter over de optie _compo
 > component       Collection of web components that can be used anywhere
 ```
 
-#### Updating Stencil
-Om gebruik te maken van de laatste versie van Stencil kun je het volgende script uitvoeren:
+#### Stencil Installation
+Zorg ervoor dat je binnen de directory zit van het gegenereerde project, voer daarna het volgende script uit om de laatste versie van Stencil te genereren:
 
 ```
  npm install @stencil/core@latest --save-exact
