@@ -66,7 +66,10 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addPlugin(pluginSass, {
-    watch: ['**/*.{scss,sass}', '!node_modules/**']
+    watch: ['src/**/*.{scss,sass}'],
+
+    // Enable sourcemaps for ez debugging
+    sourcemaps: true
   });
 
   // You can return your Config object (optional).
