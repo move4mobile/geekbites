@@ -23,6 +23,6 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
     "eleventy-plugin-sass": "^1.0.0",
     "luxon": "^1.22.0",
-    "rimraf": "^3.0.1"
+    "rimraf": "^3.0.2"
   }
 }
