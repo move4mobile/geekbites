@@ -1,6 +1,6 @@
 {
   "name": "geekbites",
-  "version": "2.0.0-SNAPSHOT",
+  "version": "2.0.0",
   "description": "Onze blog staat live: http://geekbites.move4mobile.io",
   "main": "index.js",
   "scripts": {
