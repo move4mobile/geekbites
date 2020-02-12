@@ -1,0 +1,35 @@
+name: GeekBites - CI
+
+on:
+  push:
+    branches:
+      - master
+      - develop
+      - release/**
+  pull_request:
+    branches:
+      - master
+      - develop
+      - release/**
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+        os: [ubuntu-latest]
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: npm build
+        run: |
+          npm ci
+          npm run build --if-present
+        env:
+          CI: true
