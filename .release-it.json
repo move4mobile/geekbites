@@ -1,6 +1,7 @@
 {
     "git": {
       "tagName": "%s",
+      "git.requireUpstream": false,
       "requireCleanWorkingDir": false
     },
     "github": {
