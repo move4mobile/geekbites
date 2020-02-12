@@ -22,6 +22,8 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: npm build
         run: |
+          git config --global user.email "you@example.com"
+          git config --global user.name "Your Name"
           npm ci
           npm run build --if-present
           npm run release -- patch --ci
