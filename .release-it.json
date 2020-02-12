@@ -1,0 +1,14 @@
+{
+    "non-interactive": true,
+    "git": {
+      "tagName": "%s",
+      "requireCleanWorkingDir": false
+    },
+    "github": {
+      "release": true
+    },
+    "npm": {
+      "publish": false
+    }
+  }
+  

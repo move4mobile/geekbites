@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "eleventy",
-    "start": "rimraf dist && eleventy --serve"
+    "start": "rimraf dist && eleventy --serve",
+    "release": "release-it"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
     "eleventy-plugin-sass": "^1.0.0",
     "luxon": "^1.22.0",
+    "release-it": "^12.4.3",
     "rimraf": "^3.0.2"
   }
 }
