@@ -7,11 +7,19 @@ on:
       - 'v*' # Push events to matching v*, i.e. v1.0, v20.15.10
 
 jobs:
-  release-on-push:
-    runs-on: ubuntu-latest
-    env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  release:
     steps:
-      - uses: rymndhng/release-on-push-action@master
+      - name: Create GitHub release
+        uses: Roang-zero1/github-create-release-action@master
         with:
-          strategy: patch
+          version_regex: ^v[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]+
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}    
+  # release-on-push:
+  #   runs-on: ubuntu-latest
+  #   env:
+  #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  #   steps:
+  #     - uses: rymndhng/release-on-push-action@master
+  #       with:
+  #         strategy: patch
