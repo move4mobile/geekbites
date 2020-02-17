@@ -28,7 +28,7 @@ jobs:
 
     - name: Build project zip
       run: |
-        zip -r dist ./dist/*
+        zip -r output ./dist/*
 
     - name: Bump version and push tag
       id: tag_release
@@ -56,6 +56,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }} 
-        asset_path: ./dist.zip
-        asset_name: dist.zip
+        asset_path: ./output.zip
+        asset_name: output.zip
         asset_content_type: application/zip
