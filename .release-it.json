@@ -1,0 +1,15 @@
+{
+    "git": {
+      "tagName": "%s",
+      "requireUpstream": false,
+      "requireCleanWorkingDir": false
+    },
+    "github": {
+      "release": true,
+      "tokenRef": "GITHUB_TOKEN"
+    },
+    "npm": {
+      "publish": false
+    }
+  }
+  

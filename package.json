@@ -1,15 +1,16 @@
 {
   "name": "geekbites",
-  "version": "2.0.0-SNAPSHOT",
+  "version": "2.4.3",
   "description": "Onze blog staat live: http://geekbites.move4mobile.io",
   "main": "index.js",
   "scripts": {
     "build": "eleventy",
-    "start": "rimraf dist && eleventy --serve"
+    "start": "rimraf dist && eleventy --serve",
+    "release": "release-it"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/move4mobile/geekbites.git"
+    "url": "https://github.com/move4mobile/geekbites.git"
   },
   "author": "",
   "license": "ISC",
@@ -23,6 +24,7 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
     "eleventy-plugin-sass": "^1.0.0",
     "luxon": "^1.22.0",
-    "rimraf": "^3.0.1"
+    "release-it": "^12.4.3",
+    "rimraf": "^3.0.2"
   }
 }
