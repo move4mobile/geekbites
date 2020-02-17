@@ -1,26 +1,46 @@
-name: GeekBites - Release
+name: Release workflow
 
 on:
   push:
-    # Sequence of patterns matched against refs/tags
-    tags:
-      - 'v*' # Push events to matching v*, i.e. v1.0, v20.15.10
-
+    branches:
+      - master
 jobs:
-  release:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Create GitHub release
-        uses: Roang-zero1/github-create-release-action@master
-        with:
-          version_regex: ^v[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]+
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}    
-  # release-on-push:
-  #   runs-on: ubuntu-latest
-  #   env:
-  #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  #   steps:
-  #     - uses: rymndhng/release-on-push-action@master
-  #       with:
-  #         strategy: patch
+    - name: Checkout code
+      uses: actions/checkout@master
+      with:
+        fetch-depth: '0'
+    # - name: Build project 
+    #   run: |
+    #     zip --junk-paths docs JOURNAL.md ./examples/*
+    - name: Bump version and push tag
+      id: tag_release
+      uses: anothrNick/github-tag-action@1.17.2
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        WITH_V: true
+        DEFAULT_BUMP: patch
+
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ steps.tag_release.outputs.tag }}
+        release_name: ${{ steps.tag_release.outputs.tag }}
+        draft: false
+        prerelease: false
+
+    # - name: Upload Release Asset
+    #   id: upload-release-asset 
+    #   uses: actions/upload-release-asset@v1
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    #   with:
+    #     upload_url: ${{ steps.create_release.outputs.upload_url }} 
+    #     asset_path: ./docs.zip
+    #     asset_name: docs.zip
+    #     asset_content_type: application/zip
