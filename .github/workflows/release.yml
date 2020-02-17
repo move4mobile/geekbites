@@ -62,5 +62,5 @@ jobs:
 
     - uses: actions/upload-artifact@v1
       with:
-        name: site.zip
+        name: site
         path: site.zip
