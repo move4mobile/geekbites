@@ -27,4 +27,3 @@ jobs:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           MERGE_LABELS: "automerge,!work in progress"
           MERGE_DELETE_BRANCH: "true"
-          MERGE_REMOVE_LABELS: "automerge"
