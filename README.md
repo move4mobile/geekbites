@@ -49,3 +49,11 @@ https://guides.github.com/features/mastering-markdown/
 
 #### cards-jekyll-template
 https://github.com/willianjusten/cards-jekyll-template
+
+
+## GitHub Actions
+### Auto merge PR's
+
+Experiment 1:
+* https://github.com/pascalgn/automerge-action
+
