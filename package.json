@@ -24,7 +24,7 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
     "eleventy-plugin-sass": "^1.0.0",
     "luxon": "^1.23.0",
-    "release-it": "^13.5.6",
+    "release-it": "^13.5.7",
     "rimraf": "^3.0.2"
   }
 }
