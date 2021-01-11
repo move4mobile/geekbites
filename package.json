@@ -21,7 +21,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
     "@11ty/eleventy-plugin-rss": "^1.0.9",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.4",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.6",
     "eleventy-plugin-sass": "^1.1.1",
     "luxon": "^1.25.0",
     "release-it": "^14.2.2",
