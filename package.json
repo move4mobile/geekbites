@@ -6,8 +6,7 @@
   "private": true,
   "scripts": {
     "build": "eleventy",
-    "start": "rimraf dist && eleventy --serve",
-    "release": "release-it"
+    "start": "rimraf dist && eleventy --serve"
   },
   "repository": {
     "type": "git",
