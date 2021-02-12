@@ -1,3 +1,10 @@
+# [2.6.0](https://github.com/move4mobile/geekbites/compare/v2.5.1...v2.6.0) (2021-02-12)
+
+
+### Features
+
+* **dev:** prettier config setup ([44d2e7c](https://github.com/move4mobile/geekbites/commit/44d2e7c7a954ee60c0a43fbc9ba1d238c2c08679))
+
 ## [2.5.1](https://github.com/move4mobile/geekbites/compare/v2.5.0...v2.5.1) (2021-02-12)
 
 
