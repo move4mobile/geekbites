@@ -1,0 +1,14 @@
+version: 2
+updates:
+  # Configuration for npm
+  - package-ecosystem: 'npm'
+    directory: .
+    schedule:
+      # Check the npm registry for updates at 4am UTC
+      interval: 'daily'
+      time: '04:00'
+    open-pull-requests-limit: 20
+    target-branch: 'integration/dependabot'
+    labels:
+      - 'dependencies'
+      - 'automerge'
