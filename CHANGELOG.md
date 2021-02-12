@@ -1,3 +1,10 @@
+# [2.7.0](https://github.com/move4mobile/geekbites/compare/v2.6.0...v2.7.0) (2021-02-12)
+
+
+### Features
+
+* add dependabot configuration ([2bb055e](https://github.com/move4mobile/geekbites/commit/2bb055ee45a4f4419a365d416831c7c4be476c02))
+
 # [2.6.0](https://github.com/move4mobile/geekbites/compare/v2.5.1...v2.6.0) (2021-02-12)
 
 
