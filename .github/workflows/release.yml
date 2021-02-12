@@ -45,16 +45,10 @@ jobs:
 
       - name: Build Geekbites
         run: npm run build --if-present
-        # env:
-        #   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Build project zip
+      - name: Build artifact
         run: |
-          zip -r site ./dist/*
-
-      - name: Move archived files to artifacts
-        working-directory: ${{ github.workspace }}
-        run: mv dist/* artifacts/
+          zip -r ./artifacts/site ./dist/*
 
       - name: Semantic release
         run: npx semantic-release
