@@ -72,10 +72,10 @@ jobs:
       - uses: actions/download-artifact@master
         with:
           name: myartifact
-          path: dist
+          path: output
 
       - name: Deploy
-        run: echo I am deploying, ${{ env.url }}
+        run: echo I am deploying, ${{ env.HELLO }}
 
       - name: Check output
         run: ls -l -R
