@@ -48,4 +48,4 @@ jobs:
       url: 'https://dev.geekbites.move4mobile.io'
     steps:
       - name: Deploy
-      - run: echo I am deploying
+        run: echo I am deploying
