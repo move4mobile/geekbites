@@ -38,6 +38,13 @@ jobs:
         env:
           CI: true
 
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: myartifact
+          path: |
+            dist
+
   DeployDev:
     name: Deploy to Dev
     # if: github.event_name == 'pull_request'
@@ -59,6 +66,11 @@ jobs:
       name: Staging
       url: 'https://staging.geekbites.move4mobile.io'
     steps:
+      - uses: actions/download-artifact@master
+        with:
+          name: myartifact
+          path: artifacts
+
       - name: Deploy
         run: echo I am deploying, ${{ env.url }}
 
