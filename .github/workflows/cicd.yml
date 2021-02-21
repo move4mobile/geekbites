@@ -3,6 +3,9 @@ name: CI + CD (mock)
 on:
   push:
     branches: [develop] # or master
+  pull_request:
+    branches: [develop] # or master
+  workflow_dispatch:
 jobs:
   Build:
     runs-on: ${{ matrix.os }}
