@@ -60,7 +60,7 @@ jobs:
       url: 'https://staging.geekbites.move4mobile.io'
     steps:
       - name: Deploy
-        run: echo I am deploying, ${{ env.url }
+        run: echo I am deploying, ${{ env.url }}
 
   DeployProduction:
     name: Deploy to Production
