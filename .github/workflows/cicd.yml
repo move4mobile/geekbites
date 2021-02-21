@@ -75,7 +75,7 @@ jobs:
           path: output
 
       - name: Deploy
-        run: echo I am deploying, ${{ env.HELLO }}
+        run: echo I am deploying
 
       - name: Check output
         run: ls -l -R
