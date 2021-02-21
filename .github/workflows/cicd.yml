@@ -48,7 +48,7 @@ jobs:
       url: 'https://dev.geekbites.move4mobile.io'
     steps:
       - name: Deploy
-        run: echo I am deploying, ${{ url }}
+        run: echo I am deploying, ${{ env.url }}
 
   DeployStaging:
     name: Deploy to Staging
@@ -60,11 +60,10 @@ jobs:
       url: 'https://staging.geekbites.move4mobile.io'
     steps:
       - name: Deploy
-        run: echo I am deploying, ${{ url }
+        run: echo I am deploying, ${{ env.url }
 
   DeployProduction:
     name: Deploy to Production
-    if: github.event.ref == 'refs/heads/main'
     needs: [DeployStaging]
     runs-on: ubuntu-latest
     environment:
@@ -72,4 +71,4 @@ jobs:
       url: 'https://geekbites.move4mobile.io'
     steps:
       - name: Deploy
-        run: echo I am deploying, ${{ url }}
+        run: echo I am deploying, ${{ env.url }}
