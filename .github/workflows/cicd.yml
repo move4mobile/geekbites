@@ -63,7 +63,7 @@ jobs:
         run: echo I am deploying, ${{ env.url }}
 
       - name: Check output
-        run: ls -l
+        run: ls -l -R
 
   DeployProduction:
     name: Deploy to Production
