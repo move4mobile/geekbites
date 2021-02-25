@@ -70,7 +70,7 @@
       "avatar": "https://avatars2.githubusercontent.com/u/15778830?s=80"
     },
     "danny": {
-      "name": "Danny Hooijer",
+      "name": "Danny Hooijer", 
       "email": "dhooyer@move4mobile.com",
       "github": "DannyHooyer",
       "avatar": "https://avatars0.githubusercontent.com/u/16132824?s=80"
@@ -80,5 +80,11 @@
       "email": "esteenredeker@move4mobile.com",
       "github": "esteenredeker",
       "avatar": "https://avatars.githubusercontent.com/u/78849983?s=88&v=4"
+    },
+    "youri": {
+      "name": "Youri Dekker",
+      "email": "ydekker@move4mobile.com",
+      "github": "youridekker",
+      "avatar": "https://avatars.githubusercontent.com/u/38322349?s=80"
     }
 }
