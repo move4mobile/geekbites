@@ -7,6 +7,7 @@ on:
     types:
       - requested
       - completed
+      - success
 jobs:
   test-job:
     name: Test Step
