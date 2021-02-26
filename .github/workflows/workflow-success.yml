@@ -1,8 +1,8 @@
-name: 'Workflow success'
+name: Workflow success
 on:
   workflow_run:
     workflows:
-      - cicd
+      - build
     branches: [feature/automerge-after-build]
     types:
       - requested
