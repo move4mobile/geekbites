@@ -3,7 +3,7 @@ on:
   workflow_run:
     workflows:
       - cicd
-    # branches: [main]
+    branches: [feature/automerge-after-build]
     types:
       - requested
       - completed
