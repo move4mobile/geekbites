@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 jobs:
   Build:
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
 
     strategy:
       matrix:
@@ -46,7 +46,7 @@ jobs:
       - name: Archive production artifacts
         uses: actions/upload-artifact@v2
         with:
-          name: myartifact
+          name: artifacts
           path: |
             dist
 
@@ -56,11 +56,11 @@ jobs:
     needs: [Build]
     runs-on: ubuntu-latest
     steps:
-      # - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 
       - uses: actions/download-artifact@master
         with:
-          name: myartifact
+          name: artifacts
           path: dist
 
       - uses: FirebaseExtended/action-hosting-deploy@v0
@@ -94,7 +94,7 @@ jobs:
     steps:
       - uses: actions/download-artifact@master
         with:
-          name: myartifact
+          name: artifacts
           path: output
 
       - name: Deploy
