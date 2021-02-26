@@ -52,7 +52,7 @@ jobs:
     environment:
       name: Preview Channels
       # url: 'https://staging.geekbites.move4mobile.io'
-      url: ${{ steps.my_action.outputs.details_url }}
+      url: https://${{ steps.my_action.outputs.expire_time }}.geekbites.move4mobile.io
     steps:
       - uses: actions/checkout@v2
 
