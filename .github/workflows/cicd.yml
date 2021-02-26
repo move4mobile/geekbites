@@ -51,12 +51,12 @@ jobs:
             dist
 
   DeployPreview:
-    name: PR Preview URL
+    name: Create PR Preview URL
     if: github.event_name == 'pull_request'
     needs: [Build]
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      # - uses: actions/checkout@v2
 
       - uses: actions/download-artifact@master
         with:
