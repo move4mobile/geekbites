@@ -1,4 +1,4 @@
-name: CI + CD (mock)
+name: Default Workflow
 
 on:
   push:
@@ -112,8 +112,8 @@ jobs:
           projectId: ${{ secrets.FIREBASE_PROJECT_ID }}
           channelId: live
 
-  ReleaseArtifact:
-    name: Release Artifact
+  CreateRelease:
+    name: Create Release
     if: github.event.ref == 'refs/heads/master'
     needs: [Build]
     runs-on: ubuntu-latest
