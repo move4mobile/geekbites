@@ -1,10 +1,11 @@
 name: '[exp] automerge after success build'
 on:
   workflow_run:
-    workflows: ['CI + CD (mock)']
+    workflows:
+      - CI + CD (mock)
     # branches: [main]
     types:
-      - completed
+      - requested
 jobs:
   test-job:
     name: Test Step
