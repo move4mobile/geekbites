@@ -40,17 +40,16 @@ jobs:
         env:
           CI: true
 
-      - name: Build dist
+      - name: Build artifact
         run: npm run build
 
-      - name: Archive production artifacts
+      - name: Archive artifact
         uses: actions/upload-artifact@v2
         with:
           name: artifacts
-          path: |
-            dist
+          path: dist
 
-  DeployPreview:
+  CreatePreview:
     name: Create PR Preview URL
     if: github.event_name == 'pull_request'
     needs: [Build]
@@ -80,8 +79,21 @@ jobs:
       name: Development
       url: 'https://dev.geekbites.move4mobile.io'
     steps:
-      - name: Deploy
-        run: echo I am deploying
+      - uses: actions/checkout@v2
+
+      - uses: actions/download-artifact@master
+        with:
+          name: artifacts
+          path: dist
+
+      - uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_M4M_GEEKBITES }}'
+          projectId: ${{ secrets.FIREBASE_PROJECT_ID }}
+          channelId: live
+        # env:
+        #   FIREBASE_CLI_PREVIEWS: hostingchannels
 
   DeployStaging:
     name: Deploy to Staging
