@@ -2,9 +2,9 @@ name: CI + CD (mock)
 
 on:
   push:
-    branches: [develop, master] # or master
+    branches: [develop, master]
   pull_request:
-    branches: [develop] # or master
+    branches: [develop, master]
   workflow_dispatch:
 jobs:
   Build:
