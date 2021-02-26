@@ -1,4 +1,4 @@
-name: CI + CD (mock)
+name: cicd
 on:
   push:
     branches: [develop] # or master
