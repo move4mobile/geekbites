@@ -1,3 +1,10 @@
+## [2.7.1](https://github.com/move4mobile/geekbites/compare/v2.7.0...v2.7.1) (2021-02-26)
+
+
+### Bug Fixes
+
+* test release pipeline ([3dedbcf](https://github.com/move4mobile/geekbites/commit/3dedbcf2a2cd2cebdfd0ffbd5cf9cfce5a705938))
+
 # [2.7.0](https://github.com/move4mobile/geekbites/compare/v2.6.0...v2.7.0) (2021-02-12)
 
 
