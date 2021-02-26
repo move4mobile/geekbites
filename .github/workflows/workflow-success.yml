@@ -1,4 +1,4 @@
-name: '[exp] automerge after success build'
+name: 'Workflow success'
 on:
   workflow_run:
     workflows:
