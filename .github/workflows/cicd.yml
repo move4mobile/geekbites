@@ -117,9 +117,6 @@ jobs:
     if: github.event.ref == 'refs/heads/master'
     needs: [Build]
     runs-on: ubuntu-latest
-    environment:
-      name: Production
-      url: 'https://geekbites.move4mobile.io'
     steps:
       - uses: actions/checkout@v2
 
