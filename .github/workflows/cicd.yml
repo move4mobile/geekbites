@@ -50,14 +50,11 @@ jobs:
           path: |
             dist
 
-  DeployPr:
+  DeployPreview:
     name: PR Preview URL
     if: github.event_name == 'pull_request'
     needs: [Build]
     runs-on: ubuntu-latest
-    # environment:
-    #   name: Development
-    #   url: 'https://dev.geekbites.move4mobile.io'
     steps:
       - uses: actions/checkout@v2
 
