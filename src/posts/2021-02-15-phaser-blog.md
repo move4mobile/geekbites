@@ -34,26 +34,57 @@ De eerste twee parameters 800 en 600 staan voor de lengte en de breedte van het 
 
 Phaser zoekt automatisch naar de preload functie wanneer de game gestart is. Hij laadt dan alles wat in deze functie staat. Je kunt je images, spritesheets, sounds, etc. in laden door gebruik te maken van game.load. Een bijvoorbeeld hiervan is game.load.image("Titel die je de afbeelding wil geven", "De map waar de afbeelding in staat/het bestandsnaam", Lengte, Breedte);.
 ```
-game.load.image("cadeau", "assets/cadeautje.png", 64, 64);
+game.load.image("player", "assets/player.png", 64, 64);
 ```
 
-De create funcite is het belangrijk dat je bovenaan begint met de volgende code:
+De create funcite is het belangrijk dat je bovenaan begint met deze code, omdat dit ervoor zorgt dat je physics aan de game kan toevoegen. 
 ```
  game.physics.startSystem(Phaser.Physics.ARCADE);
 ```
-Ook creeër je hier alle assets die je in de preload functie hebt ingeladen. Deze laat je in door game.add.image(Lengte waar je de image wil plaatsen, Hoogte waar je de image wil plaatsen, "De naam die je de afbeelding gegeven hebt");.
+Ook creeër je hier alle assets die je in de preload functie hebt ingeladen. Deze laat je in door game.add.image(Lengte waar je de image wil plaatsen, Hoogte waar je de image wil plaatsen, "De naam die je de afbeelding gegeven hebt");. Het is wel belangrijk om alles op volgorde te creëren. Dus als je het cadeautje op de achtergrond wil plaatsen zet je het in de volgende volgorde:
 ```
-game.add.image(400, 300, "cadeau");
+game.load.image("background", "assets/background.png", 800, 600);
+game.add.image(400, 300, "player");
 ```
-Naast alle assets kan je hier ook ander functies creeëren. Het zijn er te veel om allemaal op te noemen, dus hier zijn er een paar:
+Naast alle assets kan er nog veel meer gedaan worden in de create functie. Het zijn er te veel om allemaal bij langs te gaan, dus hier zijn er een paar:
 * Physics toevoegen 
     * Zwaartekracht
     * Stuitering 
+    * Snelheid
 * Verschillende lagen toevoegen
 * Een achtergrond toevoegen
 * Ervoor zorgen dat je player niet van het spel valt
-* Je player laten bewegen door gebruik van pijltjes toetsen
 * Andere functies aanroepen
 
-Update functie
+Nog een belangrijk stukje code dat in de create functie toegevoegd moet worden is:
+```
+cursors = this.input.keyboard.createCursorKeys();
+```
+Dit vult namelijk de cursors-object met vier eigenschappen: omhoog, rechts, links en omlaag. Om ervoor te zorgen dat de player echt kan lopen en springen moet de volgende code worden toegevoegd aan de update functie.
+```
+if (cursors.left.isDown)
+​
+    player.setVelocityX (-160);
+
+    player.anims.play ('left', true);
+​
+else if (cursors.right.isDown)
+​
+    speler.setVelocityX (160);
+
+    player.anims.play ('right', true);
+​
+anders
+​
+    player.setVelocityX (0);
+
+    player.anims.play ('beurt');
+​
+
+if (cursors.up.isDown && player.body.touching.down)
+​
+    player.setVelocityY (-330);
+```
+
+Daarnaast kan er in de update functie ook collide gebruikt worden. Collide zorgt ervoor dat de player op een bepaalde platform kan staan en er niet doorheen gaat. 
 
