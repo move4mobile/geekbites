@@ -2,7 +2,7 @@ name: CI + CD (mock)
 
 on:
   push:
-    branches: [develop] # or master
+    branches: [develop, master] # or master
   pull_request:
     branches: [develop] # or master
   workflow_dispatch:
@@ -71,7 +71,7 @@ jobs:
           FIREBASE_CLI_PREVIEWS: hostingchannels
 
   DeployDev:
-    name: Deploy to Dev 2
+    name: Deploy to Dev
     if: github.event_name == 'pull_request'
     needs: [Build]
     runs-on: ubuntu-latest
