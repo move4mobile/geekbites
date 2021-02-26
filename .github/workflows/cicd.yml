@@ -51,17 +51,21 @@ jobs:
             dist
 
   DeployPr:
-    name: Deploy to Dev
+    name: PR Preview URL
     if: github.event_name == 'pull_request'
     needs: [Build]
     runs-on: ubuntu-latest
-    environment:
-      name: Development
-      url: 'https://dev.geekbites.move4mobile.io'
+    # environment:
+    #   name: Development
+    #   url: 'https://dev.geekbites.move4mobile.io'
     steps:
       - uses: actions/checkout@v2
-      - run: npm ci && npm run build
-      - run: ls -l
+
+      - uses: actions/download-artifact@master
+        with:
+          name: myartifact
+          path: dist
+
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
