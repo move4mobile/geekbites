@@ -45,7 +45,7 @@ jobs:
           path: dist
 
   CreatePreview:
-    name: Create PR Preview URL
+    name: Generate Preview URL
     if: github.event_name == 'pull_request'
     needs: [Build]
     runs-on: ubuntu-latest
@@ -70,12 +70,12 @@ jobs:
 
   DeployDevelopment:
     name: Deploy to Development
-    # if: github.event.ref == 'refs/heads/develop'
+    if: github.event.ref == 'refs/heads/develop'
     needs: [Build]
     runs-on: ubuntu-latest
     environment:
       name: Development
-      url: 'https://staging.geekbites.move4mobile.io'
+      url: 'https://dev.geekbites.move4mobile.io'
     steps:
       - uses: actions/checkout@v2
 
@@ -93,7 +93,7 @@ jobs:
 
   DeployProduction:
     name: Deploy to Production
-    # if: github.event.ref == 'refs/heads/master'
+    if: github.event.ref == 'refs/heads/master'
     needs: [Build]
     runs-on: ubuntu-latest
     environment:
