@@ -1,0 +1,28 @@
+name: Workflow success
+on:
+  workflow_run:
+    workflows:
+      - build
+    branches: [feature/automerge-after-build]
+    types:
+      - requested
+      - completed
+      - success
+jobs:
+  test-job:
+    name: Test Step
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.workflow_run.head_branch }}
+      - run: git branch
+      - run: env
+      # - name: Download artifact
+      #   uses: dawidd6/action-download-artifact@v2
+      #   with:
+      #     workflow: ${{ github.event.workflow_run.workflow_id }}
+      #     workflow_conclusion: success
+      - name: Run command
+        run: |
+          echo '${{ github.event }}
