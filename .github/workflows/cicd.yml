@@ -71,7 +71,7 @@ jobs:
           FIREBASE_CLI_PREVIEWS: hostingchannels
 
   DeployDev:
-    name: Deploy to Dev
+    name: Deploy to Dev 2
     if: github.event_name == 'pull_request'
     needs: [Build]
     runs-on: ubuntu-latest
