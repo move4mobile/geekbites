@@ -49,6 +49,9 @@ jobs:
     if: github.event_name == 'pull_request'
     needs: [Build]
     runs-on: ubuntu-latest
+    environment:
+      name: Preview Channels
+      url: 'https://staging.geekbites.move4mobile.io'
     steps:
       - uses: actions/checkout@v2
 
@@ -60,7 +63,7 @@ jobs:
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_M4M_GEEKBITES }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}'
           projectId: ${{ secrets.FIREBASE_PROJECT_ID }}
         env:
           FIREBASE_CLI_PREVIEWS: hostingchannels
@@ -87,8 +90,8 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}'
           projectId: ${{ secrets.FIREBASE_PROJECT_ID }}
           channelId: live
-        env:
-          FIREBASE_CLI_PREVIEWS: hostingchannels
+        # env:
+        #   FIREBASE_CLI_PREVIEWS: hostingchannels
 
   DeployProduction:
     name: Deploy to Production
