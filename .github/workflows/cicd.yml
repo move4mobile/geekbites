@@ -61,12 +61,15 @@ jobs:
           path: dist
 
       - uses: FirebaseExtended/action-hosting-deploy@v0
+        id: my_action
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}'
           projectId: ${{ secrets.FIREBASE_PROJECT_ID }}
         env:
           FIREBASE_CLI_PREVIEWS: hostingchannels
+      - name: Check the output from My action
+        run: echo "${{ steps.my_action.outputs.details_url }}"
 
   DeployDevelopment:
     name: Deploy to Development
