@@ -92,8 +92,8 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_M4M_GEEKBITES }}'
           projectId: ${{ secrets.FIREBASE_PROJECT_ID }}
           channelId: live
-        # env:
-        #   FIREBASE_CLI_PREVIEWS: hostingchannels
+        env:
+          FIREBASE_CLI_PREVIEWS: hostingchannels
 
   DeployStaging:
     name: Deploy to Staging
