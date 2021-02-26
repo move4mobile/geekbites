@@ -112,7 +112,7 @@ jobs:
 
   CreateRelease:
     name: Create Release
-    if: github.event.ref == 'refs/heads/master'
+    if: "github.event.ref == 'refs/heads/master' && ! contains(toJSON(github.event.commits.*.message), '[skip-ci]')"
     needs: [Build]
     runs-on: ubuntu-latest
     steps:
