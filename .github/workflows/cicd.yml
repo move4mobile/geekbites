@@ -70,6 +70,10 @@ jobs:
         env:
           FIREBASE_CLI_PREVIEWS: hostingchannels
       - name: Check the output from My action
+        run: echo "${{ steps.my_action.outputs.urls }}"
+      - name: Check the output from My action
+        run: echo "${{ steps.my_action.outputs.expire_time }}"
+      - name: Check the output from My action
         run: echo "${{ steps.my_action.outputs.details_url }}"
 
   DeployDevelopment:
