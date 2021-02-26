@@ -10,11 +10,6 @@ jobs:
   Build:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [12]
-        os: [ubuntu-latest]
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -22,17 +17,17 @@ jobs:
           fetch-depth: '0'
           persist-credentials: false
 
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Use Node.js 12
         uses: actions/setup-node@v2-beta
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 12
 
       - name: Check cache
         uses: actions/cache@v2
         id: node-cache # use this to check for `cache-hit` (`steps.node-cache.outputs.cache-hit != 'true'`)
         with:
           path: '**/node_modules'
-          key: ${{ runner.os }}-node-modules-${{ matrix.node-version }}-${{ hashFiles('**/package-lock.json') }}
+          key: ubuntu-latest-node-modules-12-${{ hashFiles('**/package-lock.json') }}
 
       - name: Install node modules
         if: steps.node-cache.outputs.cache-hit != 'true'
@@ -70,14 +65,14 @@ jobs:
         env:
           FIREBASE_CLI_PREVIEWS: hostingchannels
 
-  DeployDev:
-    name: Deploy to Dev
-    if: github.event_name == 'pull_request'
+  DeployDevelopment:
+    name: Deploy to Development
+    # if: github.event.ref == 'refs/heads/develop'
     needs: [Build]
     runs-on: ubuntu-latest
     environment:
       name: Development
-      url: 'https://dev.geekbites.move4mobile.io'
+      url: 'https://staging.geekbites.move4mobile.io'
     steps:
       - uses: actions/checkout@v2
 
@@ -94,26 +89,6 @@ jobs:
           channelId: live
         env:
           FIREBASE_CLI_PREVIEWS: hostingchannels
-
-  DeployStaging:
-    name: Deploy to Staging
-    if: github.event.ref == 'refs/heads/develop' # or master
-    needs: [Build]
-    runs-on: ubuntu-latest
-    environment:
-      name: Staging
-      url: 'https://staging.geekbites.move4mobile.io'
-    steps:
-      - uses: actions/download-artifact@master
-        with:
-          name: artifacts
-          path: output
-
-      - name: Deploy
-        run: echo I am deploying
-
-      - name: Check output
-        run: ls -l -R
 
   DeployProduction:
     name: Deploy to Production
