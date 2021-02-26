@@ -92,8 +92,7 @@ jobs:
 
   DeployProduction:
     name: Deploy to Production
-    if: github.event.ref == 'refs/heads/master'
-    needs: [Build]
+    needs: [ReleaseArtifact]
     runs-on: ubuntu-latest
     environment:
       name: Production
@@ -112,3 +111,32 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}'
           projectId: ${{ secrets.FIREBASE_PROJECT_ID }}
           channelId: live
+
+  ReleaseArtifact:
+    name: Release Artifact
+    if: github.event.ref == 'refs/heads/master'
+    needs: [Build]
+    runs-on: ubuntu-latest
+    environment:
+      name: Production
+      url: 'https://geekbites.move4mobile.io'
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/download-artifact@master
+        with:
+          name: artifacts
+          path: dist
+
+      - name: Prepare artifacts folder
+        working-directory: ${{ github.workspace }}
+        run: mkdir artifacts
+
+      - name: Build artifact
+        run: |
+          zip -r ./artifacts/site ./dist/*
+
+      - name: Semantic release
+        run: npx semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
