@@ -1,3 +1,10 @@
+# [2.8.0](https://github.com/move4mobile/geekbites/compare/v2.7.1...v2.8.0) (2021-03-04)
+
+
+### Features
+
+* new blogpost 'Modern web API's' ([#145](https://github.com/move4mobile/geekbites/issues/145)) ([a2e2a0e](https://github.com/move4mobile/geekbites/commit/a2e2a0eed5669bcea961d8de31321cc4c5380a5c))
+
 ## [2.7.1](https://github.com/move4mobile/geekbites/compare/v2.7.0...v2.7.1) (2021-02-26)
 
 
