@@ -19,7 +19,7 @@ Het begint allemaal bij je HTML bestand waar je Phaser aanroept in je head, met 
 Na dit gedaan te hebben maak je een JavaScript bestand aan en roep je de game aan met:
 ```
 window.onload = function(){
-    var game = new Phaser.Game(800 (width), 600 (height), Phaser.AUTO, "", {
+    var game = new Phaser.Game(800, 600, Phaser.AUTO, "", {
         preload: preload,
         create: create,
         update: update
@@ -29,7 +29,7 @@ Als weergavecontext voor de game kan er gekozen worden voor Phaser.CANVAS, Phase
 
 Wanneer je toch wil kiezen voor WEBGL of CANVAS is het goed om de verschillen te weten. Een van de verschillen is dat WEBGL een stuk sneller is dan CANVAS. Daarnaast wordt WEBGL door meer browsers ondersteunt en is vooral bedoelt voor 3D, maar kan ook gebruikt worden voor 2D. Daarentegen kan CANVAS alleen gebruikt worden voor 2D weergave. CANVAS is dan ook de voorloper van WEBGL, want WEBGL is voortgekomen uit CANVAS 3 experimenten.
 
-Verder staan de width en de height  voor de canvasgrootte, in dit geval is dat 800 x 600 pixels. 
+Verder staan de width en de height voor de canvasgrootte, in dit geval is dat 800 x 600 pixels. 
 
 #### Preload functie
 Verder heeft elke game een preload, create en update functie, waarmee je het spel maakt. Wanneer de game start, zoekt Phaser automatisch naar de preload functie en laadt alles wat daar in staat. In de preload roep je alle ‘’game.load’’ aan om een wachtrij voor de lader op te bouwen. 
