@@ -29,7 +29,7 @@ Als weergavecontext voor de game kan er gekozen worden voor Phaser.CANVAS, Phase
 
 Wanneer je toch wil kiezen voor WEBGL of CANVAS is het goed om de verschillen te weten. Een van de verschillen is dat WEBGL een stuk sneller is dan CANVAS. Daarnaast wordt WEBGL door meer browsers ondersteunt en is vooral bedoelt voor 3D, maar kan ook gebruikt worden voor 2D. Daarentegen kan CANVAS alleen gebruikt worden voor 2D weergave. CANVAS is dan ook de voorloper van WEBGL, want WEBGL is voortgekomen uit CANVAS 3 experimenten.
 
-Verder staan de width en de height voor de canvasgrootte, in dit geval is dat 800 x 600 pixels. 
+Verder staat de 800 voor de width en de 600 voor de height. Dit is de canvasgrootte van de game. 
 
 #### Preload functie
 Verder heeft elke game een preload, create en update functie, waarmee je het spel maakt. Wanneer de game start, zoekt Phaser automatisch naar de preload functie en laadt alles wat daar in staat. In de preload roep je alle ‘’game.load’’ aan om een wachtrij voor de lader op te bouwen. 
