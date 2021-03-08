@@ -27,7 +27,7 @@ window.onload = function(){
 ```
 Als weergavecontext voor de game kan er gekozen worden voor Phaser.CANVAS, Phaser.WEBGL of Phaser.AUTO. De aanbevolen waarde om te gebruiken is Phaser.AUTO, omdat deze automatisch dat gebruikt wat de browser die wordt gebruikt ondersteunt. 
 
-Wanneer je toch wil kiezen voor WEBGL of CANVAS is het goed om de verschillen te weten. Een van de verschillen is dat WEBGL qua snelheid groter is dan CANVAS. Daarnaast wordt WEBGL door meer browsers ondersteunt en is vooral bedoelt voor 3D, maar kan ook gebruikt worden voor 2D. Daarentegen kan CANVAS alleen gebruikt worden voor 2D weergave. CANVAS is dan ook de voorloper van WEBGL, want WEBGL is voortgekomen uit CANVAS 3 experimenten.
+Wanneer je toch wil kiezen voor WEBGL of CANVAS is het goed om de verschillen te weten. Een van de verschillen is dat WEBGL een stuk sneller is dan CANVAS. Daarnaast wordt WEBGL door meer browsers ondersteunt en is vooral bedoelt voor 3D, maar kan ook gebruikt worden voor 2D. Daarentegen kan CANVAS alleen gebruikt worden voor 2D weergave. CANVAS is dan ook de voorloper van WEBGL, want WEBGL is voortgekomen uit CANVAS 3 experimenten.
 
 Verder staan de width en de height  voor de canvasgrootte, in dit geval is dat 800 x 600 pixels. 
 
