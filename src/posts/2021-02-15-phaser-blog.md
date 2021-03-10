@@ -32,7 +32,7 @@ Wanneer je toch wil kiezen voor WEBGL of CANVAS is het goed om de verschillen te
 Verder staat de 800 voor de width en de 600 voor de height. Dit is de canvasgrootte van de game. 
 
 #### Preload functie
-Verder heeft elke game een preload, create en update functie, waarmee je het spel maakt. Wanneer de game start, zoekt Phaser automatisch naar de preload functie en laadt alles wat daar in staat. In de preload roep je alle ‘’game.load’’ aan om een wachtrij voor de lader op te bouwen. 
+Verder heeft elke game een preload, create en update functie, waarmee je het spel maakt. Wanneer de game start laadt Phaser automatisch alles wat er in de preload functie staat in. In de preload roep je alle ‘’game.load’’ aan om een wachtrij voor de lader op te bouwen. 
 
 #### Create functie
 Zodra het laden van de preload functie klaar is wordt de create functie automatisch gestart. In de create functie staat het grootste deel van de set-upcode. Het is belangrijk om te weten dat de game objecten worden weergegeven in de volgorde waarin ze worden aangemaakt. Je kan zelf kiezen waar je objecten op het canvas wil plaatsen. Dit doe je door ook de variabelen width en height aan ze mee te geven. Het is zelfs mogelijk om het object buiten de 0, 0 tot 800, 600 te plaatsen. Je kan het object dan niet zien maar het zal nog steeds binnen de scene aanwezig zijn. Met het camerasysteem van Phaser 3 is het mogelijk om met een actieve camera je in het spel te verplaatsen en in en uit te zoomen. 
