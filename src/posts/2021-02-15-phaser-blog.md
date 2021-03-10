@@ -9,14 +9,14 @@ date: 2021-03-09
 ### Wat is Phaser?
 Kort gezegd is [Phaser](https://phaser.io/) een gameframework waarmee je HTML-5 games kan maken. Deze games kunnen gespeeld worden op desktop en mobiel. Phaser kan gratis gedownload worden via https://phaser.io/ en is ontwikkeld door Photon Storm in 2013.
 
-Om gebruik te maken van Phaser is het handig als je al enige kennis hebt van HTML en JavaScript. Phaser is namelijk een JavaScript library, wat dus betekent dat je de game volledig hierin bouwt. Phaser maakt het mogelijk voor beginners en gevorderden om een eigen interactieve en leuke game te maken. Verder heeft het veel verschillende functies, zelfs te veel om allemaal te benoemen. Dit is ook een van de redenen waarom het zo geliefd is bij game ontwikkelaars. 
+Om gebruik te maken van Phaser is het handig als je al enige kennis hebt van html en javascript. Phaser is namelijk een javascript library, wat dus betekent dat je de game volledig hierin bouwt. Phaser maakt het mogelijk voor beginners en gevorderden om een eigen interactieve en leuke game te maken. Verder heeft het veel verschillende functies, zelfs te veel om allemaal te benoemen. Dit is ook een van de redenen waarom het zo geliefd is bij game ontwikkelaars. 
 
 ### Opzetten van een Phaser game
-Het begint allemaal bij je HTML bestand waar je Phaser aanroept in je head, met de volgende code: 
+Het begint allemaal bij je html bestand waar je Phaser aanroept in je head, met de volgende code: 
 ```
 <script src="https://cdnjs.cloudflare.com/ajax/libs/phaser-ce/2.12.0/phaser.min.js"></script>
 ```
-Na dit gedaan te hebben maak je een JavaScript bestand aan en roep je de game aan met:
+Na dit gedaan te hebben maak je een javascript bestand aan en roep je de game aan met:
 ```
 window.onload = function(){
     var game = new Phaser.Game(800, 600, Phaser.AUTO, "", {
