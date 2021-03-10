@@ -13,11 +13,11 @@ Om gebruik te maken van Phaser is het handig als je al enige kennis hebt van HTM
 
 ### Opzetten van een Phaser game
 Het begint allemaal bij je HTML bestand waar je Phaser aanroept in je head, met de volgende code: 
-```
+```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/phaser-ce/2.12.0/phaser.min.js"></script>
 ```
 Na dit gedaan te hebben maak je een JavaScript bestand aan en roep je de game aan met:
-```
+```javascript
 window.onload = function(){
     var game = new Phaser.Game(800, 600, Phaser.AUTO, "", {
         preload: preload,
@@ -39,7 +39,7 @@ Zodra het laden van de preload functie klaar is wordt de create functie automati
 
 #### Update functie
 Ten slotte de update functie, deze wordt vooral gebruikt om ervoor te zorgen dat de player zich kan verplaatsen, de zwaartekracht te bepalen en om botsingen met andere objecten te controleren. Deze botsingen controleren is belangrijk, want anders valt hij door de ondergrond heen. Om de speler met de ondergrond te laten botsen, moet je een collider object aanmaken. Dit doe je door dit in je update functie te zetten
-```
+```javascript
 this.physics.add.collider (speler, ondergrond); 
 ```
 
