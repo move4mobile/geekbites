@@ -43,7 +43,16 @@ Ten slotte de update functie, deze wordt vooral gebruikt om ervoor te zorgen dat
 this.physics.add.collider (player, platform); 
 ```
 
+### Phaser game
+Zelf graag een Phaser game willen spelen of benieuwd naar hoe ze eruit kunnen zien? 
+Breakout en starstruck zijn beide HTML-5 games gemaakt met Phaser.
+* [Breakout](https://phaser.io/examples/v2/games/breakout)
+* [Starstruck](https://phaser.io/examples/v2/games/starstruck)
+
+
 ### Belangrijke bronnen
 
 * [Making your first Phaser 3 game](https://phaser.io/tutorials/making-your-first-phaser-3-game/part1)
 * [WebGL vs Canvas](https://www.educba.com/webgl-vs-canvas/)
+* [Breakout](https://phaser.io/examples/v2/games/breakout)
+* [Starstruck](https://phaser.io/examples/v2/games/starstruck)
