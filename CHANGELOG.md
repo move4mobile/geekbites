@@ -1,3 +1,10 @@
+# [2.9.0](https://github.com/move4mobile/geekbites/compare/v2.8.0...v2.9.0) (2021-03-11)
+
+
+### Features
+
+* new blogpost about Phaser  ([eb0eeb5](https://github.com/move4mobile/geekbites/commit/eb0eeb57aab99def5c5ea81b9c87d4d2cc918d20))
+
 # [2.8.0](https://github.com/move4mobile/geekbites/compare/v2.7.1...v2.8.0) (2021-03-04)
 
 
