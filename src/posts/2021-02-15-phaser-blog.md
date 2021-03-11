@@ -1,5 +1,5 @@
 ---
-title: 'Phaser'
+title: 'Phaser, een gameframework voor HTML-5 games'
 comments: true
 author: eline
 min_read: 5
