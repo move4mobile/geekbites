@@ -3,7 +3,7 @@ title: 'Phaser, een gameframework voor HTML-5 games'
 comments: true
 author: eline
 min_read: 5
-date: 2021-03-09
+date: 2021-03-10
 ---
 
 ### Wat is Phaser?
