@@ -2,38 +2,29 @@
 
 Onze blog staat live: http://geekbites.move4mobile.io
 
-
 #### How to install
-Allereerst even checken of je Ruby hebt geinstalleerd:
+First install Node.js and check which verion of Node you have.
+Eleventy requires Node-8 or newer 
 
-`ruby -v`
+`node --version`
 
-Als dat het geval is dan kun je volgende commando's uitvoeren:
+If that is the case you can run the following code to install the dependencies:
 
-`sudo gem install bundler`
+`npm install`
 
-`sudo gem install jekyll`
+After this you can run the code `npm run`.
 
-`bundle`
+To build, just run `npm run build`. This will pack and compile all resources needed to put the application in production and generate a service worker.
 
-`jekyll serve`
+Then you `npm run start`, npm will run the start script for you and start your application with your special configuration options.
 
-En je bent klaar voor het schrijven van je eigen Geekbite!
+And then you are ready to write your own Geekbites blog. 
 
-Mocht je toch tegen een probleem met dependencies aanlopen, dan kun je het volgende commando chain proberen:
+#### Tips
 
-`bundle update` 
+When it found any vulnerabilities after you run the code `npm install`  you can run the code  `npm audit fix` to fix them, or `npm audit` for details
 
-`bundle install`
-
-`bundle exec jekyll serve`
-
-Succes!!!
+After this there will be no or less vulnerabilities, then you can run the code `npm run`.
 
 
-## GitHub Actions
-### Auto merge PR's
-
-Experiment 1:
-* https://github.com/pascalgn/automerge-action
-
+Goodluck!!
