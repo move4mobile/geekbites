@@ -21,7 +21,7 @@ Het is de week van Google I/O, een week vol inspiratie waarin Google de laatste 
 
 Het evenement is gevuld met keynotes, sessies, workshops en meer. Er is zelfs een virtuele wereld ([Google I/O Adventure](https://events.google.com/io/adventure?lng=en)) waarin je met andere developers en Googlers kan connecten.
 
-![Google I/O Adventure](/assets/io-codelabs/ioadventure.png)
+![Google I/O Adventure](/assets/io-codelabs/io21-adventure.png)
 
 Het evenement opent ieder jaar met de **Google I/O Keynote** voor het bredere publiek. Tijdens deze keynote worden de belangrijkste (mainstream) ontwikkelingen gepresenteerd. Daarna volgt, traditioneel gewijs, de **Developer Keynote** welke meer gericht is op developers (software ontwikkelaars). Hieron wordt dieper ingegaan op de technische ontwikkelingen.
 
