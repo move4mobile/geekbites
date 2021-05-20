@@ -59,14 +59,16 @@ De beste manier om technische skills te ontwikkelen, is door gewoon te doen. En 
 
 Hier zijn enkele suggesties op een rij:
 
-| Workshop                                                             | Onderwerp                  |
-| -------------------------------------------------------------------- | -------------------------- |
-| Extend an Android app to Google Assistant with App Actions           | Android & Google Assistant |
-| Build and deploy a model with Vertex AI                              | Cloud & ML/AI              |
-| Build user-adaptive interfaces with preference media                 | Web                        |
-| Create your first Tile in Wear                                       | Android Wear               |
-| TensorFlow.js: Make a smart webcam in JS with a pre-trained ML model | IoT/SmartHome & TensorFlow |
-| Get to know Firebase for Flutter                                     | Firebase & Flutter         |
+<!-- prettier-ignore-start -->
+| Workshop | Onderwerp | &nbsp; |
+| - | - | - | - |
+{% 
+    for item in io21_workshops 
+%} | [{{ item.title }}]({{ item.url }}) | {{ item.topic }} | [video]({{ item.video_url }}) |
+{% 
+    endfor 
+%}
+<!-- prettier-ignore-end -->
 
 <!-- Section: Externe links en referenties -->
 
