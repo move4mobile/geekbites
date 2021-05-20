@@ -13,7 +13,7 @@ permalink: /2021/05/20/google-io-learn-something-new/
 
 Het is de week van Google I/O, een week vol inspiratie waarin Google de laatste (technische) snufjes en ontwikkelingen met ons deelt. Dit is een aangewezen kans om je eigen kennis te verbreden of nieuwe skills te ontwikkelen.
 
-<!-- Section: Over het event -->
+<!-- Section: Over Google I/O -->
 
 ### Wat is Google I/O?
 
@@ -27,7 +27,7 @@ Het evenement start ieder jaar met de **Google I/O Keynote** (openingskeynote) v
 
 Diverse onderwerpen komen voorbij, zoals Firebase, Accessibility, Android en nog veel meer.
 
-![Google Products](/assets/io-codelabs/io21-products.png)
+![Google Products](/assets/io-codelabs/io21-products3.png)
 
 Bekijk de [event website](https://events.google.com/io/program/discover/) om het volledige programma te verkennen.
 
