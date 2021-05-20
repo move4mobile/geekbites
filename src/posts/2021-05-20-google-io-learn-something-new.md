@@ -27,7 +27,7 @@ Het evenement start ieder jaar met de **Google I/O Keynote** (openingskeynote) v
 
 Diverse onderwerpen komen voorbij, zoals Firebase, Accessibility, Android en nog veel meer.
 
-![Google Products](/assets/io-codelabs/io21-products3.png)
+![Google Products](/assets/io-codelabs/io21-products.png)
 
 Bekijk de [event website](https://events.google.com/io/program/discover/) om het volledige programma te verkennen.
 
