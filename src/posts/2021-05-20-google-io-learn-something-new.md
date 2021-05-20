@@ -1,10 +1,10 @@
 ---
 title: "Google I/O '21: leer eens iets nieuws"
 category: inspiration
-tags: googleio, technology, codelab
-comments: false
+tags: googleio, technology, codelab, workshop
+comments: true
 author: michael
-min_read: tbd
+min_read: 8
 date: 2021-05-20
 permalink: /2021/05/20/google-io-learn-something-new/
 ---
@@ -25,17 +25,13 @@ Het evenement is gevuld met keynotes, sessies, workshops en meer. Er is zelfs ee
 
 Het evenement start ieder jaar met de **Google I/O Keynote** (openingskeynote) voor het bredere publiek. Tijdens deze keynote worden de belangrijkste (mainstream) ontwikkelingen gepresenteerd. Daarna volgt, traditioneel gewijs, de **Developer Keynote** welke meer gericht is op developers (software ontwikkelaars). Hieron wordt dieper ingegaan op de technische ontwikkelingen.
 
-<!-- TODO: YouTube embed -->
-
-https://www.youtube.com/watch?v=L7c4wS7T_T8
-
 Diverse onderwerpen komen voorbij, zoals Firebase, Accessibility, Android en nog veel meer.
 
 ![Google Products](/assets/io-codelabs/io21-products.png)
 
 Bekijk de [event website](https://events.google.com/io/program/discover/) om het volledige programma te verkennen.
 
-<!-- Section: Workshhohps & Codelabs -->
+<!-- Section: Workshops & Codelabs -->
 
 ### Google Workshops & Codelabs
 
@@ -43,7 +39,7 @@ Het is tijdens het event ook mogelijk om deel te nemen aan een of meerdere works
 
 ![Google I/O Workshops](/assets/io-codelabs/io21-workshops.png)
 
-Meestal gaat de workshop gepaard met een verwante **Google Codelab**. Een Google Codelab is niks anders dan een tuturial of instructie waarmee je zelf, stap-voor-stap, een kleine applicatie of feature kan bouwen. Google stelt diverse Codelabs beschikbaar op [codelabs.developers.google.com](https://codelabs.developers.google.com/) (gratis).
+Meestal gaat de workshop gepaard met een verwante **Google Codelab**. Een Google Codelab is niks anders dan een tuturial of instructie waarmee je zelf, stap-voor-stap, een kleine applicatie of feature kan bouwen. Google stelt diverse codelabs beschikbaar op [codelabs.developers.google.com](https://codelabs.developers.google.com/) (gratis).
 
 ### Tijd om iets (nieuws) te leren!
 
@@ -72,10 +68,13 @@ Hier zijn enkele suggesties op een rij:
 
 <!-- Section: Externe links en referenties -->
 
+**Bonus**: maak eerst even een [Google Developer Profile](https://developers.google.com/profile) aan en ontvang na het afronden van je eerste codelab, een badge.
+
 ### Externe links
 
-<!-- WIP -->
-
-- [I/O workshops](https://events.google.com/io/program/content?5=type_workshop&lng=en)
+- [Google I/O 2021 Keynote](https://www.youtube.com/watch?v=L7c4wS7T_T8)
+- [Google I/O website](https://events.google.com/io/?lng=en)
+- [Google Developers](https://developers.google.com/)
+- [web.dev](https://web.dev/)
 
 <!-- CTA: Google Developers profile? -->
