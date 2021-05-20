@@ -52,7 +52,7 @@ Hier zijn enkele suggesties op een rij:
 | - | - | - | - |
 {% 
     for item in io21_workshops 
-%} | [{{ item.title }}]({{ item.url }}) | {{ item.topic }} | [video]({{ item.video_url }}) |
+%} | [{{ item.title }}]({{ item.url }}) | {{ item.topic }} | [video]({{ item.video_url }})&nbsp;&middot;&nbsp;[codelab]({{ item.codelab_url }}) |
 {% 
     endfor 
 %}
