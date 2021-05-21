@@ -1,3 +1,15 @@
+# [2.10.0](https://github.com/move4mobile/geekbites/compare/v2.9.0...v2.10.0) (2021-05-21)
+
+
+### Bug Fixes
+
+* comments link for Web API post by changing title ([#173](https://github.com/move4mobile/geekbites/issues/173)) ([56618b0](https://github.com/move4mobile/geekbites/commit/56618b097bd85efb17c1ad985f397c6d8e40cc35))
+
+
+### Features
+
+* **blogpost:** learn something new (google io workshops) ([#194](https://github.com/move4mobile/geekbites/issues/194)) ([06c6a64](https://github.com/move4mobile/geekbites/commit/06c6a6419ca9f36119b70ad32deba9edfdbf90c7))
+
 # [2.9.0](https://github.com/move4mobile/geekbites/compare/v2.8.0...v2.9.0) (2021-03-11)
 
 
