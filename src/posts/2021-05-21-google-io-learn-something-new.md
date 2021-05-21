@@ -17,7 +17,7 @@ Het is de week van Google I/O, een week vol inspiratie waarin Google de laatste 
 
 ### Wat is Google I/O?
 
-[Google I/O](https://events.google.com/io/) is het grootste (3-daagse) developers event van Google, live vanuit [Mountain View (California)](<https://nl.wikipedia.org/wiki/Mountain_View_(Santa_Clara_County)>). Dit jaar voor het eerst volledig virtueel.
+[Google I/O](https://events.google.com/io/) is het grootste (3-daagse) developers event van Google, live vanuit [Mountain View (California)](<https://nl.wikipedia.org/wiki/Mountain_View_(Santa_Clara_County)>). Dit jaarlijkse evenement is dit jaar voor het eerst volledig virtueel.
 
 Het evenement is gevuld met keynotes, sessies, workshops en meer. Er is zelfs een virtuele wereld ([Google I/O Adventure](https://events.google.com/io/adventure?lng=en)) waarin je met andere developers en Googlers kan connecten.
 
@@ -76,7 +76,7 @@ Hopelijk ben je hiermee geinspireerd geraakt zelf ook een workshop of codelab te
 
 ### Externe links
 
-- [Bekijk de Google I/O Keynote](https://www.youtube.com/watch?v=L7c4wS7T_T8)
+- [Bekijk de Google I/O Keynote](https://www.youtube.com/watch?v=XFFrahd05OM)
 - [Google I/O website](https://events.google.com/io/?lng=en)
 - [Google Developers](https://developers.google.com/)
 - [web.dev](https://web.dev/)
