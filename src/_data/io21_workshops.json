@@ -1,0 +1,51 @@
+[
+  {
+    "title": "Extend an Android app to Google Assistant with App Actions",
+    "topic": "Android & Google Assistant",
+    "url": "https://events.google.com/io/session/1173ce49-233b-460c-96e9-ed094738dde0?lng=en",
+    "video_url": "https://youtu.be/PMinB3VZ9x4",
+    "codelab_url": "https://codelabs.developers.google.com/codelabs/appactions-beta"
+  },
+  {
+    "title": "Build and deploy a model with Vertex AI",
+    "topic": "Cloud & ML/AI",
+    "url": "https://events.google.com/io/session/a0414a2a-b43f-449b-b248-1d8cb765159c?lng=en",
+    "video_url": "https://youtu.be/aB2OxnyfP0c",
+    "codelab_url": "https://codelabs.developers.google.com/codelabs/vertex-ai-custom-models"
+  },
+  {
+    "title": "Build user-adaptive interfaces with preference media",
+    "topic": "Web",
+    "url": "https://events.google.com/io/session/f09c3e3e-f64e-4551-a948-9a718588a463?lng=en",
+    "video_url": "https://youtu.be/NQ-FQvsR-gY",
+    "codelab_url": "https://codelabs.developers.google.com/codelabs/user-adaptive-interfaces"
+  },
+  {
+    "title": "Create your first Tile in Wear",
+    "topic": "Android Wear",
+    "url": "https://events.google.com/io/session/fbef3692-047b-4573-b345-7d40388ff568?lng=en",
+    "video_url": "https://youtu.be/Q7xudRfN188",
+    "codelab_url": "https://developer.android.com/codelabs/wear-tiles"
+  },
+  {
+    "title": "TensorFlow.js: Make a smart webcam in JS with a pre-trained ML model",
+    "topic": "IoT/SmartHome & TensorFlow",
+    "url": "https://events.google.com/io/session/8472f8a3-619a-47cb-b606-8a451175a344?lng=en",
+    "video_url": "https://youtu.be/hk-709L3RK8",
+    "codelab_url": "https://codelabs.developers.google.com/codelabs/tensorflowjs-object-detection"
+  },
+  {
+    "title": "A whirlwind tour through Project Fugu APIs",
+    "topic": "Web",
+    "url": "https://events.google.com/io/session/af611a1c-b490-4514-8e0d-0b64200409f4?lng=en",
+    "video_url": "https://youtu.be/5CLyAX2CTLc",
+    "codelab_url": "https://developers.google.com/codelabs/project-fugu"
+  },
+  {
+    "title": "Get to know Firebase for Flutter",
+    "topic": "Firebase & Flutter",
+    "url": "https://events.google.com/io/session/86b5dda1-cad1-47f9-bd36-b84674dad014?lng=en",
+    "video_url": "https://youtu.be/4wunbF29Kkg",
+    "codelab_url": "https://firebase.google.com/codelabs/firebase-get-to-know-flutter"
+  }
+]
