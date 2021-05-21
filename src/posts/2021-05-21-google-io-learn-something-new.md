@@ -76,7 +76,7 @@ Hopelijk ben je hiermee geinspireerd geraakt zelf ook een workshop of codelab te
 
 ### Externe links
 
-- [Bekijk de Google I/O Keynote](https://www.youtube.com/watch?v=XFFrahd05OM)
+- [Google I/O Keynote](https://www.youtube.com/watch?v=XFFrahd05OM)
 - [Google I/O website](https://events.google.com/io/?lng=en)
 - [Google Developers](https://developers.google.com/)
 - [web.dev](https://web.dev/)
