@@ -23,7 +23,7 @@ Het evenement is gevuld met keynotes, sessies, workshops en meer. Er is zelfs ee
 
 ![Google I/O Adventure](/assets/io-codelabs/io21-adventure.png)
 
-Het evenement opent ieder jaar met de **Google I/O Keynote** voor het bredere publiek. Tijdens deze keynote worden de belangrijkste mainstream ontwikkelingen gepresenteerd. Daarna volgt, traditioneel gewijs, de **Developer Keynote** welke meer gericht is op developers (software ontwikkelaars). Hieron wordt dieper ingegaan op de technische ontwikkelingen.
+Het evenement opent ieder jaar met de **Google I/O Keynote** voor het bredere publiek. Tijdens deze keynote worden de belangrijkste mainstream ontwikkelingen gepresenteerd. Daarna volgt, traditioneel gewijs, de **Developer Keynote** welke meer gericht is op developers (software ontwikkelaars). Hieronder wordt dieper ingegaan op de technische ontwikkelingen.
 
 Diverse onderwerpen komen voorbij, zoals Firebase, Accessibility, Android en nog veel meer.
 
