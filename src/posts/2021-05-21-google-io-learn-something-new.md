@@ -66,7 +66,7 @@ Dit zijn een aantal interessante ontwikkelingen die je in een workshop voorbij k
 
 - **Vertex AI**: een nieuw managed _machine learning_ platform van Google Cloud. In de workshop wordt ingegaan op de tooling, waarmee je zelf model kan trainen en uitrollen met Vertex AI.
 
-- **App Actions & Google Assistant**: open een _feature_ van je Android app, direct via Google Assistant. Neem als voorbeeld de app BookMyDesk (om handige app om werkplek te reserveren op kantoor). Zou het dan niet makkelijk zijn, als je gewoon tegen Google Assistant zou kunnen zeggen "Hey Google, reserveer een werkplek voor morgen." ?
+- **App Actions & Google Assistant**: open een _feature_ van je Android app, direct via Google Assistant. Neem als voorbeeld de app BookMyDesk, een handige app om een werkplek te reserveren op kantoor. Zou het dan niet makkelijk zijn, als je gewoon tegen Google Assistant zou kunnen zeggen "Hey Google, reserveer een werkplek voor morgen." ?
 
 - **Project Fugu**: dit is projectnaam voor een verzameling moderne en toekomstige web browser API's. Wist je dat je vanaf je mobiele browser, de _native_ deelfunctie van je mobiel kan aanroepen?
 
