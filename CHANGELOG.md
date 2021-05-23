@@ -1,3 +1,10 @@
+## [2.10.1](https://github.com/move4mobile/geekbites/compare/v2.10.0...v2.10.1) (2021-05-23)
+
+
+### Bug Fixes
+
+* **io-blog:** content tweaks ([#196](https://github.com/move4mobile/geekbites/issues/196)) ([ae6d76f](https://github.com/move4mobile/geekbites/commit/ae6d76f61cc2f0c2b8a83ad76a78252437f1645f))
+
 # [2.10.0](https://github.com/move4mobile/geekbites/compare/v2.9.0...v2.10.0) (2021-05-21)
 
 
