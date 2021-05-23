@@ -11,19 +11,19 @@ permalink: /2021/05/21/google-io-learn-something-new/
 
 <!-- Section: Intro -->
 
-Het is de week van Google I/O, een week vol inspiratie waarin Google de laatste (technische) snufjes en ontwikkelingen met ons deelt. Dit is een aangewezen kans om **je eigen kennis te verbreden of nieuwe skills te ontwikkelen**.
+Het is de week van Google I/O, een week vol inspiratie waarin Google de laatste technische snufjes en ontwikkelingen met ons deelt. Dit is een aangewezen kans om **je eigen kennis te verbreden of nieuwe skills te ontwikkelen**.
 
 <!-- Section: Over Google I/O -->
 
 ### Wat is Google I/O?
 
-[Google I/O](https://events.google.com/io/) is het grootste (3-daagse) developers event van Google, live vanuit [Mountain View (California)](<https://nl.wikipedia.org/wiki/Mountain_View_(Santa_Clara_County)>). Dit jaarlijkse evenement is dit jaar voor het eerst volledig virtueel.
+[Google I/O](https://events.google.com/io/) is het grootste 3-daagse developers event van Google, live vanuit [Mountain View (California)](<https://nl.wikipedia.org/wiki/Mountain_View_(Santa_Clara_County)>). Dit jaarlijkse evenement is dit jaar voor het eerst volledig virtueel.
 
 Het evenement is gevuld met keynotes, sessies, workshops en meer. Er is zelfs een virtuele wereld ([Google I/O Adventure](https://events.google.com/io/adventure?lng=en)) waarin je met andere developers en Googlers kan connecten.
 
 ![Google I/O Adventure](/assets/io-codelabs/io21-adventure.png)
 
-Het evenement opent ieder jaar met de **Google I/O Keynote** voor het bredere publiek. Tijdens deze keynote worden de belangrijkste (mainstream) ontwikkelingen gepresenteerd. Daarna volgt, traditioneel gewijs, de **Developer Keynote** welke meer gericht is op developers (software ontwikkelaars). Hieron wordt dieper ingegaan op de technische ontwikkelingen.
+Het evenement opent ieder jaar met de **Google I/O Keynote** voor het bredere publiek. Tijdens deze keynote worden de belangrijkste mainstream ontwikkelingen gepresenteerd. Daarna volgt, traditioneel gewijs, de **Developer Keynote** welke meer gericht is op developers (software ontwikkelaars). Hieronder wordt dieper ingegaan op de technische ontwikkelingen.
 
 Diverse onderwerpen komen voorbij, zoals Firebase, Accessibility, Android en nog veel meer.
 
@@ -39,11 +39,11 @@ Het is tijdens het evenement ook mogelijk om deel te nemen aan een of meerdere w
 
 ![Google I/O Workshops](/assets/io-codelabs/io21-workshops.png)
 
-Meestal gaat de workshop gepaard met een verwante **Google Codelab**. Een Google Codelab is niks anders dan een tuturial of instructie waarmee je zelf, stap-voor-stap, een kleine applicatie of feature kan bouwen. Google stelt diverse codelabs beschikbaar op [codelabs.developers.google.com](https://codelabs.developers.google.com/) (gratis).
+Meestal gaat de workshop gepaard met een verwante **Google Codelab**. Een Google Codelab is niks anders dan een tuturial of instructie waarmee je zelf, stap-voor-stap, een kleine applicatie of feature kan bouwen. Google stelt gratis diverse codelabs beschikbaar op [codelabs.developers.google.com](https://codelabs.developers.google.com/).
 
 ### Tijd om iets (nieuws) te leren!
 
-De beste manier om technische skills te ontwikkelen, is door gewoon te doen. En een leuke manier om nieuwe trends te ontdekken, is door gewoon een workshop buiten je directe expertise te pakken (bijvoorbeeld Machine Learning of Flutter).
+De beste manier om technische skills te ontwikkelen, is door gewoon te doen. En een leuke manier om nieuwe trends te ontdekken, is door gewoon een workshop buiten je directe expertise te pakken, bijvoorbeeld Machine Learning of Flutter.
 
 Hier zijn enkele suggesties op een rij:
 
@@ -64,13 +64,13 @@ Dit zijn een aantal interessante ontwikkelingen die je in een workshop voorbij k
 
 - **Flutter** ken je waarschijnlijk al van cross-platform ontwikkeling voor Android en iOS. Wist je ook dat je nu met Flutter vanuit dezelfde codebase, ook kan ontwikkelen voor Desktop (Windows/Mac/Linux/ChromeOS) en Web?
 
-- **Vertex AI**: een nieuw (managed) _machine learning_ platform van Google Cloud. In de workshop wordt ingegaan op de tooling, waarmee je zelf model kan trainen en uitrollen met Vertex AI.
+- **Vertex AI**: een nieuw managed _machine learning_ platform van Google Cloud. In de workshop wordt ingegaan op de tooling, waarmee je zelf model kan trainen en uitrollen met Vertex AI.
 
-- **App Actions & Google Assistant**: open een _feature_ van je Android app, direct via Google Assistant. Neem als voorbeeld de app BookMyDesk (om handige app om werkplek te reserveren op kantoor). Zou het dan niet makkelijk zijn, als je gewoon tegen Google Assistant zou kunnen zeggen "Hey Google, reserveer een werkplek voor morgen." ?
+- **App Actions & Google Assistant**: open een _feature_ van je Android app, direct via Google Assistant. Neem als voorbeeld de app [BookMyDesk](https://bookmydesk.com/), een handige app om een werkplek te reserveren op kantoor. Zou het dan niet makkelijk zijn, als je gewoon tegen Google Assistant zou kunnen zeggen "Hey Google, reserveer een werkplek voor morgen." ?
 
-- **Project Fugu**: dit is projectnaam voor een verzameling moderne (en toekomstige) web browser API's. Wist je dat je vanaf je mobiele browser, de _native_ deelfunctie van je mobiel kan aanroepen?
+- **Project Fugu**: dit is projectnaam voor een verzameling moderne en toekomstige web browser API's. Wist je dat je vanaf je mobiele browser, de _native_ deelfunctie van je mobiel kan aanroepen?
 
-Hopelijk ben je hiermee geinspireerd geraakt zelf ook een workshop of codelab te volgen. **Welke wordt het?**
+Hopelijk ben je hiermee geinspireerd geraakt om zelf ook eens een workshop of codelab te volgen. **Welke wordt het?**
 
 <!-- Section: Externe links en referenties -->
 
