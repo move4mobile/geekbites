@@ -31,7 +31,7 @@
     "@semantic-release/release-notes-generator": "^9.0.3",
     "cz-conventional-changelog": "^3.3.0",
     "eleventy-plugin-sass": "^1.2.0",
-    "husky": "^6.0.0",
+    "husky": "^7.0.1",
     "luxon": "^1.27.0",
     "rimraf": "^3.0.2"
   },
