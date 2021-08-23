@@ -1,6 +1,6 @@
 {
   "name": "geekbites",
-  "version": "0.0.0-DEV",
+  "version": "2.7.1",
   "description": "Onze blog staat live: http://geekbites.move4mobile.io",
   "main": "index.js",
   "private": true,
@@ -52,7 +52,7 @@
   },
   "release": {
     "branches": [
-      "master"
+      "main"
     ],
     "prepare": [
       "@semantic-release/changelog",
