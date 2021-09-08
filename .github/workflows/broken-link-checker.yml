@@ -45,4 +45,4 @@ jobs:
 
       - name: Verify build
         run: |
-          npx broken-link-checker http://127.0.0.1:8080 -ro --filter-level 2 --exclude "*/__/firebase/*"
+          npx broken-link-checker http://127.0.0.1:8080 -roe --filter-level 2 --exclude "*/__/firebase/*"
