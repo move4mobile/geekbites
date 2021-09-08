@@ -38,6 +38,9 @@ jobs:
       - name: Build artifact
         run: npm run build
 
+      - name: Verify build
+        run: npx broken-link-checker-local ./dist -roe --filter-level 2 --exclude "*/__/firebase/*"
+
       - name: Archive artifact
         uses: actions/upload-artifact@v2
         with:
