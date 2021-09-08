@@ -38,7 +38,10 @@ jobs:
       - name: Build artifact
         run: npm run build
 
-      - name: Verify build
+      - name: Start http-server
         run: |
           npx http-server ./dist -p 8080
+
+      - name: Verify build
+        run: |
           npx broken-link-checker http://127.0.0.1:8080 -ro --filter-level 2
