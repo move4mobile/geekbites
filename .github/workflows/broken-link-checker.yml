@@ -40,7 +40,7 @@ jobs:
 
       - name: Start http-server
         run: |
-          npx http-server ./dist -p 8080
+          nohub npx http-server ./dist -p 8080 &
 
       - name: Verify build
         run: |
