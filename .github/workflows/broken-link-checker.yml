@@ -41,6 +41,7 @@ jobs:
       - name: Start http-server
         run: |
           nohub npx http-server ./dist -p 8080 &
+          sleep 5
 
       - name: Verify build
         run: |
