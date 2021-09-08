@@ -1,0 +1,44 @@
+name: Broken Link Checker
+
+on:
+  push:
+    branches: [develop, main]
+  pull_request:
+    branches: [develop, main]
+  workflow_dispatch:
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: '0'
+          persist-credentials: false
+
+      - name: Use Node.js 12
+        uses: actions/setup-node@v2-beta
+        with:
+          node-version: 12
+
+      - name: Check cache
+        uses: actions/cache@v2
+        id: node-cache # use this to check for `cache-hit` (`steps.node-cache.outputs.cache-hit != 'true'`)
+        with:
+          path: '**/node_modules'
+          key: ubuntu-latest-node-modules-12-${{ hashFiles('**/package-lock.json') }}
+
+      - name: Install node modules
+        if: steps.node-cache.outputs.cache-hit != 'true'
+        run: npm ci
+        env:
+          CI: true
+
+      - name: Build artifact
+        run: npm run build
+
+      - name: Verify build
+        run: |
+          npx http-server ./dist -p 8080
+          npx broken-link-checker http://127.0.0.1:8080 -ro --filter-level 2
