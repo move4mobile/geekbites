@@ -1,6 +1,6 @@
 # Geek Bites [![Build Status](https://travis-ci.org/move4mobile/geekbites.svg?branch=develop)](https://travis-ci.org/move4mobile/geekbites)
 
-Onze blog staat live: http://geekbites.move4mobile.io
+Onze blog staat live: https://geekbites.move4mobile.io
 
 #### How to install
 First install Node.js and check which verion of Node you have.

@@ -47,6 +47,8 @@ De beste manier om technische skills te ontwikkelen, is door gewoon te doen. En 
 
 Hier zijn enkele suggesties op een rij:
 
+<div class="table-responsive">
+
 <!-- prettier-ignore-start -->
 | Workshop | Onderwerp | &nbsp; |
 | - | - | - | - |
@@ -57,6 +59,8 @@ Hier zijn enkele suggesties op een rij:
     endfor 
 %}
 <!-- prettier-ignore-end -->
+
+</div>
 
 **Bonus**: maak eerst even een [Google Developer Profile](https://developers.google.com/profile) aan en ontvang na het afronden van je eerste codelab, een badge.
 
