@@ -11,22 +11,22 @@ permalink: /2021/09/06/using-css-frameworks/
 
 <!-- Section: Intro -->
 
-Veel websites, webwinkels en blogs maken gebruik van een CSS framework. Erg populair is nog altijd Twitter Bootstrap. Een ervaren webdesigner / frontender herkent het direct zonder in de code te hoeven kijken. Grafisch gezien, lijken ze vaak sterk op elkaar. Bootstrap is snel inzetbaar en je hebt in een no-time een repsonsive website staan. Zelf de source downloaden en Bootstrap builden wordt helaas nog vaak overgeslagen. Men plakt de productie CDN link in de head en de overrides worden er aan toegevoegd. Er kleven hier echter een aantal nadelen aan. Vaak wordt er maar een klein deel van de hele library gebruikt, terwijl de browser de volledige stylesheet in moet laden. "Eénmaal in je cache, geladen met 5G maakt toch niet uit?" zullen sommigen zeggen. Toch gaat dit ten kosten van de performance en de UX; verspringende fontsizes en kleuren zie ik helaas nog te vaak. 
+Veel websites, webwinkels en blogs maken gebruik van een CSS framework. Erg populair is nog altijd Twitter Bootstrap. Een ervaren webdesigner / frontender herkent het direct zonder in de code te hoeven kijken. Grafisch gezien lijken ze namelijk vaak sterk op elkaar. Bootstrap is snel inzetbaar en je hebt in een no-time een repsonsive website staan. Zelf de source downloaden en Bootstrap builden wordt helaas nog vaak overgeslagen. Men plakt de productie CDN link in de head en de overrides worden er aan toegevoegd. Er kleven hier echter een aantal nadelen aan. Vaak wordt er maar een klein deel van de hele library gebruikt, terwijl de browser de volledige stylesheet in moet laden. "Eénmaal in je cache, geladen met 5G maakt toch niet uit?" zullen sommigen zeggen. Toch gaat dit ten kosten van de performance en de UX; verspringende fontsizes en kleuren zie ik helaas nog te vaak. 
 
 ![Bootstrap](/assets/css-frameworks/bootstrap.png)
 
 <i><span style="font-size: .75em;">Bootstrap website. 2021-09-06</span></i>
 
-Ik ben jarenlang weggebleven bij Bootstrap, met de overtuiging alleen te schrijven wat de browser nodig heeft. Niets meer en niets minder. 
+Ikzelf ben lang weggebleven bij Bootstrap, met de overtuiging alleen te schrijven wat de browser nodig heeft. Niets meer en niets minder. 
 
-Tegenwoordig zijn hier modernere varianten voor. Een tweetal die ik hier uit wil lichten is **Tailwind CSS** en **Windi CSS**. 
+Tegenwoordig zijn hier modernere varianten voor bedacht. Een tweetal die ik hier uit wil lichten is **Tailwind CSS** en **Windi CSS**. 
 
 ![Tailwind CSS](/assets/css-frameworks/tailwindcss.png)
 <i><span style="font-size: .75em;">Tailwind website. 2021-09-06</span></i>
 
 ### Het concept
 
-Het idee is dat je je html schrijft met de classes die je nodig hebt voor je designs en componenten. Tijdens development heb je alle classes tot je beschikking. Een responsive grid, tools, spacing, backgrounds, kleuren, vormen, animaties, noem het maar op. De gehele library is wel 3,6mb (unminified), dus je zult begrijpen dat er echt heel veel beschikbaar is. Op het moment dat je gaat builden voor productie, scant Tailwind je html en genereert hij een CSS bestand met alleen de classes die je gebruikt hebt. Resultaat: een kleine, optimale stylesheet van wellicht maar 10kb!
+Het idee is dat je je html schrijft met de classes die je nodig hebt voor je designs en componenten. Tijdens development heb je alle classes tot je beschikking. Een responsive grid, tools, spacing, backgrounds, kleuren, vormen, animaties, noem het maar op. De gehele library is wel 3,6mb (unminified), dus je zult begrijpen dat er echt heel veel beschikbaar is. Op het moment dat je gaat builden voor productie, scant Tailwind je templates in je geconfigureerde mappen en genereert hij een CSS bestand met alleen de classes die je gebruikt hebt. Resultaat: een kleine, optimale stylesheet van wellicht maar 10kb!
 
 ### Windi
 
