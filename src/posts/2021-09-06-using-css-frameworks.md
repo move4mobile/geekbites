@@ -1,7 +1,7 @@
 ---
 title: "CSS Frameworks: Tailwind- en Windi CSS"
 category: inspiration
-tags: framework, css, sass. frontend
+tags: framework, css, sass, frontend
 comments: true
 author: nick
 min_read: 5
