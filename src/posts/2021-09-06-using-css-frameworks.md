@@ -30,7 +30,7 @@ Het idee is dat je je html schrijft met de classes die je nodig hebt voor je des
 
 ### Windi
 
-Een nadeel is dat je soms erg lange class names krijgt in je html. Qua leesbaarheid wordt het daar niet beter van. Een groter nadeel is dat je tijdens development de gehele stylesheet in de browser geladen wordt. Er zit zoveel in dat sommige browsers 'laggy' worden en soms zelfs crashen! Hiervoor heeft **Windi CSS** een oplossing voor gevonden. Ook tijdens development worden alleen de classes gegeneerd die je gebruikt, in plaats van de hele bibliotheek. Maar dan vraag je je af: hoe pas ik dan in de inspector mijn classes aan, zodat ik kan zien wat ik verander? Ook hier heeft Windi aan gedacht. Pas je je HTML aan in de inspector, zal Windi on-the-fly de classes toevoegen aan de head van je pagina., een onmisbare feature.
+Een nadeel is dat je soms erg lange class names krijgt in je html. Qua leesbaarheid wordt het daar niet beter van. Een groter nadeel is dat je tijdens development de gehele stylesheet in de browser geladen wordt. Er zit zoveel in dat sommige browsers 'laggy' worden en soms zelfs crashen! Hiervoor heeft **Windi CSS** een oplossing voor gevonden. Ook tijdens development worden alleen de classes gegeneerd die je gebruikt, in plaats van de hele bibliotheek. Maar dan vraag je je af: hoe pas ik dan in de inspector mijn classes aan, zodat ik kan zien wat ik verander? Ook hier heeft Windi aan gedacht. Pas je je HTML aan in de inspector, zal Windi on-the-fly de classes toevoegen aan de head van je pagina, een onmisbare feature.
 
 ![Windi CSS](/assets/css-frameworks/windi-css.png)
 <i><span style="font-size: .75em;">Windi homepage. 2021-09-06</span></i>
