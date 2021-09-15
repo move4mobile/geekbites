@@ -1,3 +1,10 @@
+# [2.11.0](https://github.com/move4mobile/geekbites/compare/v2.10.1...v2.11.0) (2021-09-15)
+
+
+### Features
+
+* **blogpost:** Using modern CSS frameworks ([#219](https://github.com/move4mobile/geekbites/issues/219)) ([f485a48](https://github.com/move4mobile/geekbites/commit/f485a48e361664c13559ce9a454050d2c9a86c7a))
+
 ## [2.10.1](https://github.com/move4mobile/geekbites/compare/v2.10.0...v2.10.1) (2021-05-23)
 
 
