@@ -35,7 +35,7 @@ p {
 }
 
 strong {
-  color: #303030;
+  color: $gray-5;
 }
 
 ul, ol, dl {
@@ -67,7 +67,7 @@ abbr {
 
   &[title] {
     cursor: help;
-    border-bottom: 1px dotted #e5e5e5;
+    border-bottom: 1px dotted $border-color;
   }
 }
 
@@ -94,7 +94,7 @@ blockquote {
 
 // Footnote number within body text
 a[href^="#fn:"],
-// Back to footnote link
+  // Back to footnote link
 a[href^="#fnref:"] {
   display: inline-block;
   margin-left: .1rem;
@@ -114,4 +114,8 @@ a[href^="#fnref:"] {
 .lead {
   font-size: 1.25rem;
   font-weight: 300;
+}
+
+.small {
+  font-size: .75rem;
 }
