@@ -39,8 +39,7 @@ jobs:
         run: npm run build
 
       - name: Check for broken links
-        # -roe = Recursive, Ordered, Exclude-External-links
-        run: npx broken-link-checker-local ./dist -roe --filter-level 2 --exclude "*/__/firebase/*"
+        run: npm run check-broken-links:internal
 
       - name: Archive artifact
         uses: actions/upload-artifact@v2
