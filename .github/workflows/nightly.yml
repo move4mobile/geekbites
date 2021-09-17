@@ -74,8 +74,8 @@ jobs:
           SLACK_USERNAME: 'M4M Bot'
           SLACK_ICON: 'https://github.com/move4mobile.png?size=48'
           SLACK_COLOR: 'danger'
-          SLACK_TITLE: 'The nightly build for Geekbites is failing :warning:'
-          SLACK_MESSAGE: 'The message'
+          SLACK_TITLE: 'Geekbites nightly'
+          SLACK_MESSAGE: 'The nightly build for Geekbites is failing :warning:'
           SLACK_FOOTER: ':squirrel:'
           MSG_MINIMAL: true
 # Docs / info
