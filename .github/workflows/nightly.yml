@@ -3,6 +3,8 @@ name: Nightly Build
 on:
   schedule:
     - cron: '0 2 * * *' # run at 2 AM UTC
+  pull_request:
+    branches: [develop, main]
   workflow_dispatch:
 
 jobs:
@@ -50,3 +52,31 @@ jobs:
 
       - name: Verify all links
         run: npm run check-broken-links
+
+  notify_on_failure:
+    needs: [nighlty]
+
+    # if: failure()
+
+    name: Slack Notify
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Slack Notification
+        uses: rtCamp/action-slack-notify@master
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          # SLACK_CHANNEL: geekbites
+          SLACK_USERNAME: 'M4M Bot'
+          SLACK_ICON_EMOJI: 'rabo-algemeen-godzilla'
+          SLACK_COLOR: 'danger'
+          SLACK_TITLE: 'The nightly build for Geekbites is failing :warning:'
+          SLACK_FOOTER: ':squirrel:'
+          MSG_MINIMAL: true
+# Docs / info
+# Used actions:
+# - https://github.com/marketplace/actions/slack-notify
