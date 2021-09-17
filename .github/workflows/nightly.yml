@@ -70,7 +70,7 @@ jobs:
         uses: rtCamp/action-slack-notify@master
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-          # SLACK_CHANNEL: geekbites
+          SLACK_CHANNEL: geekbites
           SLACK_USERNAME: 'M4M Bot'
           SLACK_ICON_EMOJI: 'rabo-algemeen-godzilla'
           SLACK_COLOR: 'danger'
