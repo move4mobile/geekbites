@@ -74,7 +74,7 @@ jobs:
           SLACK_COLOR: 'danger'
           SLACK_TITLE: 'Geekbites nightly'
           SLACK_MESSAGE: 'The nightly build for Geekbites is failing :warning:'
-          SLACK_FOOTER: ':robot-face:'
+          SLACK_FOOTER: ':robot_face:'
           MSG_MINIMAL: true
 # Docs / info
 # Used actions:
