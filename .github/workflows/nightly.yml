@@ -3,8 +3,6 @@ name: Nightly Build
 on:
   schedule:
     - cron: '0 2 * * *' # run at 2 AM UTC
-  pull_request:
-    branches: [develop, main]
   workflow_dispatch:
 
 jobs:
@@ -56,7 +54,7 @@ jobs:
   notify_on_failure:
     needs: [nighlty]
 
-    # if: failure()
+    if: failure()
 
     name: Slack Notify
 
@@ -76,7 +74,7 @@ jobs:
           SLACK_COLOR: 'danger'
           SLACK_TITLE: 'Geekbites nightly'
           SLACK_MESSAGE: 'The nightly build for Geekbites is failing :warning:'
-          SLACK_FOOTER: ':squirrel:'
+          SLACK_FOOTER: ':robot-face:'
           MSG_MINIMAL: true
 # Docs / info
 # Used actions:
