@@ -6,7 +6,10 @@
   "private": true,
   "scripts": {
     "build": "eleventy",
-    "start": "rimraf dist && eleventy --serve"
+    "start": "rimraf dist && eleventy --serve",
+    "check-broken-links": "npm run check-broken-links:internal && npm run check-broken-links:external",
+    "check-broken-links:internal": "npx broken-link-checker-local ./dist -roe --filter-level 3 --exclude \"*/__/firebase/*\"",
+    "check-broken-links:external": "npx broken-link-checker-local ./dist -roi --filter-level 3 --exclude \"*/__/firebase/*\""
   },
   "repository": {
     "type": "git",
@@ -29,6 +32,7 @@
     "@semantic-release/git": "^9.0.1",
     "@semantic-release/npm": "^8.0.0",
     "@semantic-release/release-notes-generator": "^10.0.2",
+    "broken-link-checker-local": "^0.2.1",
     "cz-conventional-changelog": "^3.3.0",
     "eleventy-plugin-sass": "^1.2.0",
     "husky": "^7.0.2",

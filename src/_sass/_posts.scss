@@ -16,8 +16,9 @@
 .page-title,
 .post-title,
 .post-title a {
-  color: #303030;
+  color: $gray-5;
 }
+
 .page-title,
 .post-title {
   margin-top: 0;
@@ -30,7 +31,6 @@
   margin-bottom: 1rem;
   color: #9a9a9a;
 }
-
 
 // Related posts
 .related {
@@ -62,6 +62,25 @@
       small {
         color: inherit;
       }
+    }
+  }
+}
+
+.post {
+  figure {
+    display: flex;
+    flex-flow: column;
+    margin: 0 0 1rem;
+
+    img {
+      margin: 0;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    }
+
+    figcaption {
+      font-style: italic;
+      font-size: .75rem;
+      padding: 8px 0;
     }
   }
 }
