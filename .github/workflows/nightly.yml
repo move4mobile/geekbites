@@ -1,0 +1,81 @@
+name: Nightly Build
+
+on:
+  schedule:
+    - cron: '0 2 * * *' # run at 2 AM UTC
+  workflow_dispatch:
+
+jobs:
+  nighlty:
+    name: Nightly build job
+
+    runs-on: ${{ matrix.os }}
+
+    continue-on-error: ${{ matrix.experimental }}
+
+    strategy:
+      matrix:
+        node-version: [14]
+        os: [ubuntu-latest]
+        experimental: [false]
+        include:
+          - node-version: 16
+            os: ubuntu-latest
+            experimental: true
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: '0'
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2-beta
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Check cache
+        uses: actions/cache@v2
+        id: node-cache
+        with:
+          path: '**/node_modules'
+          key: ${{ runner.os }}-node-modules-${{ matrix.node-version }}-${{ hashFiles('**/package-lock.json') }}
+
+      - name: Install node modules
+        if: steps.node-cache.outputs.cache-hit != 'true'
+        run: npm ci
+
+      - name: Build artifact
+        run: npm run build
+
+      - name: Verify all links
+        run: npm run check-broken-links
+
+  notify_on_failure:
+    needs: [nighlty]
+
+    if: failure()
+
+    name: Slack Notify
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Slack Notification
+        uses: rtCamp/action-slack-notify@master
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_CHANNEL: geekbites
+          SLACK_USERNAME: 'M4M Bot'
+          SLACK_ICON: 'https://github.com/move4mobile.png?size=48'
+          SLACK_COLOR: 'danger'
+          SLACK_TITLE: 'Geekbites nightly'
+          SLACK_MESSAGE: 'The nightly build for Geekbites is failing :warning:'
+          SLACK_FOOTER: ':robot_face:'
+          MSG_MINIMAL: true
+# Docs / info
+# Used actions:
+# - https://github.com/marketplace/actions/slack-notify
