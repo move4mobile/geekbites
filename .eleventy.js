@@ -1,7 +1,8 @@
 const { DateTime } = require('luxon');
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const pluginSass = require("eleventy-plugin-sass");
+const pluginSass = require('eleventy-plugin-dart-sass');
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const path = require('path');
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.setDataDeepMerge(true);
@@ -66,7 +67,13 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addPlugin(pluginSass, {
-    watch: ['src/**/*.{scss,sass}'],
+    includePaths: ['./src/**/*.{scss,sass}'],
+    sassLocation: path.join(__dirname, 'src/'),
+    sassIndexFile: 'styles.scss',
+
+    outDir: path.join(__dirname, 'dist/'),
+    outPath: './',
+    outFileName: 'styles.css',
 
     // Enable sourcemaps for ez debugging
     sourcemaps: true
