@@ -4,7 +4,6 @@ const pluginSass = require("eleventy-plugin-sass");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 module.exports = function(eleventyConfig) {
-  eleventyConfig.setDataDeepMerge(true);
 
   eleventyConfig.addLayoutAlias('post', 'layouts/post.njk');
 
