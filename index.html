@@ -15,7 +15,7 @@ title: Home
 
     <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}{% if post.min_read != null %} - {{post.min_read}} min read {% endif %} - <a href="{{ post.url }}#comments" class="disqus-comment-count" data-disqus-identifier="{{ site.disqusid }}{{ post.url | replace:'index.html','' }}"> <!-- Count will be inserted here --> </a></time>
 
-    {% include author.html %}
+    {% include "author.html" %}
     {{ post.content }}
 
   </article>
