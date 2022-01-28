@@ -15,11 +15,11 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14]
+        node-version: [16]
         os: [ubuntu-latest]
         experimental: [false]
         include:
-          - node-version: 16
+          - node-version: 17
             os: ubuntu-latest
             experimental: true
 
