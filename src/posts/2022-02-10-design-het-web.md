@@ -5,8 +5,8 @@ tags: new blogpost
 comments: true
 author: joris
 min_read: 5
-date: 2022-02-10
-permalink: /2022/02/10/design-het-web/
+date: 2022-02-14
+permalink: /2022/02/14/design-het-web/
 ---
 
 <!-- Section: Intro -->
@@ -37,7 +37,7 @@ Het moeilijkste om te leren is het denken als een developer; een soort analytisc
 ## De dubbele pet: WordPress
 
 In mijn geval was ik meer vaardig in design terwijl ik meer interesse had voor de development. Als tussenoplossing daarvoor maakte ik gebruik van WordPress.
-Een veel gebruikt CMS die theme based veel mogelijkheden biedt. Na het maken van het design kon ik het in een populaire builder zoals [Avada](https://avada.theme-fusion.com/) of [Elementor](https://elementor.com/) het design ongeveer nabouwen. Het design van het web is voor klein MKB veruit het belangrijkst. De Achterliggende techniek is niet zo belangrijk. Door een behoorlijke groep mensen word de designer ook gezien als developer. Als designer heb je dus een dubbele pet als je het hebt over Theme based werken.
+Een veel gebruikt CMS die theme based veel mogelijkheden biedt. Na het maken van het design kon ik het in een populaire builder zoals [Avada](https://avada.theme-fusion.com/) of [Elementor](https://elementor.com/) het design ongeveer nabouwen. Het design van het web is voor klein MKB veruit het belangrijkst. De onderliggende techniek is niet zo belangrijk. Door een behoorlijke groep mensen word de designer ook gezien als developer. Als designer heb je dus een dubbele pet als je het hebt over Theme based werken.
 
 De technische kennis beperkt zich tot basis HTML/CSS vaardigheden wat goed te overzien is. Een groot nadeel van WordPress is, is dat het gebruik maakt van plug-in’s en dat er veel updates gaande zijn. Op het moment dat er hier ergens wat fout gaat ben je afhankelijk van je technische kennis of de bouwer van het thema/de plug-in.
 
