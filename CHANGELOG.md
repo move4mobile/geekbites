@@ -1,3 +1,10 @@
+# [2.12.0](https://github.com/move4mobile/geekbites/compare/v2.11.0...v2.12.0) (2022-02-14)
+
+
+### Features
+
+* **blogpost:** Design Het Web ([#267](https://github.com/move4mobile/geekbites/issues/267)) ([d8347e4](https://github.com/move4mobile/geekbites/commit/d8347e41e3de38157dcfae1baad4311ac00a248f))
+
 # [2.11.0](https://github.com/move4mobile/geekbites/compare/v2.10.1...v2.11.0) (2021-09-15)
 
 
