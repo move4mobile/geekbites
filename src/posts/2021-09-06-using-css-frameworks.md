@@ -1,5 +1,5 @@
 ---
-title: "CSS Frameworks: Tailwind en Windi"
+title: 'CSS Frameworks: Tailwind en Windi'
 category: inspiration
 tags: framework, css, sass, frontend
 comments: true
@@ -18,7 +18,7 @@ Veel websites, webwinkels en blogs maken gebruik van een CSS framework. Erg popu
     <figcaption>Bootstrap website. 2021-09-06</figcaption>
 </figure>
 
-Ik ben zelf lang weggebleven bij Bootstrap, met de overtuiging alleen te schrijven wat de browser nodig heeft. Niets meer en niets minder. 
+Ik ben zelf lang weggebleven bij Bootstrap, met de overtuiging alleen te schrijven wat de browser nodig heeft. Niets meer en niets minder.
 
 Tegenwoordig zijn er slimme oplossingen bedacht om toch gebruik te maken van een CSS framework, met alleen de styling die daadwerkelijk nodig is. Een tweetal die ik hier uit wil lichten is **Tailwind CSS** en **Windi CSS**.
 
@@ -32,8 +32,8 @@ Het idee is dat je je html schrijft met de classes die je nodig hebt voor je des
 
 ### Tailwind
 
- De Tailwind CSS library kan wel oplopen tot 12Mb (unminified), dus je zult begrijpen dat er echt heel veel beschikbaar is. Een groot nadeel van Tailwind was dat tijdens development de gehele stylesheet in de browser geladen werd. Er zat zoveel in dat sommige browsers 'laggy' werden en soms zelfs vastliepen! Vanaf versie 2.1 is dit opgelost door een JIT-compiler. [Bekijk het filmpje op deze pagina](https://tailwindcss.com/docs/just-in-time-mode) voor een goede uitleg. 
- 
+De Tailwind CSS library kan wel oplopen tot 12Mb (unminified), dus je zult begrijpen dat er echt heel veel beschikbaar is. Een groot nadeel van Tailwind was dat tijdens development de gehele stylesheet in de browser geladen werd. Er zat zoveel in dat sommige browsers 'laggy' werden en soms zelfs vastliepen! Vanaf versie 2.1 is dit opgelost door een JIT-compiler. [Bekijk het filmpje op deze pagina](https://tailwindcss.com/docs/just-in-time-mode) voor een goede uitleg.
+
 Nu kan je alleen nog geen classes toevoegen in de inspector, als ze niet aanwezig zijn. Een ander nadeel is dat je soms erg lange class names krijgt in je html. Qua leesbaarheid wordt het daar niet beter van. Hier heeft **Windi CSS** de oplossingen voor.
 
 <figure>
@@ -60,6 +60,5 @@ Om classes leesbaarder te houden, kan er gebruik gemaakt worden van handige [sho
 
 Beide frameworks zijn geschikt voor meerdere build tools, andere frameworks en IDE ondersteuning.
 
- - [Tailwind CSS install](https://tailwindcss.com/docs/installation)
- - [Windi CSS install](https://windicss.org/guide/installation.html)
- 
+- [Tailwind CSS install](https://tailwindcss.com/docs/installation)
+- [Windi CSS install](https://windicss.org/guide/installation.html)
