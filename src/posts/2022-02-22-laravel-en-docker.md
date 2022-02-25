@@ -11,7 +11,7 @@ permalink: /2022/02/22/laravel-en-docker/
 
 Als webdeveloper kan het je tegenwoordig haast niet ontgaan zijn, het Laravel framework. Een populair framework geschreven in PHP voor het ontwikkelen van web applicaties. Met Laravel kan je zowel een losse API als een complete full-stack applicatie ontwikkelen. Zo heeft Laravel een heleboel standaard functionaliteiten zoals een ORM, dependency injection, queues en scheduled jobs. Daarnaast kan er met een extra package en enkele commands een compleet authenticatie systeem gegenereerd worden. Hierdoor is het een zeer geschikt framework voor de snelle realisatie van een proof of concept applicatie.
 
-Echter komen met al deze functionaliteiten ook de nodige tools bij kijken die je moet installeren op je machine. Zo heb je in elk geval PHP en Composer nodig en ontkom je eigenlijk ook niet aan een database als MySQL. Als de applicatie eenmal iets uitgebreider wordt kom je ook al snel dingen tegen als NPM, NodeJS en Redis. Uiteindelijk zorgt dit ervoor dat iedereen in het team en op de productie omgeving vanalles moet installeren en vervolgens ook nog dezelfde versie moet draaien. Hierdoor loop je al snel het risico dat je het welbekende probleem tegenkomt: "maar op mijn machine werkt het gewoon hoor".
+Echter komen met al deze functionaliteiten ook de nodige tools bij kijken die je moet installeren op je machine. Zo heb je in elk geval PHP en Composer nodig en ontkom je eigenlijk ook niet aan een database als MySQL. Als de applicatie eenmaal iets uitgebreider wordt kom je ook al snel dingen tegen als NPM, NodeJS en Redis voor bijvoorbeeld het maken van een WebSocket server of het compileren van frontend assets. Uiteindelijk zorgt dit ervoor dat iedereen in het team en op de productie omgeving vanalles moet installeren en vervolgens ook nog dezelfde versie moet draaien. Hierdoor loop je al snel het risico dat je het welbekende probleem tegenkomt: "maar op mijn machine werkt het gewoon hoor".
 
 <figure style="display: flex; align-items: center">
     <img src="/assets/laravel-en-docker/but-it-works-on-my-machine.jpg" alt="But it works on my machine" style="max-width: 50%;">
@@ -27,13 +27,13 @@ Deze oplossing werkt in principe prima alleen is het probleem dat een Virtuele m
 
 ## Docker, dé oplossing!
 
-Docker bied voor het probleem van hardwaregebruik en snelheid de ideale oplossing. Docker is een platform voor het beheren van container applicaties. De containers zijn een stuk minder zwaar in gebruik dan virtuele machines. Daarnaast zijn containers snel en zijn ze makkelijk uitbreidbaar. Voor een uitgebreide vergelijking tussen containers en virtuele machines raad ik [dit artikel](https://www.burwood.com/blog-archive/containerization-vs-virtualization) aan.
+Docker biedt voor het probleem van hardwaregebruik en snelheid de ideale oplossing. Docker is een platform voor het beheren van container applicaties. De containers zijn een stuk minder zwaar in gebruik dan virtuele machines. Daarnaast zijn containers snel en zijn ze makkelijk uitbreidbaar. Voor een uitgebreide vergelijking tussen containers en virtuele machines raad ik [dit artikel](https://www.burwood.com/blog-archive/containerization-vs-virtualization) aan.
 
 Uiteindelijk heeft Laravel hiervoor ook een package gemaakt genaamd Sail. Hiermee kan de hele stack die voor Laravel nodig is gebruikt wordon zonder zelf ook maar iets te installeren. Het enige wat je nodig hebt is een Docker installatie en wanneer er Windows gebruikt wordt WSL2 (Windows Subsystem for Linux)
 
 ## Aan de slag!
 
-Nu gaan we daadwerkelijk aan de slag een een Laravel project opzetten met Docker. Zorg ervoor dat je Docker en Docker Compose hebt geinstalleerd. Bij Windows en macOS zit Docker Compose standaard bij je Docker Dekstop installatie. Alleen voor een Linux OS is het noodzakelijk Docker Compose apart te installeren. Voor de installatie instructies van Docker zie de [Docker Docs](https://docs.docker.com/desktop/)
+Nu gaan we daadwerkelijk aan de slag een een Laravel project opzetten met Docker. Zorg ervoor dat je Docker en Docker Compose hebt geinstalleerd. Bij Windows en macOS zit Docker Compose standaard bij je Docker Desktop installatie. Alleen voor een Linux OS is het noodzakelijk Docker Compose apart te installeren. Voor de installatie instructies van Docker zie de [Docker Docs](https://docs.docker.com/desktop/)
 
 ### Aanmaken project
 
@@ -84,7 +84,7 @@ Deze commando zal een aparte docker container aanmaken (en vervolgens ook verwij
 
 ## Verder lezen
 
-Ben je nou nieuwschierig geworden naar Laravel of Docker? Kijk dan eens op de volgende sites.
+Ben je nou nieuwsgierig geworden naar Laravel of Docker? Kijk dan eens op de volgende sites.
 
 - [Laravel](https://laravel.com/)
 - [Laracasts](https://laracasts.com/)
