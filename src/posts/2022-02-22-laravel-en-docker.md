@@ -53,7 +53,7 @@ Ga vervolgens naar de map van je nieuwe project door de volgende commando te doe
 cd voorbeeld-app
 ```
 
-Vanuit deze map kan de applicatie gestart worden in Docker. Dit gebeurd met de volgende commando:
+Vanuit deze map kan de applicatie gestart worden in Docker. Dit gebeurt met de volgende commando:
 
 ```bash
 ./vendor/bin/sail up
