@@ -29,17 +29,17 @@ Deze oplossing werkt in principe prima alleen is het probleem dat een Virtuele m
 
 Docker biedt voor het probleem van hardwaregebruik en snelheid de ideale oplossing. Docker is een platform voor het beheren van container applicaties. De containers zijn een stuk minder zwaar in gebruik dan virtuele machines. Daarnaast zijn containers snel en zijn ze makkelijk uitbreidbaar. Voor een uitgebreide vergelijking tussen containers en virtuele machines raad ik [dit artikel](https://www.burwood.com/blog-archive/containerization-vs-virtualization) aan.
 
-Uiteindelijk heeft Laravel hiervoor ook een package gemaakt genaamd Sail. Hiermee kan de hele stack die voor Laravel nodig is gebruikt wordon zonder zelf ook maar iets te installeren. Het enige wat je nodig hebt is een Docker installatie en wanneer er Windows gebruikt wordt WSL2 (Windows Subsystem for Linux)
+Uiteindelijk heeft Laravel hiervoor ook een package gemaakt genaamd Sail. Hiermee kan de hele stack die voor Laravel nodig is gebruikt wordon zonder zelf ook maar iets te installeren. Het enige wat je nodig hebt is een Docker installatie en wanneer er Windows gebruikt wordt WSL2 (Windows Subsystem for Linux).
 
 ## Aan de slag!
 
-Nu gaan we daadwerkelijk aan de slag een een Laravel project opzetten met Docker. Zorg ervoor dat je Docker en Docker Compose hebt geinstalleerd. Bij Windows en macOS zit Docker Compose standaard bij je Docker Desktop installatie. Alleen voor een Linux OS is het noodzakelijk Docker Compose apart te installeren. Voor de installatie instructies van Docker zie de [Docker Docs](https://docs.docker.com/desktop/)
+Nu gaan we daadwerkelijk aan de slag een een Laravel project opzetten met Docker. Zorg ervoor dat je Docker en Docker Compose hebt geinstalleerd. Bij Windows en macOS zit Docker Compose standaard bij je Docker Desktop installatie. Alleen voor een Linux OS is het noodzakelijk Docker Compose apart te installeren. Voor de installatie instructies van Docker zie de [Docker Docs](https://docs.docker.com/desktop/).
 
 ### Aanmaken project
 
 Start een terminal op en voer de commando hieronder uit.
 
-_Let op: als Windows gebruiker moet je in de WSL terminal zitten door `wsl` uit te voeren in PowerShell of Command Prompt_
+_Let op: als Windows gebruiker moet je in de WSL terminal zitten door `wsl` uit te voeren in PowerShell of Command Prompt._
 
 ```bash
 curl -s https://laravel.build/voorbeeld-app | bash
