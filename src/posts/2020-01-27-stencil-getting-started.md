@@ -8,14 +8,16 @@ date: 2020-01-27
 ---
 
 ### Wat is Stencil?
-[Stencil](https://stenciljs.com/) is een compiler die Web Components (Custom Elements v1) genereert. Stencil combineert de beste concepten van de meest populaire frameworks in een simpele tool.
+
+[Stencil](https://stenciljs.com/docs/introduction) is een compiler die Web Components (Custom Elements v1) genereert. Stencil combineert de beste concepten van de meest populaire frameworks in een simpele tool.
 
 Stencil maakt gebruik van features zoals:
-* Virtual DOM
-* Async rendering
-* Reactive data-binding
-* TypeScript
-* JSX
+
+- Virtual DOM
+- Async rendering
+- Reactive data-binding
+- TypeScript
+- JSX
 
 Stencil is ontwikkeld door het Ionic framework team.
 
@@ -38,12 +40,13 @@ Stencil kan gebruikt worden om losstaande componenten of gehele applicaties te m
 De keuzes zijn hieronder weergegeven, deze blog gaat echter over de optie _component_.
 
 ```
-  ionic-pwa       Everything you need to build fast, production ready PWAs 
+  ionic-pwa       Everything you need to build fast, production ready PWAs
   app             Minimal starter for building a Stencil app or website
 > component       Collection of web components that can be used anywhere
 ```
 
 #### Stencil Installation
+
 Zorg ervoor dat je binnen de directory zit van het gegenereerde project, voer daarna het volgende script uit om de laatste versie van Stencil te installeren:
 
 ```
@@ -51,6 +54,7 @@ Zorg ervoor dat je binnen de directory zit van het gegenereerde project, voer da
 ```
 
 #### Component Generator
+
 Nu beschik je over een standaard component Stencil project met een basic my-first-component.
 Nu kan je de basic component verwijderen en je eigen component genereren, dit doe je als volgt:
 
@@ -65,6 +69,5 @@ Naast het uitvoeren van het generate script kan je ook de Stencil CLI aanroepen 
 ```
 
 Alle gegenereerde componenten zijn terug te vinden in de _src/components_ folder.
-
 
 Gefeliciteerd! Je hebt nu een basic component Stencil project opgezet! Voor meer informatie over Stencil klik dan [hier](https://stenciljs.com/docs/getting-started).
