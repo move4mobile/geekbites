@@ -1,3 +1,15 @@
+# [2.13.0](https://github.com/move4mobile/geekbites/compare/v2.12.0...v2.13.0) (2022-03-04)
+
+
+### Bug Fixes
+
+* stenciljs url ([#284](https://github.com/move4mobile/geekbites/issues/284)) ([39fd552](https://github.com/move4mobile/geekbites/commit/39fd552af8b6ad4f60d20f8edcdc3472f9509da7))
+
+
+### Features
+
+* **blogpost:** Laravel and Docker ([#279](https://github.com/move4mobile/geekbites/issues/279)) ([c6ec6fa](https://github.com/move4mobile/geekbites/commit/c6ec6faadddd4b3f1321ee0cea7e038d3b5287f1))
+
 # [2.12.0](https://github.com/move4mobile/geekbites/compare/v2.11.0...v2.12.0) (2022-02-14)
 
 
