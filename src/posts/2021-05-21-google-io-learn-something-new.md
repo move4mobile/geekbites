@@ -19,7 +19,7 @@ Het is de week van Google I/O, een week vol inspiratie waarin Google de laatste 
 
 [Google I/O](https://events.google.com/io/) is het grootste 3-daagse developers event van Google, live vanuit [Mountain View (California)](<https://nl.wikipedia.org/wiki/Mountain_View_(Santa_Clara_County)>). Dit jaarlijkse evenement is dit jaar voor het eerst volledig virtueel.
 
-Het evenement is gevuld met keynotes, sessies, workshops en meer. Er is zelfs een virtuele wereld ([Google I/O Adventure](https://events.google.com/io/adventure?lng=en)) waarin je met andere developers en Googlers kan connecten.
+Het evenement is gevuld met keynotes, sessies, workshops en meer. Er is zelfs een virtuele wereld ([Google I/O Adventure](https://events.google.com/io#/adventure?lng=en)) waarin je met andere developers en Googlers kan connecten.
 
 ![Google I/O Adventure](/assets/io-codelabs/io21-adventure.png)
 
@@ -29,13 +29,13 @@ Diverse onderwerpen komen voorbij, zoals Firebase, Accessibility, Android en nog
 
 ![Google Products](/assets/io-codelabs/io21-products.png)
 
-Bekijk de [event website](https://events.google.com/io/program/discover/) om het volledige programma te verkennen.
+Bekijk de [event website](https://events.google.com/io#/program/discover/) om het volledige programma te verkennen.
 
 <!-- Section: Workshops & Codelabs -->
 
 ### Google Workshops & Codelabs
 
-Het is tijdens het evenement ook mogelijk om deel te nemen aan een of meerdere workshops. Iedere workshop wordt verzorgt door een Googler en neemt ongeveer een uur in beslag. Letterlijk voor ieder product of onderwerp is er wel een workshop beschikbaar. Kijk maar eens op de website onder het kopje [Learning Lab](https://events.google.com/io/learning-lab/?lng=en).
+Het is tijdens het evenement ook mogelijk om deel te nemen aan een of meerdere workshops. Iedere workshop wordt verzorgt door een Googler en neemt ongeveer een uur in beslag. Letterlijk voor ieder product of onderwerp is er wel een workshop beschikbaar. Kijk maar eens op de website onder het kopje [Learning Lab](https://events.google.com/io#/learning-lab/?lng=en).
 
 ![Google I/O Workshops](/assets/io-codelabs/io21-workshops.png)
 
@@ -81,6 +81,6 @@ Hopelijk ben je hiermee geinspireerd geraakt om zelf ook eens een workshop of co
 ### Externe links
 
 - [Google I/O Keynote](https://www.youtube.com/watch?v=XFFrahd05OM)
-- [Google I/O website](https://events.google.com/io/?lng=en)
+- [Google I/O website](https://events.google.com/io/)
 - [Google Developers](https://developers.google.com/)
 - [web.dev](https://web.dev/)
