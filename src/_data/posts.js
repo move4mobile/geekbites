@@ -1,4 +1,6 @@
 const fetch = require('isomorphic-fetch');
+var showdown = require('showdown'),
+  converter = new showdown.Converter();
 
 var query = `query Query($limit: Int) {
   items: Blogpost(limit: $limit) {
@@ -38,7 +40,7 @@ async function getData() {
       name: item.Title,
       author: item.authorKey,
       url: item.permalink,
-      templateContent: item.Content,
+      templateContent: converter.makeHtml(item.Content),
       data: {
         title: item.Title,
       },

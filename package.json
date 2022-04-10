@@ -39,7 +39,8 @@
     "husky": "^7.0.4",
     "isomorphic-fetch": "^3.0.0",
     "luxon": "^2.3.0",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "showdown": "^2.0.3"
   },
   "config": {
     "commitizen": {
