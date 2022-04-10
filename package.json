@@ -34,8 +34,10 @@
     "@semantic-release/release-notes-generator": "^10.0.3",
     "broken-link-checker-local": "^0.2.1",
     "cz-conventional-changelog": "^3.3.0",
+    "dotenv": "^16.0.0",
     "eleventy-plugin-dart-sass": "^1.0.3",
     "husky": "^7.0.4",
+    "isomorphic-fetch": "^3.0.0",
     "luxon": "^2.3.0",
     "rimraf": "^3.0.2"
   },
