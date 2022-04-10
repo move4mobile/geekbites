@@ -3,15 +3,17 @@ const fetch = require('isomorphic-fetch');
 var query = `query Query($limit: Int) {
   items: Blogpost(limit: $limit) {
     id
-    title
-    date_created
-    author {
+    status
+    user_created {
       first_name
       last_name
       avatar
-      id
-      last_access
     }
+    Title
+    publishDate
+    permalink
+    authorKey
+    Content
   }
 }`;
 
@@ -31,12 +33,15 @@ async function getData() {
 
   const responseData = response.data.items.map(item => {
     return {
-      date: item.date_created,
+      date: item.publishDate ? new Date(item.publishDate) : null, // Example: convert to JavaScript Date object
       id: item.id,
-      name: item.title,
-      // imageUrl: item.imageUrl,
-      artist: item.author.first_name,
-      // popularity: item.popularity,
+      name: item.Title,
+      author: item.authorKey,
+      url: item.permalink,
+      templateContent: item.Content,
+      data: {
+        title: item.Title,
+      },
     };
   });
 

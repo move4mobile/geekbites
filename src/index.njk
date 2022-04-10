@@ -5,5 +5,5 @@ tags:
 navtitle: Home
 ---
 
-{% set postslist = collections.posts | head(-3) %}
+{% set postslist = posts | head(-3) %}
 {% include "postslist-content.njk" %}
