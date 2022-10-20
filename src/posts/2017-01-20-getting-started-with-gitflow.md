@@ -12,7 +12,7 @@ permalink: /2017/01/20/getting-started-with-gitflow/
 Iedere developer heeft wel eens gehoord van **Git**: een razendsnel versiebeheersysteem oorspronkelijk gemaakt tijdens de ontwikkeling van de Linuxkernel.
 
 > Versiebeheer is het systeem waarbij veranderingen in een bestand of groep van bestanden over de tijd wordt bijgehouden, zodat je later specifieke versies kan opvragen. In de voorbeelden in dit boek is het broncode van computersoftware waarvan de versies beheerd worden maar in principe kan elk soort bestand op een computer aan versiebeheer worden onderworpen.
-[(bron)](https://git-scm.com/book/nl/v1/Aan-de-slag-Het-wat-en-waarom-van-versiebeheer)
+[(bron)](https://git-scm.com/book/nl/v2/Aan-de-slag-Over-versiebeheer)
 
 ## Git
 Git is dè standaard binnen organisaties (die aan software ontwikkeling doen) en iedere developer heeft hier vroeg of laat mee te maken. 
