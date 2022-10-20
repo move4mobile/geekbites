@@ -1,3 +1,10 @@
+## [2.13.1](https://github.com/move4mobile/geekbites/compare/v2.13.0...v2.13.1) (2022-10-20)
+
+
+### Bug Fixes
+
+* update git book (broken) link ([#321](https://github.com/move4mobile/geekbites/issues/321)) ([8d90ce2](https://github.com/move4mobile/geekbites/commit/8d90ce2a6546b7b9f1684ec3e9f33c5ff611dcd5))
+
 # [2.13.0](https://github.com/move4mobile/geekbites/compare/v2.12.0...v2.13.0) (2022-03-04)
 
 
