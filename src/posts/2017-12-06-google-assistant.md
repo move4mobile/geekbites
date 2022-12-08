@@ -19,7 +19,7 @@ De Assistant staat open voor nieuwe apps en ondersteunt steeds meer talen, ook b
 Voor het maken van een Assistant app heb je een aantal dingen nodig:
 1. Een [Actions on Google](https://developers.google.com/actions/) project
 2. Een Webhook in een programmeertaal naar keuze (Node.js webhook gehost op Firebase Cloud Functions)
-3. Een platform dat de logica van de conversatie verzorgt ([Dialogflow](https://dialogflow.com/))
+3. Een platform dat de logica van de conversatie verzorgt ([Dialogflow](https://cloud.google.com/dialogflow/docs/))
 
 De meest gebruikte platformen hiervoor zijn Firebase Cloud Functions in combinatie met de Firebase Realtime Database en Dialogflow voor de conversatielogica.
 De meeste documentatie is gericht op het gebruik van deze platformen, ook hebben ze een goede integratie met Actions on Google en kan je met een druk op de knop je project deployen.
