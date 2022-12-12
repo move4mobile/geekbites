@@ -1,3 +1,10 @@
+## [2.13.2](https://github.com/move4mobile/geekbites/compare/v2.13.1...v2.13.2) (2022-12-12)
+
+
+### Bug Fixes
+
+* update dialogflow link ([#334](https://github.com/move4mobile/geekbites/issues/334)) ([#335](https://github.com/move4mobile/geekbites/issues/335)) ([7e7fcbf](https://github.com/move4mobile/geekbites/commit/7e7fcbff5cae6c52eda031dbebcdf296192a4187))
+
 ## [2.13.1](https://github.com/move4mobile/geekbites/compare/v2.13.0...v2.13.1) (2022-10-20)
 
 
