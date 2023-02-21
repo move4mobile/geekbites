@@ -1,3 +1,36 @@
+## [2.13.2](https://github.com/move4mobile/geekbites/compare/v2.13.1...v2.13.2) (2022-12-12)
+
+
+### Bug Fixes
+
+* update dialogflow link ([#334](https://github.com/move4mobile/geekbites/issues/334)) ([#335](https://github.com/move4mobile/geekbites/issues/335)) ([7e7fcbf](https://github.com/move4mobile/geekbites/commit/7e7fcbff5cae6c52eda031dbebcdf296192a4187))
+
+## [2.13.1](https://github.com/move4mobile/geekbites/compare/v2.13.0...v2.13.1) (2022-10-20)
+
+
+### Bug Fixes
+
+* update git book (broken) link ([#321](https://github.com/move4mobile/geekbites/issues/321)) ([8d90ce2](https://github.com/move4mobile/geekbites/commit/8d90ce2a6546b7b9f1684ec3e9f33c5ff611dcd5))
+
+# [2.13.0](https://github.com/move4mobile/geekbites/compare/v2.12.0...v2.13.0) (2022-03-04)
+
+
+### Bug Fixes
+
+* stenciljs url ([#284](https://github.com/move4mobile/geekbites/issues/284)) ([39fd552](https://github.com/move4mobile/geekbites/commit/39fd552af8b6ad4f60d20f8edcdc3472f9509da7))
+
+
+### Features
+
+* **blogpost:** Laravel and Docker ([#279](https://github.com/move4mobile/geekbites/issues/279)) ([c6ec6fa](https://github.com/move4mobile/geekbites/commit/c6ec6faadddd4b3f1321ee0cea7e038d3b5287f1))
+
+# [2.12.0](https://github.com/move4mobile/geekbites/compare/v2.11.0...v2.12.0) (2022-02-14)
+
+
+### Features
+
+* **blogpost:** Design Het Web ([#267](https://github.com/move4mobile/geekbites/issues/267)) ([d8347e4](https://github.com/move4mobile/geekbites/commit/d8347e41e3de38157dcfae1baad4311ac00a248f))
+
 # [2.11.0](https://github.com/move4mobile/geekbites/compare/v2.10.1...v2.11.0) (2021-09-15)
 
 
