@@ -1,3 +1,15 @@
+# [2.14.0](https://github.com/move4mobile/geekbites/compare/v2.13.2...v2.14.0) (2023-02-21)
+
+
+### Bug Fixes
+
+* **blogpost:** update gramsbergen url (host protocol https) ([#355](https://github.com/move4mobile/geekbites/issues/355)) ([4fd6683](https://github.com/move4mobile/geekbites/commit/4fd66830c2ae5f04b188a04f866a16bde9ae0296))
+
+
+### Features
+
+* remove travis build status from readme (trigger release) ([b1a422b](https://github.com/move4mobile/geekbites/commit/b1a422bb995ce6dd530c391772671547a70c3919))
+
 ## [2.13.2](https://github.com/move4mobile/geekbites/compare/v2.13.1...v2.13.2) (2022-12-12)
 
 
