@@ -1,4 +1,4 @@
-# Geek Bites [![Build Status](https://travis-ci.org/move4mobile/geekbites.svg?branch=develop)](https://travis-ci.org/move4mobile/geekbites)
+# Geek Bites
 
 You can find our blog here: https://geekbites.move4mobile.io
 
