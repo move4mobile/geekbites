@@ -54,7 +54,7 @@ jobs:
 
   CreatePreview:
     name: Generate Preview URL
-    if: github.event_name == 'pull_request'
+    if: ${{ github.event_name == 'pull_request' and github.actor != 'dependabot[bot]' }}
     needs: [Build]
     runs-on: ubuntu-latest
     environment:
