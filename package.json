@@ -37,7 +37,7 @@
     "eleventy-plugin-dart-sass": "^1.0.3",
     "husky": "^8.0.3",
     "luxon": "^3.3.0",
-    "rimraf": "^4.3.0"
+    "rimraf": "^4.3.1"
   },
   "config": {
     "commitizen": {
