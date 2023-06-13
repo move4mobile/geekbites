@@ -9,7 +9,7 @@
     "start": "rimraf dist && eleventy --serve",
     "check-broken-links": "npm run check-broken-links:internal && npm run check-broken-links:external",
     "check-broken-links:internal": "npx broken-link-checker-local ./dist -roe --filter-level 3 --exclude \"*/__/firebase/*\"",
-    "check-broken-links:external": "npx broken-link-checker-local ./dist -roi --filter-level 3 --exclude \"*/__/firebase/*\" --exclude \"*/stenciljs.com/*\" --exclude \"*/twitter.com/*\""
+    "check-broken-links:external": "npx broken-link-checker-local ./dist -roi --filter-level 3 --exclude \"*/__/firebase/*\" --exclude \"*/stenciljs.com/*\" --exclude \"*/twitter.com/*\" --exclude \"*/bitcoin.nl/*\" --exclude \"*/gramsbergen.nl/*\""
   },
   "repository": {
     "type": "git",
