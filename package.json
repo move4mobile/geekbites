@@ -9,7 +9,7 @@
     "start": "rimraf dist && eleventy --serve",
     "check-broken-links": "npm run check-broken-links:internal && npm run check-broken-links:external",
     "check-broken-links:internal": "npx broken-link-checker-local ./dist -roe --filter-level 3 --exclude \"*/__/firebase/*\"",
-    "check-broken-links:external": "npx broken-link-checker-local ./dist -roi --filter-level 3 --exclude \"*/__/firebase/*\" --exclude \"*/stenciljs.com/*\" --exclude \"*/twitter.com/*\""
+    "check-broken-links:external": "npx broken-link-checker-local ./dist -roi --filter-level 3 --exclude \"*/__/firebase/*\" --exclude \"*/stenciljs.com/*\" --exclude \"*/twitter.com/*\" --exclude \"*/gramsbergen.nl/*\""
   },
   "repository": {
     "type": "git",
@@ -25,7 +25,7 @@
     "@11ty/eleventy": "^1.0.0",
     "@11ty/eleventy-plugin-rss": "^1.1.2",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
-    "@commitlint/cli": "^16.1.0",
+    "@commitlint/cli": "^17.6.1",
     "@commitlint/config-conventional": "^16.0.0",
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/commit-analyzer": "^9.0.2",
@@ -36,7 +36,7 @@
     "cz-conventional-changelog": "^3.3.0",
     "eleventy-plugin-dart-sass": "^1.0.3",
     "husky": "^7.0.4",
-    "luxon": "^2.3.0",
+    "luxon": "^2.5.2",
     "rimraf": "^3.0.2"
   },
   "config": {

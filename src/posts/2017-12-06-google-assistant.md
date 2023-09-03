@@ -38,12 +38,12 @@ Hoe kleiner de app des te meer kans dat de app goedgekeurd wordt. Minder respons
 
 Voor mijn stageopdracht heb ik 2 apps geschreven voor de Assistant:
 
-De [Move4Mobile gate](https://assistant.google.com/services/a/id/398d19646c4bff39/) app opent met het commando "Open the gate" de slagboom naar de parkeerplaats van Move4Mobile in Zwolle.
+De Move4Mobile gate app opent met het commando "Open the gate" de slagboom naar de parkeerplaats van Move4Mobile in Zwolle.
 De app vraagt aan de gebruiker permissie om de naam en locatie van de Assistant te krijgen, zodra de gebruiker hiermee instemt wordt er in de webhook gekeken of deze locatie binnen een bepaalde afstand is van de vestiging in Zwolle. Als dit het geval is opent de slagboom. 
 De locatie en naam van de gebruiker worden bij elke request opgeslagen, waardoor er goed inzicht is in wie de poort opent. Dit wordt voornamelijk gebruikt om misbruik tegen te gaan, de app staat namelijk openbaar in de store(echter alleen voor Nederland) dus iedereen kan erbij.
 Als een onbekend persoon te vaak de app aanroept kan deze geblokkeerd worden. Ook is er de optie om bekende gebruikers te "White listen" waardoor ze makkelijker de poort kunnen openen zonder eerst te checken op locatie.
 
-Met de [Bite Service](https://assistant.google.com/services/a/id/7949ff350578a67f/) app kun je via spraak snacks bestellen via het "Bite" platform.
+Met de Bite Service app kun je via spraak snacks bestellen via het "Bite" platform.
 Met Bite Service kan je alles wat al kan met de Bite Android of Progressive Web App (PWA), en meer, maar nu doormiddel van spraak!
 Een gebruiker kan snacks bestellen, Bites openen, zijn order aanpassen en locken, de volledige status van een order opvragen en nog veel meer.
 
