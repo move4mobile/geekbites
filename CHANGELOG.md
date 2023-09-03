@@ -1,3 +1,11 @@
+## [2.14.1](https://github.com/move4mobile/geekbites/compare/v2.14.0...v2.14.1) (2023-09-03)
+
+
+### Bug Fixes
+
+* **blogpost:** remove broken links ([#421](https://github.com/move4mobile/geekbites/issues/421)) ([bbd1a6a](https://github.com/move4mobile/geekbites/commit/bbd1a6ab004ef101088f4ecbf5066ececd07aa94))
+* exclude broken urls from checks ([#401](https://github.com/move4mobile/geekbites/issues/401)) ([d6a0e70](https://github.com/move4mobile/geekbites/commit/d6a0e705d784df1db0e8c047ba49b92696fec130))
+
 # [2.14.0](https://github.com/move4mobile/geekbites/compare/v2.13.2...v2.14.0) (2023-02-21)
 
 
