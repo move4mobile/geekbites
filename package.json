@@ -36,7 +36,7 @@
     "cz-conventional-changelog": "^3.3.0",
     "eleventy-plugin-dart-sass": "^1.0.3",
     "husky": "^8.0.3",
-    "luxon": "^3.3.0",
+    "luxon": "^3.4.3",
     "rimraf": "^5.0.1"
   },
   "config": {
