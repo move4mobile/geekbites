@@ -1,0 +1,29 @@
+name: Slack Notification Verify
+
+on:
+  workflow_dispatch:
+
+jobs:
+  notify_test:
+    name: Slack Notify
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Slack Notification
+        uses: rtCamp/action-slack-notify@v2.3.3
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_CHANNEL: geekbites
+          SLACK_USERNAME: 'M4M Bot'
+          SLACK_ICON: 'https://github.com/move4mobile.png?size=48'
+          SLACK_TITLE: 'Geekbites nightly'
+          SLACK_MESSAGE: 'Slack notifications are working :tada:'
+          SLACK_FOOTER: ':robot_face:'
+          MSG_MINIMAL: true
+# Docs / info
+# Used actions:
+# - https://github.com/marketplace/actions/slack-notify

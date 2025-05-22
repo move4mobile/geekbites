@@ -1,10 +1,11 @@
-# Geek Bites [![Build Status](https://travis-ci.org/move4mobile/geekbites.svg?branch=develop)](https://travis-ci.org/move4mobile/geekbites)
+# Geek Bites
 
-Onze blog staat live: https://geekbites.move4mobile.io
+You can find our blog here: https://geekbites.move4mobile.io
 
 #### How to install
+
 First install Node.js and check which verion of Node you have.
-Eleventy requires Node-8 or newer 
+Eleventy requires Node-8 or newer
 
 `node --version`
 
@@ -18,13 +19,12 @@ To build, just run `npm run build`. This will pack and compile all resources nee
 
 Then you `npm run start`, npm will run the start script for you and start your application with your special configuration options.
 
-And then you are ready to write your own Geekbites blog. 
+And then you are ready to write your own Geekbites blog.
 
 #### Tips
 
-When it found any vulnerabilities after you run the code `npm install`  you can run the code  `npm audit fix` to fix them, or `npm audit` for details
+When it found any vulnerabilities after you run the code `npm install` you can run the code `npm audit fix` to fix them, or `npm audit` for details
 
 After this there will be no or less vulnerabilities, then you can run the code `npm run`.
-
 
 Goodluck!!

@@ -1,97 +1,109 @@
 {
-    "michael": {
-      "name": "Michael Schilling",
-      "bio": "Some bio text",
-      "email": "mschilling@move4mobile.com",
-      "twitter": "mschilling",
-      "github": "mschilling",
-      "avatar": "https://avatars0.githubusercontent.com/u/7045335?&s=80"
-    },
-    "dennis": {
-      "name": "Dennis Bruijn",
-      "email": "dbruijn@move4mobile.com",
-      "twitter": "0x1ad2",
-      "github": "0x1ad2",
-      "avatar": "https://avatars0.githubusercontent.com/u/1705904?&s=80"
-    },
-    "cas": {
-      "name": "Cas van Dinter",
-      "email": "cvandinter@move4mobile.com",
-      "github": "cassshh",
-      "avatar": "https://avatars.githubusercontent.com/cassshh?s=80"
-    },
-    "jesper": {
-      "name": "Jesper Strating",
-      "email": "jstrating@move4mobile.com",
-      "github": "jstrating",
-      "avatar": "https://avatars0.githubusercontent.com/jstrating?s=80"
-    },
-    "ramon": {
-      "name": "Ramon Valk",
-      "email": "rvalk@move4mobile.com",
-      "twitter": "ramonvalk",
-      "github": "RamonValk",
-      "avatar": "https://avatars0.githubusercontent.com/u/9320900?&s=80"
-    },
-    "ronan": {
-      "name": "Ronan Super",
-      "email": "rsuper@move4mobile.com",
-      "github": "rsuper",
-      "avatar": "https://avatars3.githubusercontent.com/u/4209748?&s=80"
-    },
-    "wilco": {
-      "name": "Maaike Wolters",
-      "email": "wwolters@move4mobile.com",
-      "github": "mswolters",
-      "avatar": "https://avatars1.githubusercontent.com/u/5948253?s=80"
-    },
-    "arwin": {
-      "name": "Arwin Strating",
-      "email": "astrating@move4mobile.com",
-      "github": "arwinstrating",
-      "avatar": "https://avatars0.githubusercontent.com/u/9743543?&s=80"
-    },
-    "ruben": {
-      "name": "Ruben Aalders",
-      "email": "raalders@move4mobile.com",
-      "github": "rubenaalders",
-      "avatar": "https://avatars2.githubusercontent.com/u/4243098?&s=80"
-    },
-    "martin": {
-      "name": "Martin Beekhuizen",
-      "email": "mbeekhuizen@move4mobile.com",
-      "github": "MartinBeekhuizen",
-      "avatar": "https://avatars1.githubusercontent.com/u/10518249?&s=80"
-    },
-    "bart": {
-      "name": "Bart L'Herminez",
-      "email": "blherminez@move4mobile.com",
-      "github": "Bartlherminez",
-      "avatar": "https://avatars2.githubusercontent.com/u/15778830?s=80"
-    },
-    "danny": {
-      "name": "Danny Hooijer",
-      "email": "dhooyer@move4mobile.com",
-      "github": "DannyHooyer",
-      "avatar": "https://avatars0.githubusercontent.com/u/16132824?s=80"
-    },
-    "eline": {
-      "name": "Eline Steen Redeker",
-      "email": "esteenredeker@move4mobile.com",
-      "github": "esteenredeker",
-      "avatar": "https://avatars.githubusercontent.com/u/78849983?s=88&v=4"
-    },
-    "youri": {
-      "name": "Youri Dekker",
-      "email": "ydekker@move4mobile.com",
-      "github": "youridekker",
-      "avatar": "https://avatars.githubusercontent.com/u/38322349?s=80"
-    },
-    "nick": {
-      "name": "Nick Ratering",
-      "email": "nratering@move4mobile.com",
-      "twitter": "nickratering",
-      "github": "nratering",
-      "avatar": "https://avatars.githubusercontent.com/u/89972776?v=4&s=80"
-    }
+  "michael": {
+    "name": "Michael Schilling",
+    "bio": "Some bio text",
+    "email": "mschilling@move4mobile.com",
+    "twitter": "mschilling",
+    "github": "mschilling",
+    "avatar": "https://avatars0.githubusercontent.com/u/7045335?&s=80"
+  },
+  "dennis": {
+    "name": "Dennis Bruijn",
+    "email": "dbruijn@move4mobile.com",
+    "twitter": "0x1ad2",
+    "github": "0x1ad2",
+    "avatar": "https://avatars0.githubusercontent.com/u/1705904?&s=80"
+  },
+  "cas": {
+    "name": "Cas van Dinter",
+    "email": "cvandinter@move4mobile.com",
+    "github": "cassshh",
+    "avatar": "https://avatars.githubusercontent.com/cassshh?s=80"
+  },
+  "jesper": {
+    "name": "Jesper Strating",
+    "email": "jstrating@move4mobile.com",
+    "github": "jstrating",
+    "avatar": "https://avatars0.githubusercontent.com/jstrating?s=80"
+  },
+  "ramon": {
+    "name": "Ramon Valk",
+    "email": "rvalk@move4mobile.com",
+    "twitter": "ramonvalk",
+    "github": "RamonValk",
+    "avatar": "https://avatars0.githubusercontent.com/u/9320900?&s=80"
+  },
+  "ronan": {
+    "name": "Ronan Super",
+    "email": "rsuper@move4mobile.com",
+    "github": "rsuper",
+    "avatar": "https://avatars3.githubusercontent.com/u/4209748?&s=80"
+  },
+  "wilco": {
+    "name": "Maaike Wolters",
+    "email": "wwolters@move4mobile.com",
+    "github": "mswolters",
+    "avatar": "https://avatars1.githubusercontent.com/u/5948253?s=80"
+  },
+  "arwin": {
+    "name": "Arwin Strating",
+    "email": "astrating@move4mobile.com",
+    "github": "arwinstrating",
+    "avatar": "https://avatars0.githubusercontent.com/u/9743543?&s=80"
+  },
+  "ruben": {
+    "name": "Ruben Aalders",
+    "email": "raalders@move4mobile.com",
+    "github": "rubenaalders",
+    "avatar": "https://avatars2.githubusercontent.com/u/4243098?&s=80"
+  },
+  "martin": {
+    "name": "Martin Beekhuizen",
+    "email": "mbeekhuizen@move4mobile.com",
+    "github": "MartinBeekhuizen",
+    "avatar": "https://avatars1.githubusercontent.com/u/10518249?&s=80"
+  },
+  "bart": {
+    "name": "Bart L'Herminez",
+    "email": "blherminez@move4mobile.com",
+    "github": "Bartlherminez",
+    "avatar": "https://avatars2.githubusercontent.com/u/15778830?s=80"
+  },
+  "danny": {
+    "name": "Danny Hooijer",
+    "email": "dhooyer@move4mobile.com",
+    "github": "DannyHooyer",
+    "avatar": "https://avatars0.githubusercontent.com/u/16132824?s=80"
+  },
+  "eline": {
+    "name": "Eline Steen Redeker",
+    "email": "esteenredeker@move4mobile.com",
+    "github": "esteenredeker",
+    "avatar": "https://avatars.githubusercontent.com/u/78849983?s=88&v=4"
+  },
+  "youri": {
+    "name": "Youri Dekker",
+    "email": "ydekker@move4mobile.com",
+    "github": "youridekker",
+    "avatar": "https://avatars.githubusercontent.com/u/38322349?s=80"
+  },
+  "nick": {
+    "name": "Nick Ratering",
+    "email": "nratering@move4mobile.com",
+    "twitter": "nickratering",
+    "github": "nratering",
+    "avatar": "https://avatars.githubusercontent.com/u/89972776?v=4&s=80"
+  },
+  "joris": {
+    "name": "Joris van der Kamp",
+    "email": "jvanderkamp@move4mobile.com",
+    "github": "jorisvanderkamp",
+    "avatar": "https://avatars.githubusercontent.com/u/82873974?v=4&s=80"
+  },
+  "sander": {
+    "name": "Sander Elderman",
+    "email": "sander@move4mobile.com",
+    "github": "sanderelderman",
+    "avatar": "https://avatars.githubusercontent.com/u/14293589?v=4&s=80"
+  }
 }
