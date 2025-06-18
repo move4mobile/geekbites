@@ -1,3 +1,23 @@
+## [2.14.1](https://github.com/move4mobile/geekbites/compare/v2.14.0...v2.14.1) (2023-09-03)
+
+
+### Bug Fixes
+
+* **blogpost:** remove broken links ([#421](https://github.com/move4mobile/geekbites/issues/421)) ([bbd1a6a](https://github.com/move4mobile/geekbites/commit/bbd1a6ab004ef101088f4ecbf5066ececd07aa94))
+* exclude broken urls from checks ([#401](https://github.com/move4mobile/geekbites/issues/401)) ([d6a0e70](https://github.com/move4mobile/geekbites/commit/d6a0e705d784df1db0e8c047ba49b92696fec130))
+
+# [2.14.0](https://github.com/move4mobile/geekbites/compare/v2.13.2...v2.14.0) (2023-02-21)
+
+
+### Bug Fixes
+
+* **blogpost:** update gramsbergen url (host protocol https) ([#355](https://github.com/move4mobile/geekbites/issues/355)) ([4fd6683](https://github.com/move4mobile/geekbites/commit/4fd66830c2ae5f04b188a04f866a16bde9ae0296))
+
+
+### Features
+
+* remove travis build status from readme (trigger release) ([b1a422b](https://github.com/move4mobile/geekbites/commit/b1a422bb995ce6dd530c391772671547a70c3919))
+
 ## [2.13.2](https://github.com/move4mobile/geekbites/compare/v2.13.1...v2.13.2) (2022-12-12)
 
 
