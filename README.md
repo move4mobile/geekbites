@@ -2,29 +2,61 @@
 
 You can find our blog here: https://geekbites.move4mobile.io
 
-#### How to install
+## Getting Started
 
-First install Node.js and check which verion of Node you have.
-Eleventy requires Node-8 or newer
+Follow these steps to set up the Geek Bites blog locally and start contributing:
 
-`node --version`
+### Prerequisites
 
-If that is the case you can run the following code to install the dependencies:
+First, make sure you have Node.js installed on your system. Eleventy requires Node.js version 8 or newer.
 
-`npm install`
+Check your Node.js version:
+```bash
+node --version
+```
 
-After this you can run the code `npm run`.
+### Installation
 
-To build, just run `npm run build`. This will pack and compile all resources needed to put the application in production and generate a service worker.
+1. Clone this repository to your local machine
+2. Navigate to the project directory
+3. Install the project dependencies:
 
-Then you `npm run start`, npm will run the start script for you and start your application with your special configuration options.
+```bash
+npm install
+```
 
-And then you are ready to write your own Geekbites blog.
+### Development
 
-#### Tips
+To start the development server with live reload:
 
-When it found any vulnerabilities after you run the code `npm install` you can run the code `npm audit fix` to fix them, or `npm audit` for details
+```bash
+npm run start
+```
 
-After this there will be no or less vulnerabilities, then you can run the code `npm run`.
+This will:
+- Clear the `dist` directory
+- Start the Eleventy development server
+- Watch for file changes and automatically rebuild
+- Serve the site locally (usually at `http://localhost:8080`)
 
-Goodluck!!
+### Building for Production
+
+To build the site for production:
+
+```bash
+npm run build
+```
+
+This will generate all the static files needed for deployment in the `dist` directory.
+
+### Writing Blog Posts
+
+After setting up the project, you're ready to write your own Geek Bites blog posts! Blog posts are located in the `src/posts` directory and are written in Markdown format.
+
+## Tips
+
+- If you encounter vulnerabilities after running `npm install`, you can run `npm audit fix` to fix them automatically, or `npm audit` for more details
+- The site uses Eleventy (11ty) as a static site generator
+- Styles are processed with Sass and located in the `src/_sass` directory
+
+Good luck with your blogging!
