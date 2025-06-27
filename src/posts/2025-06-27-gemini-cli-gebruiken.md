@@ -1,5 +1,5 @@
 ---
-title: Gemini CLI: De kracht van Google AI vanuit je terminal
+title: 'Gemini CLI: De kracht van Google AI vanuit je terminal'
 category: ai-tools
 tags: gemini, cli, ai, google, command-line
 comments: true
