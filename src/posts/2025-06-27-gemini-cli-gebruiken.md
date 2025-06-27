@@ -309,6 +309,8 @@ Gemini CLI brengt de kracht van Google's AI direct naar je terminal. Door de com
 
 Of je nu snel een code snippet wilt laten uitleggen, een complexe algorithm wilt analyseren, of je hele development workflow wilt automatiseren - gemini-cli maakt het mogelijk.
 
+Deze blog post is trouwens ook een klein experiment - geschreven met behulp van Copilot om te kijken hoe AI kan bijdragen aan technische content. Een mooie synergie tussen mens en machine!
+
 Tijd om je terminal wat slimmer te maken!
 
 ## Nuttige links
