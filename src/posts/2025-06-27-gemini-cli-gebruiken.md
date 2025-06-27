@@ -1,9 +1,9 @@
 ---
-title: Gemini CLI - De kracht van Google AI vanuit je terminal
+title: Gemini CLI: De kracht van Google AI vanuit je terminal
 category: ai-tools
 tags: gemini, cli, ai, google, command-line
 comments: true
-author: copilot
+author: michael
 min_read: 10
 date: 2025-06-27
 permalink: /2025/06/27/gemini-cli-gebruiken/
@@ -17,7 +17,7 @@ Iedere developer heeft wel eens gehoord van **Gemini**: Google's krachtige AI-mo
 
 Gemini is natuurlijk beschikbaar via de webinterface op [gemini.google.com](https://gemini.google.com), maar voor developers die veel tijd in de terminal doorbrengen, is er nu een nog handiger oplossing: **gemini-cli**.
 
-Gemini CLI is Google's officiële command-line interface voor het interacteren met Gemini AI-modellen direct vanuit je terminal. 
+Gemini CLI is Google's officiële command-line interface voor het interacteren met Gemini AI-modellen direct vanuit je terminal.
 Voor developers die gewend zijn aan een CLI-workflow kan dit een enorme productiviteitsboost betekenen.
 
 Net zoals je met `git` je versiecontrole regelt, kun je nu met `gemini` AI-functionaliteit integreren in je dagelijkse development workflow.
@@ -50,28 +50,50 @@ $ gemini --version
 ```
 
 Output:
+
 ```
 0.1.5
 ```
 
-### API Key configureren
+### Authenticatie configureren
 
-Om gemini-cli te kunnen gebruiken heb je een Google AI API key nodig. Deze kun je verkrijgen via [Google AI Studio](https://aistudio.google.com/).
+Om gemini-cli te kunnen gebruiken moet je authenticeren met Google's AI services. Er zijn verschillende authenticatiemethoden beschikbaar:
+
+#### Optie 1: Inloggen met je Google account (aanbevolen)
+
+De eenvoudigste manier is inloggen met je persoonlijke Google account. Bij de eerste keer opstarten van gemini-cli wordt je automatisch doorgestuurd naar een webpagina voor authenticatie. Na authenticatie worden je credentials lokaal opgeslagen, zodat je niet elke keer opnieuw hoeft in te loggen.
+
+Dit geeft je automatisch toegang tot:
+
+- Tot 60 model requests per minuut
+- 1.000 model requests per dag
+
+**Let op:** Voor Google Workspace accounts of bepaalde andere gevallen moet je mogelijk een `GOOGLE_CLOUD_PROJECT` environment variable instellen.
+
+#### Optie 2: Google AI API key
+
+Voor geavanceerd gebruik of hogere limieten kun je een API key gebruiken. Deze kun je verkrijgen via [Google AI Studio](https://aistudio.google.com/app/apikey).
 
 Er zijn twee manieren om je API key te configureren:
 
-#### Optie 1: Environment variable
+**API key via environment variable:**
+
 ```bash
 $ export GEMINI_API_KEY="jouw-api-key-hier"
 ```
 
-#### Optie 2: Settings bestand
+**API key via settings bestand:**
+
 Gemini CLI maakt automatisch een configuratiemap aan in `~/.gemini/`. Je kunt hier een `settings.json` bestand aanmaken:
 
 ```bash
 $ mkdir -p ~/.gemini
 $ echo '{"auth": {"type": "api_key", "api_key": "jouw-api-key-hier"}}' > ~/.gemini/settings.json
 ```
+
+#### Optie 3: Vertex AI
+
+Voor enterprise gebruik kun je ook authenticeren via Vertex AI met Google Cloud credentials.
 
 ## Aan de slag met gemini-cli
 
@@ -84,6 +106,7 @@ $ gemini -p "Wat is de hoofdstad van Nederland?"
 ```
 
 Output:
+
 ```
 De hoofdstad van Nederland is Amsterdam.
 ```
@@ -111,6 +134,7 @@ $ gemini -m "gemini-1.5-flash" -p "Maak een simpele HTML pagina"
 ```
 
 De beschikbare modellen zijn:
+
 - `gemini-2.5-pro` (standaard) - Meest krachtig voor complexe taken
 - `gemini-1.5-flash` - Sneller voor eenvoudige taken
 - `gemini-1.5-pro` - Balans tussen snelheid en kwaliteit
@@ -221,7 +245,7 @@ generate_commit_message() {
         echo "Geen staged changes gevonden"
         return 1
     fi
-    
+
     echo "$diff_output" | gemini -p "Schrijf een heldere commit message voor deze changes. Gebruik conventional commits format."
 }
 
@@ -232,6 +256,7 @@ generate_commit_message
 ## Tips en best practices
 
 ### 1. Context is koning
+
 Hoe meer relevante context je meegeeft, hoe betere resultaten je krijgt. Gebruik file context slim:
 
 ```bash
@@ -266,17 +291,20 @@ $ gemini -p "Maak een checklist voor code review in markdown format"
 ### Veelvoorkomende problemen
 
 #### API Key issues
+
 ```bash
 Error: Please set an Auth method in your .gemini/settings.json
 ```
 
 **Oplossing:** Controleer of je API key correct is geconfigureerd:
+
 ```bash
 $ cat ~/.gemini/settings.json
 $ echo $GEMINI_API_KEY
 ```
 
 #### Rate limiting
+
 ```bash
 Error: Rate limit exceeded
 ```
@@ -284,6 +312,7 @@ Error: Rate limit exceeded
 **Oplossing:** Wacht even voordat je het opnieuw probeert, of gebruik een lichter model zoals `gemini-1.5-flash`.
 
 #### Geen internet connectie
+
 ```bash
 Error: getaddrinfo EAI_AGAIN
 ```
@@ -292,14 +321,14 @@ Error: getaddrinfo EAI_AGAIN
 
 ## Toekomst van AI in development
 
-Gemini CLI is meer dan alleen een handige tool - het vertegenwoordigt een verschuiving naar AI-geïntegreerde development workflows. 
+Gemini CLI is meer dan alleen een handige tool - het vertegenwoordigt een verschuiving naar AI-geïntegreerde development workflows.
 
 Door AI-functionaliteit direct in je terminal te brengen, verdwijnt de drempel om AI te gebruiken voor dagelijkse development taken. Het wordt net zo natuurlijk als het gebruiken van `grep`, `awk` of andere Unix-tools.
 
 De integratie met bestaande command-line tools via pipes en scripts opent de deur naar volledig geautomatiseerde, AI-aangedreven workflows. Denk aan:
 
 - Automatische code reviews bij elke commit
-- Intelligente error analysis in CI/CD pipelines  
+- Intelligente error analysis in CI/CD pipelines
 - AI-gegenereerde documentatie updates
 - Smart refactoring suggestions
 
@@ -315,7 +344,7 @@ Tijd om je terminal wat slimmer te maken!
 
 ## Nuttige links
 
-* [Gemini CLI op NPM](https://www.npmjs.com/package/@google/gemini-cli)
-* [Google AI Studio](https://aistudio.google.com/) - Voor het verkrijgen van API keys
-* [Gemini API Documentatie](https://ai.google.dev/docs)
-* [Google AI SDK voor JavaScript](https://www.npmjs.com/package/@google/generative-ai)
+- [Gemini CLI op NPM](https://www.npmjs.com/package/@google/gemini-cli)
+- [Google AI Studio](https://aistudio.google.com/) - Voor het verkrijgen van API keys
+- [Gemini API Documentatie](https://ai.google.dev/docs)
+- [Google AI SDK voor JavaScript](https://www.npmjs.com/package/@google/generative-ai)
