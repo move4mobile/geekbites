@@ -9,7 +9,7 @@ date: 2025-06-27
 permalink: /2025/06/27/gemini-cli-gebruiken/
 ---
 
-Iedere developer heeft wel eens gehoord van **Gemini**: Google's krachtige AI-model dat kan helpen bij het schrijven van code, beantwoorden van vragen en het oplossen van complexe problemen.
+Iedere Developer heeft wel eens gehoord van **Gemini**: Google's krachtige AI-model dat kan helpen bij het schrijven van code, beantwoorden van vragen en het oplossen van complexe problemen.
 
 > Gemini is een multimodaal AI-model van Google dat tekst, code, afbeeldingen en andere content kan begrijpen en genereren. Het is ontworpen om developers en gebruikers te helpen bij verschillende taken, van het schrijven van code tot het beantwoorden van complexe vragen.
 
