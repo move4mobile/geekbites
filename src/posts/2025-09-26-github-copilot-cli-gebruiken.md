@@ -6,7 +6,7 @@ comments: true
 author: michael
 min_read: 12
 date: 2025-09-26
-permalink: /2025/09/26/github-copilot-cli-gebruiken/
+permalink: /2025/09/26/github-copilot-cli/
 ---
 
 Iedere developer heeft wel eens gehoord van **GitHub Copilot**: GitHub's AI-powered coding assistant die je helpt bij het schrijven van code direct in je editor. Maar wat als je die krachtige AI-functionaliteit ook in je terminal zou kunnen gebruiken?
