@@ -19,7 +19,7 @@ GitHub Copilot is natuurlijk al bekend van de code-autocompletion in editors zoa
 
 GitHub Copilot CLI integreert AI-functionaliteit direct in je command-line workflow, waardoor je complexe commando's kunt genereren, uitleggen en optimaliseren zonder je terminal te verlaten.
 
-Net zoals je met `git` je versiecontrole regelt, kun je nu met `gh copilot` AI-functionaliteit gebruiken voor je dagelijkse terminal taken. Het mooie is dat deze tool specifiek ontworpen is voor shell-commando's en systeembeheer.
+Net zoals je met `git` je versiecontrole regelt, kun je nu met `copilot` AI-functionaliteit gebruiken voor je dagelijkse terminal taken. Het mooie is dat deze tool specifiek ontworpen is voor shell-commando's en systeembeheer.
 
 ### Waarom GitHub Copilot CLI gebruiken?
 
@@ -27,16 +27,24 @@ De belangrijkste voordelen van GitHub Copilot CLI ten opzichte van andere AI CLI
 
 - **Shell-specifiek**: Geoptimaliseerd voor het genereren van shell-commando's
 - **Context-bewust**: Begrijpt je huidige directory en git-status
-- **Veiligheid**: Voorkomt destructieve commando's en vraagt bevestiging
 - **GitHub-integratie**: Werkt naadloos samen met GitHub repositories
-- **Multi-platform**: Ondersteunt bash, zsh, PowerShell en fish
-- **Explain functie**: Legt complexe commando's uit in begrijpelijke taal
+- **Multi-platform**: Ondersteunt bash, zsh, PowerShell (fish via community)
+- **Interactive mode**: Stap-voor-stap guidance bij complexe taken
+- **Agent capabilities**: Kan autonome multi-step taken uitvoeren
 
 ## Installatie en configuratie
 
-### Installeren via npm (aanbevolen)
+### Vereisten
 
-GitHub Copilot CLI kan eenvoudig geïnstalleerd worden via npm:
+Voor GitHub Copilot CLI heb je nodig:
+- Node.js v22 of hoger
+- npm v10 of hoger
+- Een actief GitHub Copilot abonnement
+- Ondersteunde platforms: Linux, macOS, Windows (experimenteel via WSL)
+
+### Installeren via npm
+
+GitHub Copilot CLI wordt geïnstalleerd als standalone tool via npm:
 
 ```bash
 $ npm install -g @github/copilot
@@ -45,32 +53,18 @@ $ npm install -g @github/copilot
 Na installatie kun je controleren of alles goed is gegaan:
 
 ```bash
-$ gh copilot --version
-```
-
-### Alternatief: Installeren via GitHub CLI
-
-GitHub Copilot CLI kan ook geïnstalleerd worden als extensie voor de GitHub CLI:
-
-```bash
-# Installeer eerst GitHub CLI als je het nog niet hebt
-$ brew install gh  # macOS
-$ sudo apt install gh  # Ubuntu/Debian
-$ winget install GitHub.cli  # Windows
-
-# Installeer de Copilot CLI extensie
-$ gh extension install github/gh-copilot
+$ copilot --version
 ```
 
 ### Authenticatie
 
-GitHub Copilot CLI vereist een actief GitHub Copilot abonnement. Authenticeer eerst met GitHub:
+Start GitHub Copilot CLI in een code directory:
 
 ```bash
-$ gh auth login
+$ copilot
 ```
 
-Volg de instructies om in te loggen met je GitHub account dat toegang heeft tot Copilot.
+De eerste keer wordt je gevraagd om in te loggen met je GitHub account. Je kunt ook een Personal Access Token gebruiken voor authenticatie.
 
 ## Aan de slag met GitHub Copilot CLI
 
@@ -79,7 +73,7 @@ Volg de instructies om in te loggen met je GitHub account dat toegang heeft tot 
 De krachtigste functie is het genereren van shell-commando's:
 
 ```bash
-$ gh copilot suggest "vind alle JavaScript files die groter zijn dan 1MB"
+$ copilot -p "vind alle JavaScript files die groter zijn dan 1MB"
 ```
 
 Output:
@@ -106,7 +100,7 @@ This command:
 Heb je een complex commando gevonden maar weet je niet precies wat het doet?
 
 ```bash
-$ gh copilot explain "find . -name '*.log' -mtime +7 -delete"
+$ copilot -p "explain: find . -name '*.log' -mtime +7 -delete"
 ```
 
 GitHub Copilot CLI legt het commando stap voor stap uit en waarschuwt voor potentieel gevaarlijke operaties.
@@ -117,13 +111,13 @@ GitHub Copilot CLI werkt met verschillende shells:
 
 ```bash
 # Bash/Zsh
-$ gh copilot suggest --target bash "show disk usage sorted by size"
+$ copilot -p "show disk usage sorted by size for bash"
 
 # PowerShell
-$ gh copilot suggest --target powershell "get all running processes using more than 100MB RAM"
+$ copilot -p "get all running processes using more than 100MB RAM for powershell"
 
-# Fish shell
-$ gh copilot suggest --target fish "create a backup of my home directory"
+# Linux/Unix
+$ copilot -p "create a backup of my home directory"
 ```
 
 ## Geavanceerde functies
@@ -134,32 +128,24 @@ GitHub Copilot CLI is intelligent genoeg om je huidige directory context te begr
 
 ```bash
 # In een Git repository
-$ gh copilot suggest "show me all commits from last week by author"
+$ copilot -p "show me all commits from last week by author"
 
 # In een Node.js project
-$ gh copilot suggest "install development dependencies and run tests"
+$ copilot -p "install development dependencies and run tests"
 
 # In een Python project
-$ gh copilot suggest "create virtual environment and install requirements"
+$ copilot -p "create virtual environment and install requirements"
 ```
 
-### Veiligheidscontroles
+### Controle over acties
 
-Een grote kracht van GitHub Copilot CLI is de ingebouwde veiligheid:
+GitHub Copilot CLI geeft je volledige controle over wat er gebeurt:
 
 ```bash
-$ gh copilot suggest "delete all files in this directory"
+$ copilot -p "delete all files in this directory"
 ```
 
-Output:
-```
-⚠️  WARNING: This command is potentially destructive!
-
-rm -rf *
-
-This command will permanently delete all files in the current directory.
-Are you sure you want to proceed? (y/N)
-```
+GitHub Copilot CLI vereist expliciete goedkeuring voor alle acties en geeft je altijd de kans om een commando te bekijken voordat het wordt uitgevoerd. Je kunt ook specifieke tools toestaan of blokkeren met command-line opties.
 
 ### Alias integration
 
@@ -167,8 +153,8 @@ Je kunt GitHub Copilot CLI integreren in je shell met handige aliases:
 
 ```bash
 # Voeg toe aan je .bashrc of .zshrc
-alias suggest='gh copilot suggest'
-alias explain='gh copilot explain'
+alias suggest='copilot -p'
+alias explain='copilot -p "explain:'
 
 # Nu kun je gewoon typen:
 $ suggest "compress all PDFs in this folder"
@@ -180,7 +166,7 @@ $ explain "tar -czf backup.tar.gz /home/user/documents"
 ### Git workflow automatisering
 
 ```bash
-$ gh copilot suggest "create feature branch, commit all changes, and push to origin"
+$ copilot -p "create feature branch, commit all changes, and push to origin"
 ```
 
 Genereert bijvoorbeeld:
@@ -191,17 +177,17 @@ git checkout -b feature/new-feature && git add . && git commit -m "Add new featu
 ### Systeembeheer
 
 ```bash
-$ gh copilot suggest "find all processes listening on port 3000 and kill them"
-$ gh copilot suggest "check disk space and show largest directories"
-$ gh copilot suggest "monitor CPU usage in real-time"
+$ copilot -p "find all processes listening on port 3000 and kill them"
+$ copilot -p "check disk space and show largest directories"
+$ copilot -p "monitor CPU usage in real-time"
 ```
 
 ### Development workflow
 
 ```bash
-$ gh copilot suggest "run linter, fix formatting, and run tests"
-$ gh copilot suggest "build Docker image and push to registry"
-$ gh copilot suggest "start development server in background"
+$ copilot -p "run linter, fix formatting, and run tests"
+$ copilot -p "build Docker image and push to registry"
+$ copilot -p "start development server in background"
 ```
 
 ## Vergelijking met andere AI CLI-tools
@@ -241,11 +227,11 @@ $ gh copilot suggest "start development server in background"
 Wat GitHub Copilot CLI uniek maakt ten opzichte van andere AI CLI-tools:
 
 1. **Shell-native**: Specifiek gebouwd voor command-line gebruik
-2. **Safety-first**: Ingebouwde controles tegen gevaarlijke commando's
-3. **Multi-shell**: Native ondersteuning voor bash, zsh, PowerShell, fish
-4. **GitHub-integratie**: Begrijpt GitHub repositories en workflows
-5. **Context awareness**: Weet waar je bent en wat je aan het doen bent
-6. **Interactive mode**: Stap-voor-stap guidance bij complexe taken
+2. **Multi-shell**: Native ondersteuning voor bash, zsh, PowerShell (Linux, macOS, Windows)
+3. **GitHub-integratie**: Begrijpt GitHub repositories en workflows
+4. **Context awareness**: Weet waar je bent en wat je aan het doen bent
+5. **Interactive mode**: Stap-voor-stap guidance bij complexe taken
+6. **Agent capabilities**: Autonome uitvoering van multi-step ontwikkeltaken
 
 ## Tips en best practices
 
@@ -253,20 +239,20 @@ Wat GitHub Copilot CLI uniek maakt ten opzichte van andere AI CLI-tools:
 
 ```bash
 # Goed
-$ gh copilot suggest "find all JavaScript files modified in the last 24 hours and run ESLint on them"
+$ copilot -p "find all JavaScript files modified in the last 24 hours and run ESLint on them"
 
 # Minder goed
-$ gh copilot suggest "lint files"
+$ copilot -p "lint files"
 ```
 
 ### 2. Gebruik context
 
 ```bash
 # In een Node.js project
-$ gh copilot suggest "start development server with environment variables from .env file"
+$ copilot -p "start development server with environment variables from .env file"
 
 # In een Python project
-$ gh copilot suggest "run tests with coverage report"
+$ copilot -p "run tests with coverage report"
 ```
 
 ### 3. Verifieer gevaarlijke commando's
@@ -274,14 +260,14 @@ $ gh copilot suggest "run tests with coverage report"
 Gebruik altijd de `explain` functie voor commando's die je niet volledig begrijpt:
 
 ```bash
-$ gh copilot explain "sudo rm -rf /"  # NOOIT UITVOEREN!
+$ copilot -p "explain: sudo rm -rf /"  # NOOIT UITVOEREN!
 ```
 
 ### 4. Combineer met bestaande tools
 
 ```bash
-$ gh copilot suggest "use fzf to interactively select and delete old log files"
-$ gh copilot suggest "pipe find results to xargs for batch processing"
+$ copilot -p "use fzf to interactively select and delete old log files"
+$ copilot -p "pipe find results to xargs for batch processing"
 ```
 
 ## Shell integratie
@@ -293,18 +279,18 @@ Voeg deze functies toe aan je `.bashrc` of `.zshrc`:
 ```bash
 # Quick suggest function
 cs() {
-    gh copilot suggest "$*"
+    copilot -p "$*"
 }
 
 # Quick explain function
 ce() {
-    gh copilot explain "$*"
+    copilot -p "explain: $*"
 }
 
 # Smart suggest with current directory context
 csd() {
     local context="in directory $(pwd) with files: $(ls -la | head -5 | tail -4)"
-    gh copilot suggest "$* $context"
+    copilot -p "$* $context"
 }
 ```
 
@@ -313,8 +299,8 @@ csd() {
 Voor PowerShell gebruikers:
 
 ```powershell
-function cs { gh copilot suggest $args }
-function ce { gh copilot explain $args }
+function cs { copilot -p $args }
+function ce { copilot -p "explain: $($args)" }
 Set-Alias suggest cs
 Set-Alias explain ce
 ```
@@ -323,23 +309,24 @@ Set-Alias explain ce
 
 ### Veelvoorkomende problemen
 
-**Probleem**: "Extension not found"
+**Probleem**: Installatie mislukt
 ```bash
-# Oplossing: Herinstalleer de extensie
-$ gh extension remove gh-copilot
-$ gh extension install github/gh-copilot
+# Oplossing: Herinstalleer met juiste Node.js versie
+$ node --version  # Controleer dat je v22+ hebt
+$ npm install -g @github/copilot
 ```
 
 **Probleem**: "Authentication failed"
 ```bash
-# Oplossing: Vernieuw je authenticatie
-$ gh auth refresh
+# Oplossing: Start copilot en login opnieuw
+$ copilot
+# Volg login instructies
 ```
 
 **Probleem**: Langzame response tijd
 ```bash
-# Oplossing: Check je internet verbinding en GitHub status
-$ gh status
+# Oplossing: Check je internet verbinding
+$ ping github.com
 ```
 
 ### Debug modus
@@ -347,7 +334,7 @@ $ gh status
 Voor troubleshooting kun je debug informatie inschakelen:
 
 ```bash
-$ GH_DEBUG=api gh copilot suggest "test command"
+$ copilot -p "test command" --verbose
 ```
 
 ## Toekomst van AI in development
