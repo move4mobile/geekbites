@@ -54,9 +54,12 @@ jobs:
 
   CreatePreview:
     name: Generate Preview URL
-    if: ${{ false && github.event_name == 'pull_request' && github.actor != 'dependabot[bot]' }}
+    if: ${{ github.event_name == 'pull_request' && github.actor != 'dependabot[bot]' }}
     needs: [Build]
     runs-on: ubuntu-latest
+    permissions:
+      checks: write
+      pull-requests: write
     environment:
       name: Preview Channels
     steps:
