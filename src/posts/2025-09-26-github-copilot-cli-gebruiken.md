@@ -154,7 +154,7 @@ Je kunt GitHub Copilot CLI integreren in je shell met handige aliases:
 ```bash
 # Voeg toe aan je .bashrc of .zshrc
 alias suggest='copilot -p'
-alias explain='copilot -p "explain:'
+alias explain='copilot -p "explain:"'
 
 # Nu kun je gewoon typen:
 $ suggest "compress all PDFs in this folder"
