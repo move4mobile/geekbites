@@ -68,9 +68,9 @@ De eerste keer wordt je gevraagd om in te loggen met je GitHub account. Je kunt 
 
 ## Aan de slag met GitHub Copilot CLI
 
-### Commando's genereren met suggest
+### Commando's genereren
 
-De krachtigste functie is het genereren van shell-commando's:
+De krachtigste functie is het genereren van shell-commando's met natuurlijke taal:
 
 ```bash
 $ copilot -p "vind alle JavaScript files die groter zijn dan 1MB"
@@ -95,19 +95,19 @@ This command:
   Execute command
 ```
 
-### Commando's uitleggen met explain
+### Commando's uitleggen
 
-Heb je een complex commando gevonden maar weet je niet precies wat het doet?
+Heb je een complex commando gevonden maar weet je niet precies wat het doet? GitHub Copilot CLI kan elk commando uitleggen:
 
 ```bash
 $ copilot -p "explain: find . -name '*.log' -mtime +7 -delete"
 ```
 
-GitHub Copilot CLI legt het commando stap voor stap uit en waarschuwt voor potentieel gevaarlijke operaties.
+GitHub Copilot CLI legt elk commando stap voor stap uit en helpt je complexe syntax te begrijpen.
 
-### Verschillende shell-omgevingen
+### Multi-platform ondersteuning
 
-GitHub Copilot CLI werkt met verschillende shells:
+GitHub Copilot CLI werkt met verschillende shells en platforms:
 
 ```bash
 # Bash/Zsh
@@ -195,11 +195,11 @@ $ copilot -p "start development server in background"
 ### GitHub Copilot CLI vs Gemini CLI
 
 **GitHub Copilot CLI voordelen:**
-- Specifiek ontworpen voor shell-commando's
-- Ingebouwde veiligheidscontroles
-- Context-bewust van Git repositories
-- Ondersteuning voor meerdere shells
+- Specifiek ontworpen voor shell-commando's en terminal workflows
+- Context-bewust van Git repositories en project structuur
+- Ondersteuning voor meerdere shells en platforms
 - Directe integratie met GitHub workflow
+- Agent capabilities voor complexe multi-step taken
 
 **Gemini CLI voordelen:**
 - Breder toepassingsgebied (niet alleen commando's)
@@ -211,10 +211,10 @@ $ copilot -p "start development server in background"
 
 **GitHub Copilot CLI voordelen:**
 - Geïntegreerd in GitHub ecosysteem
-- Shell-specifieke optimalisaties
-- Veiligheidscontroles voor destructieve commando's
-- Multi-shell ondersteuning
-- Repository context awareness
+- Shell-specifieke optimalisaties en terminal-native design
+- Multi-shell ondersteuning (bash, zsh, PowerShell)
+- Repository context awareness en project begrip
+- Interactive agent mode voor complexe taken
 
 **Claude Code voordelen:**
 - Meer geavanceerde code reasoning
@@ -341,7 +341,7 @@ $ copilot -p "test command" --verbose
 
 GitHub Copilot CLI vertegenwoordigt een belangrijke evolutie in AI-geassisteerde development. Door AI-functionaliteit direct in de command-line te integreren, wordt de drempel om AI te gebruiken voor dagelijkse terminal taken weggenomen.
 
-De focus op veiligheid en context-awareness maakt het een betrouwbare tool voor production environments. De integratie met het GitHub ecosysteem zorgt voor een naadloze workflow van code naar deployment.
+De focus op context-awareness en expliciete controle maakt het een betrouwbare tool voor production environments. De integratie met het GitHub ecosysteem zorgt voor een naadloze workflow van code naar deployment.
 
 Toekomstige ontwikkelingen die we kunnen verwachten:
 
@@ -357,13 +357,13 @@ GitHub Copilot CLI brengt AI-powered assistance direct naar je terminal, specifi
 
 Of je nu complexe Git workflows wilt automatiseren, systeembeheer taken wilt versimpelen, of gewoon wilt leren van betere command-line praktijken - GitHub Copilot CLI maakt het mogelijk.
 
-In vergelijking met andere AI CLI-tools onderscheidt Copilot CLI zich door zijn shell-specifieke focus, veiligheidsfeatures en naadloze GitHub-integratie. Terwijl Gemini CLI breder inzetbaar is en Claude Code beter is in code reasoning, is GitHub Copilot CLI ongeëvenaard als het gaat om veilige, context-bewuste shell-commando generatie.
+In vergelijking met andere AI CLI-tools onderscheidt Copilot CLI zich door zijn shell-specifieke focus, agent capabilities en naadloze GitHub-integratie. Terwijl Gemini CLI breder inzetbaar is en Claude Code beter is in code reasoning, is GitHub Copilot CLI ongeëvenaard als het gaat om context-bewuste shell-commando generatie en terminal workflows.
 
-Tijd om je terminal wat slimmer en veiliger te maken!
+Tijd om je terminal wat slimmer te maken!
 
 ## Nuttige links
 
-- [GitHub Copilot CLI repository](https://github.com/github/gh-copilot)
-- [GitHub CLI documentation](https://cli.github.com/)
+- [GitHub Copilot CLI repository](https://github.com/github/copilot-cli)
+- [GitHub Copilot CLI documentatie](https://docs.github.com/en/copilot/concepts/agents/about-copilot-cli)
 - [GitHub Copilot pricing](https://github.com/features/copilot)
-- [Shell scripting best practices](https://google.github.io/styleguide/shellguide.html)
+- [GitHub Copilot features](https://github.com/features/copilot/cli)
