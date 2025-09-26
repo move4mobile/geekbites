@@ -34,9 +34,23 @@ De belangrijkste voordelen van GitHub Copilot CLI ten opzichte van andere AI CLI
 
 ## Installatie en configuratie
 
-### Installeren via GitHub CLI
+### Installeren via npm (aanbevolen)
 
-GitHub Copilot CLI wordt geïnstalleerd als extensie voor de GitHub CLI:
+GitHub Copilot CLI kan eenvoudig geïnstalleerd worden via npm:
+
+```bash
+$ npm install -g @github/copilot
+```
+
+Na installatie kun je controleren of alles goed is gegaan:
+
+```bash
+$ gh copilot --version
+```
+
+### Alternatief: Installeren via GitHub CLI
+
+GitHub Copilot CLI kan ook geïnstalleerd worden als extensie voor de GitHub CLI:
 
 ```bash
 # Installeer eerst GitHub CLI als je het nog niet hebt
@@ -46,12 +60,6 @@ $ winget install GitHub.cli  # Windows
 
 # Installeer de Copilot CLI extensie
 $ gh extension install github/gh-copilot
-```
-
-Na installatie kun je controleren of alles goed is gegaan:
-
-```bash
-$ gh copilot --version
 ```
 
 ### Authenticatie
@@ -66,7 +74,7 @@ Volg de instructies om in te loggen met je GitHub account dat toegang heeft tot 
 
 ## Aan de slag met GitHub Copilot CLI
 
-### Commando's genereren met `suggest`
+### Commando's genereren met suggest
 
 De krachtigste functie is het genereren van shell-commando's:
 
@@ -93,7 +101,7 @@ This command:
   Execute command
 ```
 
-### Commando's uitleggen met `explain`
+### Commando's uitleggen met explain
 
 Heb je een complex commando gevonden maar weet je niet precies wat het doet?
 
